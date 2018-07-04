@@ -1,0 +1,35 @@
+header{
+	border-top: 15px solid #572872;
+
+	#empty-div{
+		background-color: #1b75bc;
+		height: 5px;
+	}
+	.container-fluid img.logo{
+		width: 30%;
+	}
+	.container img.logo{
+		width: 70%;
+	}
+
+	@media (min-width: 576px){
+		.form-inline .form-control {
+			width: 60%;
+		}
+	}
+	form{
+		height: 100%;
+	}
+	.btn.search{
+		border-radius: .25rem 0 0 .25rem;
+	}
+	.form-control{
+		border-radius: 0 .25rem .25rem 0;
+	}
+	.flag{
+		
+	}
+	.dropdown:hover>.dropdown-menu.show{
+	  display: block;
+	}
+}

@@ -1,0 +1,48 @@
+{
+	"LANGUAGE" : {
+		"selectLanguage" : "Select Language",
+		"en" 			 : "English",
+		"ar" 			 : "Arabic"
+	},
+	"HEADER" : {
+		"search" : "Search",
+		"go" : "Go",
+		"select" : "select",
+		"jobs" : "Jobs",
+		"provider" : "Provider",
+		"register" : "Register",
+		"login" : "Login",
+		"welcome" : "Welcome Guest"
+	},
+	"NAVBAR" :{
+		"logo" : "Tamam",
+		"jobs_projects" : {
+			"title" 			: "Jobs & Projects",
+			"how_it_work" 		: "How It Works",
+			"submit_job" 		: "Submit A job",
+			"search_for_job" 	: "Search For Jobs",
+			"jobs_watchlist" 	: "Jobs Watchlist",
+			"invinte_job_owner" : "Invite A Job Owner",
+			"job_owner_account" : "Job Owner Account"
+		},
+		"service_providers" : {
+			"title" : "Service Providers",
+			"how_it_work" 				   : "How It Works",
+			"search_for_service_providers" : "Search For Service Providers",
+			"service_providers_watchlist"  : "Service Providers Watchlist",
+			"invinte_service_provider" 	   : "Invite a Service Provider",
+			"service_provider_account" : "Service Provider Account"
+		},
+		"community" : {
+			"title" : "Community",
+			"explore_join" : "Explore & Join",
+			"how_it_work" 		: "How It Works"
+		},
+		"support" 	: {
+			"title" : "Support",
+			"submit_ticket" : "Submit A Ticket"
+		},
+		"certification" : "Certification",
+		"blog" : "Blog"
+	}
+} 

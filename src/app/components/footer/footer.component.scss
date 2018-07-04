@@ -1,0 +1,26 @@
+footer{
+	background: #191919;
+	color: #d5d5d5;
+	border-width: 0;
+	border-top-color: #572872;
+	border-top-width: 5px;
+	border-style: solid;
+	.footer1{
+		border-bottom: 5px solid #777;
+	}
+	.footer2{
+		img{
+			width: 25%;
+		}
+		h5{
+			margin-bottom: 20px;
+		}
+		a{
+			color: #fff;
+			padding: 10px;
+			background: #000;
+			margin-right: 10px;
+			border-radius: 3px;
+		}
+	}
+}

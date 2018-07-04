@@ -1,0 +1,48 @@
+{
+	"LANGUAGE" : {
+		"selectLanguage": "اختر اللغة",
+		"en"			: "الانجليزية",
+		"ar"			: "العربية"
+	},
+	"HEADER" : {
+		"search" : "بحـث",
+		"go" : "بحـث",
+		"select" : "اختــــر",
+		"jobs" : "الوظائف",
+		"provider" : "مقدمي الخدمات",
+		"register" : "تسجيـــل جديـــــد",
+		"login" : "دخــول",
+		"welcome" : ""
+	},
+	"NAVBAR" :{
+		"logo" : "Tamam",
+		"jobs_projects" : {
+			"title" 			: "أعمال و مشاريع",
+			"how_it_work" 		: "كيف نعمل",
+			"submit_job" 		: "سجل أعمالك",
+			"search_for_job" 	: "ابحث عن عمل",
+			"jobs_watchlist" 	: "أعمالي المفضلة",
+			"invinte_job_owner" : "دعوة لتسجيل عمل",
+			"job_owner_account" : "حساب الأعمال"
+		},
+		"service_providers" : {
+			"title" : "فنيون متخصصون",
+			"how_it_work" 		: "كيف نعمل",
+			"search_for_service_providers" : "ابحث عن متخصص",
+			"service_providers_watchlist"  : "القائمة المفضلة",
+			"invinte_service_provider" 	   : "دعوة متخصص",
+			"service_provider_account" : "حساب المتخصص"
+		},
+		"community" : {
+			"title" : "مجتمعات",
+			"explore_join" : "استكشف وشارك",
+			"how_it_work" 		: "كيف نعمل"
+		},
+		"support" 	: {
+			"title" : "مساعدة",
+			"submit_ticket" : "إرسل طلب مساعدة"
+		},
+		"certification" : "الشهادات",
+		"blog" : "المدونة"
+	}
+}
