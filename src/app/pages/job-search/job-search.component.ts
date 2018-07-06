@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JobSearchComponent implements OnInit {
 
+	title: string = "SEARCH FOR JOBS AS A FREELANCER";
+
 	constructor() { }
 
 	ngOnInit() {

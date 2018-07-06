@@ -22,7 +22,7 @@
 			"submit_job" 		: "سجل أعمالك",
 			"search_for_job" 	: "ابحث عن عمل",
 			"jobs_watchlist" 	: "أعمالي المفضلة",
-			"invinte_job_owner" : "دعوة لتسجيل عمل",
+			"invite_job_owner" : "دعوة لتسجيل عمل",
 			"job_owner_account" : "حساب الأعمال"
 		},
 		"service_providers" : {
@@ -30,7 +30,7 @@
 			"how_it_work" 		: "كيف نعمل",
 			"search_for_service_providers" : "ابحث عن متخصص",
 			"service_providers_watchlist"  : "القائمة المفضلة",
-			"invinte_service_provider" 	   : "دعوة متخصص",
+			"invite_service_provider" 	   : "دعوة متخصص",
 			"service_provider_account" : "حساب المتخصص"
 		},
 		"community" : {

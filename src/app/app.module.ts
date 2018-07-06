@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatStepperModule, MatDialogModule } from '@angular/material';
+import { MatStepperModule, MatNativeDateModule, MatDatepickerModule } from '@angular/material';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
@@ -25,11 +26,13 @@ import { HowItWorkComponent } from './pages/how-it-work/how-it-work.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { JobSearchComponent } from './pages/job-search/job-search.component';
-import { JobSearchTabsComponent } from './components/job-search-tabs/job-search-tabs.component';
+import { JobTabsComponent } from './components/job-tabs/job-tabs.component';
 import { InviteOwnerComponent } from './pages/invite-owner/invite-owner.component';
 import { ProviderSearchComponent } from './pages/provider-search/provider-search.component';
 import { ProfileComponent } from './pages/profile/profile.component';
-
+import { ProviderTabsComponent } from './components/provider-tabs/provider-tabs.component';
+import { InviteFreelancerComponent } from './pages/invite-freelancer/invite-freelancer.component';
+import { ForgetPasswordComponent } from './pages/forget-password/forget-password.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -53,10 +56,13 @@ export function createTranslateLoader(http: HttpClient) {
     LoginComponent,
     RegisterComponent,
     JobSearchComponent,
-    JobSearchTabsComponent,
+    JobTabsComponent,
     InviteOwnerComponent,
     ProviderSearchComponent,
-    ProfileComponent
+    ProfileComponent,
+    ProviderTabsComponent,
+    InviteFreelancerComponent,
+    ForgetPasswordComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +70,10 @@ export function createTranslateLoader(http: HttpClient) {
     AppRoutingModule,
     HttpClientModule,
     MatStepperModule,
-    MatDialogModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
+    FormsModule,
     TranslateModule.forRoot({
         loader: {
             provide: TranslateLoader,

@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./invite-owner.component.scss']
 })
 export class InviteOwnerComponent implements OnInit {
+	title: string = "INVITE A JOB OWNER TO TAMAM MARKETPLACE";
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+	}
 
 }

@@ -22,7 +22,7 @@
 			"submit_job" 		: "Submit A job",
 			"search_for_job" 	: "Search For Jobs",
 			"jobs_watchlist" 	: "Jobs Watchlist",
-			"invinte_job_owner" : "Invite A Job Owner",
+			"invite_job_owner" : "Invite A Job Owner",
 			"job_owner_account" : "Job Owner Account"
 		},
 		"service_providers" : {
@@ -30,7 +30,7 @@
 			"how_it_work" 				   : "How It Works",
 			"search_for_service_providers" : "Search For Service Providers",
 			"service_providers_watchlist"  : "Service Providers Watchlist",
-			"invinte_service_provider" 	   : "Invite a Service Provider",
+			"invite_service_provider" 	   : "Invite a Service Provider",
 			"service_provider_account" : "Service Provider Account"
 		},
 		"community" : {

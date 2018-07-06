@@ -27,8 +27,8 @@
 				  </a>
 
 				  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-				    <a class="dropdown-item" href="#"><img class="flag" src="./assets/images/eg.png"> {{ 'LANGUAGE.ar' | translate }} </a>
-				    <a class="dropdown-item" href="#"><img class="flag" src="./assets/images/us.png"> {{ 'LANGUAGE.en' | translate }} </a>
+				    <a class="dropdown-item" (click)="changeLanguage('ar')"><img class="flag" src="./assets/images/eg.png"> {{ 'LANGUAGE.ar' | translate }} </a>
+				    <a class="dropdown-item" (click)="changeLanguage('en')"><img class="flag" src="./assets/images/us.png"> {{ 'LANGUAGE.en' | translate }} </a>
 				  </div>
 				</div>
 			</div>

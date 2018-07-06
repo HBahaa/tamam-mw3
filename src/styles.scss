@@ -1,14 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
+body{
+	background: #fbfbfb;
+}
 .main-text{
 	color: #572872;
 	text-transform: capitalize;
 	font-weight: 600;
 }
 .mat-stepper-horizontal{
-	/*width: 90%;*/
-	margin: 50px auto;
+	padding-bottom: 50px;
+	padding-top: 50px;
 }
 .mat-step-label{
 	min-width: 0px !important;
@@ -24,6 +25,7 @@
 }
 .content{
 	margin: 50px 0;
+	
 	.nav-tabs, .tab-content{
 		border: 1px solid #dee2e6;
 	}
