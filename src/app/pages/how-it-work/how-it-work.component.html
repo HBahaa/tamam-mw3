@@ -1,0 +1,238 @@
+<div class="container">
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
+		<li class="nav-item">
+		    <a class="nav-link active" id="tab1" data-toggle="tab" href="#content1" role="tab" aria-controls="content1" aria-selected="true">How To Submit Jobs</a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link" id="tab2" data-toggle="tab" href="#content2" role="tab" aria-controls="content2" aria-selected="false">How To Hire Service Providers</a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link" id="tab3" data-toggle="tab" href="#content3" role="tab" aria-controls="content3" aria-selected="true">How To Find Work</a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link" id="tab4" data-toggle="tab" href="#content4" role="tab" aria-controls="content4" aria-selected="false">How To Get Certified</a>
+		</li>
+	</ul>
+	<div class="tab-content" id="myContent">
+	    <div class="tab-pane fade show active" id="content1" role="tabpanel" aria-labelledby="tab1">
+		    <mat-horizontal-stepper #stepper1>
+				<mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/1.png" alt="Create an Account" title="Create an Account" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Create an Account</h3>
+				    		<p>To post a job, you must Sign In first with your client account on <b>"Tamam Skills Marketplace"</b>  or "<a href="#">Register Here</a>". Click on "Submit Your Job" button from the homepage or from "My Account". Click on "Client Dashboard" then "Post New Job" tab.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+			    <mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Job-Description7.png" alt="Create a job description" title="Create a job description" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Create a Clear Job Description</h3>
+				    		<p>It’s important that you place your job in the appropriate category and subcategory as to be seen by the ideal service providers. Service providers can only bid on your job if it’s in their area of interest. Your job description needs to be as detailed as possible: including specific information about the needed work, the size of the job, estimated start and completion dates, and the skills set you would like your service provider to have. Having a clear job description will save you time and effort in attracting the best proposals.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/333.png" alt="Define your Online Job" title="Define your Online Job" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Define The Rate of Your Job</h3>
+				    		<p>Fixed price jobs are best when you have a well-defined scope and structure for the work. If the job scope is less certain and you would like to work with your service provider on a more flexible basis, then choose the hourly option. You will also be asked to indicate the number of hours per week as well as the duration of the job.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+					<div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/4444444.png" alt="Publish Your Job Online" title="Publish Your Job Online" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Define The Rate of Your Job</h3>
+				    		<p>Fixed price jobs are best when you have a well-defined scope and structure for the work. If the job scope is less certain and you would like to work with your service provider on a more flexible basis, then choose the hourly option. You will also be asked to indicate the number of hours per week as well as the duration of the job.</p>
+						    <div>
+						      <button mat-button matStepperPrevious>Back</button>
+						      <button mat-button (click)="stepper1.reset()">Reset</button>
+						    </div>
+				    	</div>
+				    </div>
+				    
+				    
+				</mat-step>
+			</mat-horizontal-stepper>
+			<a href="#"><button class="btn btn-primary">Submit Your Job</button></a>
+	    </div>
+
+	    <div class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="tab2">
+			<mat-horizontal-stepper #stepper2>
+				<mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Post14.png" alt="Post Your Job" title="Post Your Job" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Post Your Job</h3>
+				    		<p>Just register on <b>Tamam</b> Marketplace and you're free to post jobs. Service Providers who believe are capable of doing the job will offer to finish the job for you, as your job gets the attention it deserves.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+			    <mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Hire.png" alt="Hire a service provider" title="Hire a service provider" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Review and Hire a Service Provider</h3>
+				    		<p>As you start receiving proposals, you will have the chance to select the groups that are most suitable for the job in mind. Start browsing each service provider's profile to see their portfolio, work history, certifications, job feedback/rating, and more. Select the service provider that meets your desired requirements.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Manage.png" alt="Manage your work" title="Manage your work" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Manage & Pay For Work You Approve</h3>
+				    		<p>Track your job's progress as milestones are being achieved or delayed. View your work in progress with service providers and more. For fixed priced jobs, simply deposit funds in our licensed escrow and your service provider will be paid when milestones are met. For hourly jobs, View your job's progress to approve work; it's quick, simple, and no trees harmed.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+					<div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Fee.png" alt="Small service fee" title="Small service fee" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Small Service Fee is Deducted</h3>
+				    		<p>The quote submitted by your service provider includes a small service fee for Tamam Marketplace. When work is delivered and payment is made, we deduct commission and transfer the rest to your service provider.</p>
+						    <div>
+						      <button mat-button matStepperPrevious>Back</button>
+						      <button mat-button (click)="stepper2.reset()">Reset</button>
+						    </div>
+				    	</div>
+				    </div>				    
+				</mat-step>
+			</mat-horizontal-stepper>
+			<a href="#"><button class="btn btn-primary">Hire Service Provider</button></a>
+	    </div>
+	    <div class="tab-pane fade " id="content3" role="tabpanel" aria-labelledby="tab3">
+		    <mat-horizontal-stepper #stepper3>
+				<mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/111.png" alt="Market Your Skills" title="Market Your Skills" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Market Your Skills</h3>
+				    		<p>Create your own profile by specifying your skills, what makes you different, what drives corporates to go for your skills, what professional history you have, and you can even mention your price. Here you have the chance to define yourself and your skills. You are also allowed to mention the certifications you obtained for the skills you have.</p>
+				    		<br />
+				    		<p>
+				    			Some projects require <b>Tamam</b> certification. The more of such certifications you have, the better chances you have to get more projects. Apply for <b>Tamam</b> certifications here.
+				    		</p>
+				    	</div>
+				    </div>
+				</mat-step>
+			    <mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/22.png" alt="Find online Jobs" title="Find online Jobs" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Find Perfect Jobs</h3>
+				    		<p>As you start receiving project invitations, review and respond to them, then get hired. You can also search <b>Tamam</b> Marketplace for projects that suit you and apply for them.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/33.png" alt="Small service Fees" title="Small service Fees" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Get Paid</h3>
+				    		<p>Leave the headache to us and focus on getting the job done. We will bill your clients and track their payments for you. We guarantee your payments as you complete milestones and finish jobs.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+					<div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Fee.png" alt="Small Service Fee" title="Small Service Fee" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Your Client Pays a Small Service Fees</h3>
+				    		<p>For the services that <b>Tamam</b> Marketplace does for you, we deduct a small commission from the payment you receive. This will ensure that our services are not only completed, but also enhanced and upgraded.</p>
+						    <div>
+						      <button mat-button matStepperPrevious>Back</button>
+						      <button mat-button (click)="stepper3.reset()">Reset</button>
+						    </div>
+				    	</div>
+				    </div>				    
+				</mat-step>
+			</mat-horizontal-stepper>
+		    <a href="#"><button class="btn btn-primary">Find Work</button></a>
+	    </div>
+
+	    <div class="tab-pane fade" id="content4" role="tabpanel" aria-labelledby="tab4">
+			<mat-horizontal-stepper #stepper4>
+			    <mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/41.png" alt="" title="" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Select The Right Certificate</h3>
+				    		<p>Sign in with your service provider account or "<a href="#">Register Here</a>". Choose a certificate that suits you to master the skills that will give you an advantage in your field. Consider which option fits best with your experience level, career path and targeted skills-set. Getting certified will give you a competitive edge in the job market.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/42.png" alt="" title="" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Obtain The Required Experience</h3>
+				    		<p>Once you know what certificate you are going to pursue, you must check the prerequisites needed to apply for this certificate. Check your experience with the requirements and decide what type of study or training is needed.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/43.png" alt="" title="" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Pay, Get Trained & Track Your Status</h3>
+				    		<p>Click on “Place Order” to be redirected to a secure URL and select your payment method. Each service provider is required to complete multiple tasks to get certified. You will be able to track your percentage completed so far. In order to achieve your certificate, all tasks must be completed.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+					<div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/end.png" alt="" title="" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Endorsement Process</h3>
+				    		<p>When your status is 100% complete, you will be evaluated by our Training & Certification Department. Once you are approved, feedback is provided and you will be able to download your certification & your public profile will automatically update with your newly added certification.</p>
+						    <div>
+						      <button mat-button matStepperPrevious>Back</button>
+						      <button mat-button (click)="stepper4.reset()">Reset</button>
+						    </div>
+				    	</div>
+				    </div>				    
+				</mat-step>
+			</mat-horizontal-stepper>
+			<a href="#"><button class="btn btn-primary">Get Certified</button></a>
+	    </div>
+	</div>
+</div> 

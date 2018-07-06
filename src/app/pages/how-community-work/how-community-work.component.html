@@ -1,0 +1,231 @@
+<div class="container">
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
+		<li class="nav-item">
+		    <a class="nav-link active" id="tab1" data-toggle="tab" href="#content1" role="tab" aria-controls="content1" aria-selected="true">Public Community</a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link" id="tab2" data-toggle="tab" href="#content2" role="tab" aria-controls="content2" aria-selected="false">Private Community</a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link" id="tab3" data-toggle="tab" href="#content3" role="tab" aria-controls="content3" aria-selected="true">Building community</a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link" id="tab4" data-toggle="tab" href="#content4" role="tab" aria-controls="content4" aria-selected="false">Uploading your work</a>
+		</li>
+	</ul>
+	<div class="tab-content" id="myContent">
+	    <div class="tab-pane fade show active" id="content1" role="tabpanel" aria-labelledby="tab1">
+		    <mat-horizontal-stepper #stepper1>
+				<mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Public.jpg" alt="Join a Public Group" title="Join a Public Group" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Joining A Community</h3>
+				    		<p>To join a community, you need to be registered in TAMAM Marketplace. Click on the image of the community and submit to "Join" the Community that you are interested to be one of its members. Once you confirm the joining request, you will be able to enjoy the community's products and benefits.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+			    <mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Upload1.jpg" alt="Upload Your Product" title="Upload Your Product" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Uploading Product</h3>
+				    		<p>After becoming one of the community members, you can upload your own work by filling and submitting a form with the required data. In 5-7 working days, a Team of Specialists from TAMAM Marketplace will test your work and send you an email with approval/regection of the uploaded work.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/publishing-strategy1.jpg" alt="Post on TAMAM" title="Post on TAMAM" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Publishing On TAMAM</h3>
+				    		<p>In case you received positive reviews and comments on your uploaded work from your community members, and you would like to publish your work on TAMAM Marketplace out of your community, you will need to fill and submit a form, wait for approval from TAMAM's Admin. After receiving the confirmation on your Work, all TAMAM's visitors will be able to enjoy your products on the marketplace.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+					<div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Sugg.jpg" alt="General Group proposal" title="General Group proposal" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Suggest A Community</h3>
+				    		<p>The community member can suggest a new public community to be published, and the most requested community will be added to the group of the public communities.</p>
+						    <div>
+						      <button mat-button matStepperPrevious>Back</button>
+						      <button mat-button (click)="stepper1.reset()">Reset</button>
+						    </div>
+				    	</div>
+				    </div>
+				    
+				    
+				</mat-step>
+			</mat-horizontal-stepper>
+	    </div>
+
+	    <div class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="tab2">
+			<mat-horizontal-stepper #stepper2>
+				<mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Log.jpg" alt="Membership registration" title="Membership registration" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Web Site Registration</h3>
+				    		<p>The user signs up in TAMAM Marketplace by creating a new account.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+			    <mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Private.jpg" alt="Join on a group" title="Join on a group" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Access The Community</h3>
+				    		<p>If the signed up user is a member of a Private community, he will be able to access it and enjoy all the benefits that are provided in this Community.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Build.jpg" alt="Build a private community" title="Build a private community" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Build your Own Community</h3>
+				    		<p>The signed up user has the option to create his own Private community, to do so he will need to fill and submit a request form. After submitting the request, the signed up user will receive a confirmation from the portal's admin. Next step is that he will receive the credentials for his Community members needed to access the new Private Community.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+					<div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/upload1.jpg" alt="Upload your products" title="Upload your products" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Uploading Product</h3>
+				    		<p>After becoming one of the Private Community members, you can upload your own work by filling and submitting a form with the required data to your Community Admin. In 5-7 working days, the Admin of your community will test your work and send you an email with approval/regection of the uploaded work.</p>
+						    <div>
+						      <button mat-button matStepperPrevious>Back</button>
+						      <button mat-button (click)="stepper2.reset()">Reset</button>
+						    </div>
+				    	</div>
+				    </div>				    
+				</mat-step>
+			</mat-horizontal-stepper>
+	    </div>
+	    <div class="tab-pane fade " id="content3" role="tabpanel" aria-labelledby="tab3">
+		    <mat-horizontal-stepper #stepper3>
+				<mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Log.jpg" alt="Membership registration" title="Membership registration" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Web Site Registration</h3>
+				    		<p>The user signs up in TAMAM Marketplace by creating a new account.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+			    <mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Private.jpg" alt="Join on a group" title="Join on a group" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Access The Community</h3>
+				    		<p>If the signed up user is a member of a Private community, he will be able to access it and enjoy all the benefits that are provided in this Community.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Build.jpg" alt="Build a private community" title="Build a private community" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Build your Own Community</h3>
+				    		<p>The signed up user has the option to create his own Private community, to do so he will need to fill and submit a request form. After submitting the request, the signed up user will receive a confirmation from the portal's admin. Next step is that he will receive the credentials for his Community members needed to access the new Private Community.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+					<div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Approval-Process-re.png" alt="Approval of the application" title="Approval of the application" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Approval Email</h3>
+				    		<p>Once TAMAM's team approves the new Private Community, the Admin will recieve a confirmation email with the code needed for the community members to use it in order to access the community.</p>
+						    <div>
+						      <button mat-button matStepperPrevious>Back</button>
+						      <button mat-button (click)="stepper3.reset()">Reset</button>
+						    </div>
+				    	</div>
+				    </div>				    
+				</mat-step>
+			</mat-horizontal-stepper>
+		        
+	    </div>
+
+	    <div class="tab-pane fade" id="content4" role="tabpanel" aria-labelledby="tab4">
+			<mat-horizontal-stepper #stepper4>
+				<mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Log.jpg" alt="Membership registration" title="Membership registration" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Web Site Registration</h3>
+				    		<p>The user signs up in TAMAM Marketplace by creating a new account.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+			    <mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Private.jpg" alt="Join on a group" title="Join on a group" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Access The Community</h3>
+				    		<p>If the signed up user is a member of a Private community, he will be able to access it and enjoy all the benefits that are provided in this Community.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+				    <div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Build.jpg" alt="Build a private community" title="Build a private community" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Build your Own Community</h3>
+				    		<p>The signed up user has the option to create his own Private community, to do so he will need to fill and submit a request form. After submitting the request, the signed up user will receive a confirmation from the portal's admin. Next step is that he will receive the credentials for his Community members needed to access the new Private Community.</p>
+				    	</div>
+				    </div>
+				</mat-step>
+				<mat-step>
+					<div class="row">
+				    	<div class="col-md-6">
+				    		<img src="../../assets/images/Approval-Process-re.png" alt="Approval of the application" title="Approval of the application" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<h3>Approval Email</h3>
+				    		<p>Once TAMAM's team approves the new Private Community, the Admin will recieve a confirmation email with the code needed for the community members to use it in order to access the community.</p>
+						    <div>
+						      <button mat-button matStepperPrevious>Back</button>
+						      <button mat-button (click)="stepper4.reset()">Reset</button>
+						    </div>
+				    	</div>
+				    </div>				    
+				</mat-step>
+			</mat-horizontal-stepper>
+	    </div>
+	</div>
+</div> 

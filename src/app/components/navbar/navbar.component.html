@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">
 	<div class="container-fluid">
-		<!-- <a class="navbar-brand" href="#">Tamam</a> -->
+		<!-- <a class="navbar-brand" routerLink="/crisis-center" routerLinkActive="active">Tamam</a> -->
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    	<span class="navbar-toggler-icon"></span>
 	    </button>
@@ -8,62 +8,62 @@
 	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mr-auto">
 		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          {{ 'NAVBAR.jobs_projects.title' | translate }} <span class="sr-only">(current)</span>
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">{{ 'NAVBAR.jobs_projects.how_it_work' | translate }}</a>
-		          <a class="dropdown-item" href="#">{{ 'NAVBAR.jobs_projects.submit_job' | translate }}</a>
-		          <a class="dropdown-item" href="#">{{ 'NAVBAR.jobs_projects.search_for_job' | translate }}</a>
-		          <a class="dropdown-item" href="#">{{ 'NAVBAR.jobs_projects.jobs_watchlist' | translate }}</a>
-		          <a class="dropdown-item" href="#">{{ 'NAVBAR.jobs_projects.invinte_job_owner' | translate }}</a>
-		          <a class="dropdown-item" href="#">{{ 'NAVBAR.jobs_projects.job_owner_account' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/find-job">{{ 'NAVBAR.jobs_projects.how_it_work' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/login">{{ 'NAVBAR.jobs_projects.submit_job' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/job-search">{{ 'NAVBAR.jobs_projects.search_for_job' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/login">{{ 'NAVBAR.jobs_projects.jobs_watchlist' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/invite-owner">{{ 'NAVBAR.jobs_projects.invinte_job_owner' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/login">{{ 'NAVBAR.jobs_projects.job_owner_account' | translate }}</a>
 		        </div>
 		      </li>
 		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          {{ 'NAVBAR.service_providers.title' | translate }}
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">{{ 'NAVBAR.service_providers.how_it_work' | translate }}</a>
-		          <a class="dropdown-item" href="#">{{ 'NAVBAR.service_providers.search_for_service_providers' | translate }}</a>
-		          <a class="dropdown-item" href="#">{{ 'NAVBAR.service_providers.service_providers_watchlist' | translate }}</a>
-		          <a class="dropdown-item" href="#">{{ 'NAVBAR.service_providers.invinte_service_provider' | translate }}</a>
-		          <a class="dropdown-item" href="#">{{ 'NAVBAR.service_providers.service_provider_account' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/submit-job">{{ 'NAVBAR.service_providers.how_it_work' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/provider-search">{{ 'NAVBAR.service_providers.search_for_service_providers' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/crisis-center">{{ 'NAVBAR.service_providers.service_providers_watchlist' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/crisis-center">{{ 'NAVBAR.service_providers.invinte_service_provider' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/crisis-center">{{ 'NAVBAR.service_providers.service_provider_account' | translate }}</a>
 		        </div>
 		      </li>
 			  <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          {{ 'NAVBAR.community.title' | translate }}
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">{{ 'NAVBAR.community.how_it_work' | translate }}</a>
-		          <a class="dropdown-item" href="#">{{ 'NAVBAR.community.explore_join' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/groups">{{ 'NAVBAR.community.explore_join' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/how-does-a-public-community-work">{{ 'NAVBAR.community.how_it_work' | translate }}</a>
 		        </div>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">{{ 'NAVBAR.certification' | translate }}</a>
+		        <a class="nav-link" routerLink="/crisis-center" routerLinkActive="active">{{ 'NAVBAR.certification' | translate }}</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">{{ 'NAVBAR.blog' | translate }}</a>
+		        <a class="nav-link" routerLink="/crisis-center" routerLinkActive="active">{{ 'NAVBAR.blog' | translate }}</a>
 		      </li>
 		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          {{ 'NAVBAR.support.title' | translate }}
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">{{ 'NAVBAR.support.submit_ticket' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/crisis-center">{{ 'NAVBAR.support.submit_ticket' | translate }}</a>
 		        </div>
 		      </li>
 		    </ul>
 		    <ul class="nav navbar-nav navbar-right">
 			    <li class="nav-item"><p class="my-2">{{ 'HEADER.welcome' | translate }}</p></li>
 			    <li class="nav-item">
-			        <a class="nav-link" href="#">{{ 'HEADER.login' | translate }} </a>
+			        <a class="nav-link" routerLink="/crisis-center" routerLinkActive="active">{{ 'HEADER.login' | translate }} </a>
 			    </li>
 			    <li class="nav-item"><p class="my-2">|</p></li>
 			    <li class="nav-item">
-			        <a class="nav-link" href="#">{{ 'HEADER.register' | translate }}</a>
+			        <a class="nav-link" routerLink="/crisis-center" routerLinkActive="active">{{ 'HEADER.register' | translate }}</a>
 			    </li>
 		    </ul>
 	    </div>
