@@ -28,5 +28,12 @@ body{
 	
 	.nav-tabs, .tab-content{
 		border: 1px solid #dee2e6;
+		padding-right: 0px;
 	}
+}
+a{
+	cursor: pointer;
+}
+.dropdown:hover>.dropdown-menu {
+	display: block;
 }

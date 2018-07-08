@@ -44,5 +44,112 @@
 		},
 		"certification" : "Certification",
 		"blog" : "Blog"
+	},
+	"FOOTER" : {
+		"contactus" : "Contact Us",
+		"aboutus" : "About Us",
+		"postjob" : "Post A Job",
+		"newsletter" : "Newsletter",
+		"comingSoon" : "Coming soon",
+		"joinus" : "Join Us"
+	},
+	"TABS" : {
+		"how-submit-job" : {
+			"title" : "How To Submit Jobs",
+			"btn" : "SUBMIT YOUR JOB",
+			"content1" : {
+				"title" : "Create an Account",
+				"body" : "To post a job, you must Sign In first with your client account on 'Tamam Skills Marketplace'  or  'Register Here'. Click on 'Submit Your Job' button from the homepage or from 'My Account'. Click on 'Client Dashboard' then 'Post New Job' tab."
+			},
+			"content2" : {
+				"title" : "Create a Clear Job Description",
+				"body" : "It’s important that you place your job in the appropriate category and subcategory as to be seen by the ideal service providers. Service providers can only bid on your job if it’s in their area of interest. Your job description needs to be as detailed as possible: including specific information about the needed work, the size of the job, estimated start and completion dates, and the skills set you would like your service provider to have. Having a clear job description will save you time and effort in attracting the best proposals."
+			},
+			"content3" : {
+				"title" : "Define The Rate of Your Job",
+				"body" : "Fixed price jobs are best when you have a well-defined scope and structure for the work. If the job scope is less certain and you would like to work with your service provider on a more flexible basis, then choose the hourly option. You will also be asked to indicate the number of hours per week as well as the duration of the job."
+			},
+			"content4" : {
+				"title" : "Publish Your Job",
+				"body" : "You can attach files that help clarify the job requirements for the service provider to receive more relevant proposals. You can also mark your job as 'featured' to be highlighted for attracting more candidates. (Extra fee is applied) to publish your job just click 'finalize job' button. The job will be reviewed by TAMAM team and send you the approval for publishing it. Once it is approved, you are ready to receive bids. "
+			}
+		},
+		"how-hire-service-providers" : {
+			"title" : "How To Hire Service Providers",
+			"btn" : "HIRE SERVICE PROVIDERS",
+			"content1" : {
+				"title" : "Post Your Job",
+				"body" : "Just register on Tamam Marketplace and you're free to post jobs. Service Providers who believe are capable of doing the job will offer to finish the job for you, as your job gets the attention it deserves."
+			},
+			"content2" : {
+				"title" : "Review and Hire a Service Provider",
+				"body" : "As you start receiving proposals, you will have the chance to select the groups that are most suitable for the job in mind. Start browsing each service provider's profile to see their portfolio, work history, certifications, job feedback/rating, and more. Select the service provider that meets your desired requirements."
+			},
+			"content3" : {
+				"title" : "Manage & Pay For Work You Approve",
+				"body" : "Track your job's progress as milestones are being achieved or delayed. View your work in progress with service providers and more. For fixed priced jobs, simply deposit funds in our licensed escrow and your service provider will be paid when milestones are met. For hourly jobs, View your job's progress to approve work; it's quick, simple, and no trees harmed."
+			},
+			"content4" : {
+				"title" : "Small Service Fee is Deducted",
+				"body" : "The quote submitted by your service provider includes a small service fee for Tamam Marketplace. When work is delivered and payment is made, we deduct commission and transfer the rest to your service provider."
+			}
+		},
+		"how-find-work" : {
+			"title" : "How To Find Work",
+			"btn" : "ابحث عن مشروع",
+			"content1" : {
+				"title" : "Market Your Skills",
+				"body" : "Create your own profile by specifying your skills, what makes you different, what drives corporates to go for your skills, what professional history you have, and you can even mention your price. Here you have the chance to define yourself and your skills. You are also allowed to mention the certifications you obtained for the skills you have. <br />Find Perfect JobsFind Perfect Jobs Some projects require Tamam certification. The more of such certifications you have, the better chances you have to get more projects. Apply for Tamam certifications here."
+			},
+			"content2" : {
+				"title" : "Find Perfect Jobs",
+				"body" : "As you start receiving project invitations, review and respond to them, then get hired. You can also search Tamam Marketplace for projects that suit you and apply for them. "
+			},
+			"content3" : {
+				"title" : "Get Paid",
+				"body" : "Leave the headache to us and focus on getting the job done. We will bill your clients and track their payments for you. We guarantee your payments as you complete milestones and finish jobs."
+			},
+			"content4" : {
+				"title" : "Your Client Pays a Small Service Fees",
+				"body" : "For the services that Tamam Marketplace does for you, we deduct a small commission from the payment you receive. This will ensure that our services are not only completed, but also enhanced and upgraded."
+			}
+		},
+		"how-get-certified" : {
+			"title" : "How To Get Certified",
+			"btn" : "Get Certified",
+			"content1" : {
+				"title" : "Select The Right Certificate",
+				"body" : "Sign in with your service provider account or Register Here. Choose a certificate that suits you to master the skills that will give you an advantage in your field. Consider which option fits best with your experience level, career path and targeted skills-set. Getting certified will give you a competitive edge in the job market."
+			},
+			"content2" : {
+				"title" : "Obtain The Required Experience",
+				"body" : "Once you know what certificate you are going to pursue, you must check the prerequisites needed to apply for this certificate. Check your experience with the requirements and decide what type of study or training is needed."
+			},
+			"content3" : {
+				"title" : "Pay, Get Trained & Track Your Status",
+				"body" : "Click on “Place Order” to be redirected to a secure URL and select your payment method. Each service provider is required to complete multiple tasks to get certified. You will be able to track your percentage completed so far. In order to achieve your certificate, all tasks must be completed."
+			},
+			"content4" : {
+				"title" : "Endorsement Process",
+				"body" : "When your status is 100% complete, you will be evaluated by our Training & Certification Department. Once you are approved, feedback is provided and you will be able to download your certification & your public profile will automatically update with your newly added certification."
+			}
+		}
+	},
+	"LOGIN" : {
+		"title" : "LOGIN OR CREATE NEW ACCOUNT",
+		"block1" :{
+			"title" : "Create New Account",
+			"content" : "Creating new accounts with Tamam enables you to get your jobs done as a client or build your successful career as a freelancer.",
+			"create-account": "Create An Account"
+		},
+		"block2" :{
+			"title" : "Login",
+			"content" : "If you have an account with us, please log in.",
+			"email" : "Email Address",
+			"password" : "Password",
+			"msg" : "Required Fields",
+			"btn": "Login",
+			"forget-password" : "Forgot your password?"
+		}
 	}
 } 

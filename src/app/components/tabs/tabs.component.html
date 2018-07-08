@@ -2,62 +2,62 @@
 	<div class="content">
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
 			<li class="nav-item">
-			    <a [ngClass]="activeTab == 1 ? 'active' : ''" class="nav-link" id="tab1" data-toggle="tab" href="#content1" role="tab" aria-controls="content1" aria-selected="true">How To Submit Jobs</a>
+			    <a [ngClass]="activeTab == 1 ? 'active' : ''" class="nav-link" id="tab1" data-toggle="tab" href="#content1" role="tab" aria-controls="content1" aria-selected="true">{{ 'TABS.how-submit-job.title' | translate }}</a>
 			</li>
 			<li class="nav-item">
-			    <a class="nav-link" id="tab2" data-toggle="tab" href="#content2" role="tab" aria-controls="content2" aria-selected="false">How To Hire Service Providers</a>
+			    <a class="nav-link" id="tab2" data-toggle="tab" href="#content2" role="tab" aria-controls="content2" aria-selected="false">{{ 'TABS.how-hire-service-providers.title' | translate }}</a>
 			</li>
 			<li class="nav-item">
-			    <a  [ngClass]="activeTab == 3 ? 'active' : ''" class="nav-link" id="tab3" data-toggle="tab" href="#content3" role="tab" aria-controls="content3" aria-selected="true">How To Find Work</a>
+			    <a  [ngClass]="activeTab == 3 ? 'active' : ''" class="nav-link" id="tab3" data-toggle="tab" href="#content3" role="tab" aria-controls="content3" aria-selected="true">{{ 'TABS.how-find-work.title' | translate }}</a>
 			</li>
 			<li class="nav-item">
-			    <a class="nav-link" id="tab4" data-toggle="tab" href="#content4" role="tab" aria-controls="content4" aria-selected="false">How To Get Certified</a>
+			    <a class="nav-link" id="tab4" data-toggle="tab" href="#content4" role="tab" aria-controls="content4" aria-selected="false">{{ 'TABS.how-get-certified.title' | translate }}</a>
 			</li>
 		</ul>
-		<div class="tab-content text-center" id="myContent">
+		<div class="tab-content" id="myContent">
 		    <div class="tab-pane fade show active" id="content1" role="tabpanel" aria-labelledby="tab1">
 			    <mat-horizontal-stepper #stepper1>
 					<mat-step>
 					    <div class="row">
-					    	<div class="col-md-6">
-					    		<img src="../../assets/images/Public.jpg" alt="Join a Public Group" title="Join a Public Group" />
+					    	<div class="col-md-6 text-center">
+					    		<img src="../../assets/images/1.png" alt="" title="" />
 					    	</div>
-					    	<div class="col-md-6">
-					    		<h3>Joining A Community</h3>
-					    		<p>To join a community, you need to be registered in TAMAM Marketplace. Click on the image of the community and submit to "Join" the Community that you are interested to be one of its members. Once you confirm the joining request, you will be able to enjoy the community's products and benefits.</p>
+					    	<div class="col-md-6 tab-body">
+					    		<h3>{{ 'TABS.how-submit-job.content1.title' | translate }}</h3>
+					    		<p>{{ 'TABS.how-submit-job.content1.body' | translate }}</p>
 					    	</div>
 					    </div>
 					</mat-step>
 				    <mat-step>
 					    <div class="row">
-					    	<div class="col-md-6">
-					    		<img src="../../assets/images/Upload1.jpg" alt="Upload Your Product" title="Upload Your Product" />
+					    	<div class="col-md-6 text-center">
+					    		<img src="../../assets/images/Job-Description7.png" alt="" title="" />
 					    	</div>
-					    	<div class="col-md-6">
-					    		<h3>Uploading Product</h3>
-					    		<p>After becoming one of the community members, you can upload your own work by filling and submitting a form with the required data. In 5-7 working days, a Team of Specialists from TAMAM Marketplace will test your work and send you an email with approval/regection of the uploaded work.</p>
+					    	<div class="col-md-6 tab-body">
+					    		<h3>{{ 'TABS.how-submit-job.content2.title' | translate }}</h3>
+					    		<p>{{ 'TABS.how-submit-job.content2.body' | translate }}</p>
 					    	</div>
 					    </div>
 					</mat-step>
 					<mat-step>
 					    <div class="row">
-					    	<div class="col-md-6">
-					    		<img src="../../assets/images/publishing-strategy1.jpg" alt="Post on TAMAM" title="Post on TAMAM" />
+					    	<div class="col-md-6 text-center">
+					    		<img src="../../assets/images/333.png" alt="" title="" />
 					    	</div>
-					    	<div class="col-md-6">
-					    		<h3>Publishing On TAMAM</h3>
-					    		<p>In case you received positive reviews and comments on your uploaded work from your community members, and you would like to publish your work on TAMAM Marketplace out of your community, you will need to fill and submit a form, wait for approval from TAMAM's Admin. After receiving the confirmation on your Work, all TAMAM's visitors will be able to enjoy your products on the marketplace.</p>
+					    	<div class="col-md-6 tab-body">
+					    		<h3>{{ 'TABS.how-submit-job.content3.title' | translate }}</h3>
+					    		<p>{{ 'TABS.how-submit-job.content3.body' | translate }}</p>
 					    	</div>
 					    </div>
 					</mat-step>
 					<mat-step>
 						<div class="row">
-					    	<div class="col-md-6">
-					    		<img src="../../assets/images/Sugg.jpg" alt="General Group proposal" title="General Group proposal" />
+					    	<div class="col-md-6 text-center">
+					    		<img src="../../assets/images/4444444.png" alt="" title="" />
 					    	</div>
-					    	<div class="col-md-6">
-					    		<h3>Suggest A Community</h3>
-					    		<p>The community member can suggest a new public community to be published, and the most requested community will be added to the group of the public communities.</p>
+					    	<div class="col-md-6 tab-body">
+					    		<h3>{{ 'TABS.how-submit-job.content4.title' | translate }}</h3>
+					    		<p>{{ 'TABS.how-submit-job.content4.body' | translate }}</p>
 							    <div>
 							      <button mat-button matStepperPrevious>Back</button>
 							      <button mat-button (click)="stepper1.reset()">Reset</button>
@@ -74,45 +74,45 @@
 				<mat-horizontal-stepper #stepper2>
 					<mat-step>
 					    <div class="row">
-					    	<div class="col-md-6">
-					    		<img src="../../assets/images/Log.jpg" alt="Membership registration" title="Membership registration" />
+					    	<div class="col-md-6 text-center">
+					    		<img src="../../assets/images/Post14.png" alt="" title="" />
 					    	</div>
-					    	<div class="col-md-6">
-					    		<h3>Web Site Registration</h3>
-					    		<p>The user signs up in TAMAM Marketplace by creating a new account.</p>
+					    	<div class="col-md-6 tab-body">
+					    		<h3>{{ 'TABS.how-hire-service-providers.content1.title' | translate }}</h3>
+					    		<p>{{ 'TABS.how-hire-service-providers.content1.body' | translate }}</p>
 					    	</div>
 					    </div>
 					</mat-step>
 				    <mat-step>
 					    <div class="row">
-					    	<div class="col-md-6">
-					    		<img src="../../assets/images/Private.jpg" alt="Join on a group" title="Join on a group" />
+					    	<div class="col-md-6 text-center">
+					    		<img src="../../assets/images/Hire.png" alt="" title="" />
 					    	</div>
-					    	<div class="col-md-6">
-					    		<h3>Access The Community</h3>
-					    		<p>If the signed up user is a member of a Private community, he will be able to access it and enjoy all the benefits that are provided in this Community.</p>
+					    	<div class="col-md-6 tab-body">
+					    		<h3>{{ 'TABS.how-hire-service-providers.content2.title' | translate }}</h3>
+					    		<p>{{ 'TABS.how-hire-service-providers.content2.body' | translate }}</p>
 					    	</div>
 					    </div>
 					</mat-step>
 					<mat-step>
 					    <div class="row">
-					    	<div class="col-md-6">
-					    		<img src="../../assets/images/Build.jpg" alt="Build a private community" title="Build a private community" />
+					    	<div class="col-md-6 text-center">
+					    		<img src="../../assets/images/Manage.png" alt="" title="" />
 					    	</div>
-					    	<div class="col-md-6">
-					    		<h3>Build your Own Community</h3>
-					    		<p>The signed up user has the option to create his own Private community, to do so he will need to fill and submit a request form. After submitting the request, the signed up user will receive a confirmation from the portal's admin. Next step is that he will receive the credentials for his Community members needed to access the new Private Community.</p>
+					    	<div class="col-md-6 tab-body">
+					    		<h3>{{ 'TABS.how-hire-service-providers.content3.title' | translate }}</h3>
+					    		<p>{{ 'TABS.how-hire-service-providers.content3.body' | translate }}</p>
 					    	</div>
 					    </div>
 					</mat-step>
 					<mat-step>
 						<div class="row">
-					    	<div class="col-md-6">
-					    		<img src="../../assets/images/Upload1.jpg" alt="Upload your products" title="Upload your products" />
+					    	<div class="col-md-6 text-center">
+					    		<img src="../../assets/images/Fee.png" alt="" title="" />
 					    	</div>
-					    	<div class="col-md-6">
-					    		<h3>Uploading Product</h3>
-					    		<p>After becoming one of the Private Community members, you can upload your own work by filling and submitting a form with the required data to your Community Admin. In 5-7 working days, the Admin of your community will test your work and send you an email with approval/regection of the uploaded work.</p>
+					    	<div class="col-md-6 tab-body">
+					    		<h3>{{ 'TABS.how-hire-service-providers.content4.title' | translate }}</h3>
+					    		<p>{{ 'TABS.how-hire-service-providers.content4.body' | translate }}</p>
 							    <div>
 							      <button mat-button matStepperPrevious>Back</button>
 							      <button mat-button (click)="stepper2.reset()">Reset</button>
@@ -126,45 +126,45 @@
 			    <mat-horizontal-stepper #stepper3>
 					<mat-step>
 					    <div class="row">
-					    	<div class="col-md-6">
-					    		<img src="../../assets/images/Log.jpg" alt="Membership registration" title="Membership registration" />
+					    	<div class="col-md-6 text-center">
+					    		<img src="../../assets/images/111.png" alt="" title="" />
 					    	</div>
-					    	<div class="col-md-6">
-					    		<h3>Web Site Registration</h3>
-					    		<p>The user signs up in TAMAM Marketplace by creating a new account.</p>
+					    	<div class="col-md-6 tab-body">
+					    		<h3>{{ 'TABS.how-find-work.content1.title' | translate }}</h3>
+					    		<p>{{ 'TABS.how-find-work.content1.body' | translate }}</p>
 					    	</div>
 					    </div>
 					</mat-step>
 				    <mat-step>
 					    <div class="row">
-					    	<div class="col-md-6">
-					    		<img src="../../assets/images/Private.jpg" alt="Join on a group" title="Join on a group" />
+					    	<div class="col-md-6 text-center">
+					    		<img src="../../assets/images/22.png" alt="Join on a group" title="Join on a group" />
 					    	</div>
-					    	<div class="col-md-6">
-					    		<h3>Access The Community</h3>
-					    		<p>If the signed up user is a member of a Private community, he will be able to access it and enjoy all the benefits that are provided in this Community.</p>
+					    	<div class="col-md-6 tab-body">
+					    		<h3>{{ 'TABS.how-find-work.content2.title' | translate }}</h3>
+					    		<p>{{ 'TABS.how-find-work.content2.body' | translate }}</p>
 					    	</div>
 					    </div>
 					</mat-step>
 					<mat-step>
 					    <div class="row">
-					    	<div class="col-md-6">
-					    		<img src="../../assets/images/Build.jpg" alt="Build a private community" title="Build a private community" />
+					    	<div class="col-md-6 text-center">
+					    		<img src="../../assets/images/33.png" alt="Build a private community" title="Build a private community" />
 					    	</div>
-					    	<div class="col-md-6">
-					    		<h3>Build your Own Community</h3>
-					    		<p>The signed up user has the option to create his own Private community, to do so he will need to fill and submit a request form. After submitting the request, the signed up user will receive a confirmation from the portal's admin. Next step is that he will receive the credentials for his Community members needed to access the new Private Community.</p>
+					    	<div class="col-md-6 tab-body">
+					    		<h3>{{ 'TABS.how-find-work.content3.title' | translate }}</h3>
+					    		<p>{{ 'TABS.how-find-work.content3.body' | translate }}</p>
 					    	</div>
 					    </div>
 					</mat-step>
 					<mat-step>
 						<div class="row">
-					    	<div class="col-md-6">
-					    		<img src="../../assets/images/Approval-Process-re.png" alt="Approval of the application" title="Approval of the application" />
+					    	<div class="col-md-6 text-center">
+					    		<img src="../../assets/images/Fee.png" alt="" title="" />
 					    	</div>
-					    	<div class="col-md-6">
-					    		<h3>Approval Email</h3>
-					    		<p>Once TAMAM's team approves the new Private Community, the Admin will recieve a confirmation email with the code needed for the community members to use it in order to access the community.</p>
+					    	<div class="col-md-6 tab-body">
+					    		<h3>{{ 'TABS.how-find-work.content4.title' | translate }}</h3>
+					    		<p>{{ 'TABS.how-find-work.content4.body' | translate }}</p>
 							    <div>
 							      <button mat-button matStepperPrevious>Back</button>
 							      <button mat-button (click)="stepper3.reset()">Reset</button>
@@ -173,52 +173,51 @@
 					    </div>				    
 					</mat-step>
 				</mat-horizontal-stepper>
-			        
 		    </div>
 
 		    <div class="tab-pane fade" id="content4" role="tabpanel" aria-labelledby="tab4">
 				<mat-horizontal-stepper #stepper4>
 					<mat-step>
 					    <div class="row">
-					    	<div class="col-md-6">
-					    		<img src="../../assets/images/Log.jpg" alt="Membership registration" title="Membership registration" />
+					    	<div class="col-md-6 text-center">
+					    		<img src="../../assets/images/41.png" alt="" title="" />
 					    	</div>
-					    	<div class="col-md-6">
-					    		<h3>Web Site Registration</h3>
-					    		<p>The user signs up in TAMAM Marketplace by creating a new account.</p>
+					    	<div class="col-md-6 tab-body">
+					    		<h3>{{ 'TABS.how-get-certified.content1.title' | translate }}</h3>
+					    		<p>{{ 'TABS.how-get-certified.content1.body' | translate }}</p>
 					    	</div>
 					    </div>
 					</mat-step>
 				    <mat-step>
 					    <div class="row">
-					    	<div class="col-md-6">
-					    		<img src="../../assets/images/Private.jpg" alt="Join on a group" title="Join on a group" />
+					    	<div class="col-md-6 text-center">
+					    		<img src="../../assets/images/42.png" alt="" title="" />
 					    	</div>
-					    	<div class="col-md-6">
-					    		<h3>Access The Community</h3>
-					    		<p>If the signed up user is a member of a Private community, he will be able to access it and enjoy all the benefits that are provided in this Community.</p>
+					    	<div class="col-md-6 tab-body">
+					    		<h3>{{ 'TABS.how-get-certified.content2.title' | translate }}</h3>
+					    		<p>{{ 'TABS.how-get-certified.content2.body' | translate }}</p>
 					    	</div>
 					    </div>
 					</mat-step>
 					<mat-step>
 					    <div class="row">
-					    	<div class="col-md-6">
-					    		<img src="../../assets/images/Build.jpg" alt="Build a private community" title="Build a private community" />
+					    	<div class="col-md-6 text-center">
+					    		<img src="../../assets/images/43.png" alt="" title="" />
 					    	</div>
-					    	<div class="col-md-6">
-					    		<h3>Build your Own Community</h3>
-					    		<p>The signed up user has the option to create his own Private community, to do so he will need to fill and submit a request form. After submitting the request, the signed up user will receive a confirmation from the portal's admin. Next step is that he will receive the credentials for his Community members needed to access the new Private Community.</p>
+					    	<div class="col-md-6 tab-body">
+					    		<h3>{{ 'TABS.how-get-certified.content3.title' | translate }}</h3>
+					    		<p>{{ 'TABS.how-get-certified.content3.body' | translate }}</p>
 					    	</div>
 					    </div>
 					</mat-step>
 					<mat-step>
 						<div class="row">
-					    	<div class="col-md-6">
-					    		<img src="../../assets/images/Approval-Process-re.png" alt="Approval of the application" title="Approval of the application" />
+					    	<div class="col-md-6 text-center">
+					    		<img src="../../assets/images/end.png" alt="" title="" />
 					    	</div>
-					    	<div class="col-md-6">
-					    		<h3>Approval Email</h3>
-					    		<p>Once TAMAM's team approves the new Private Community, the Admin will recieve a confirmation email with the code needed for the community members to use it in order to access the community.</p>
+					    	<div class="col-md-6 tab-body">
+					    		<h3>{{ 'TABS.how-get-certified.content4.title' | translate }}</h3>
+					    		<p>{{ 'TABS.how-get-certified.content4.body' | translate }}</p>
 							    <div>
 							      <button mat-button matStepperPrevious>Back</button>
 							      <button mat-button (click)="stepper4.reset()">Reset</button>

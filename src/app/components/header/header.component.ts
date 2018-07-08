@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-header',
@@ -15,5 +16,15 @@ export class HeaderComponent implements OnInit {
 
 	changeLanguage(lang){
 		this.translate.use(lang);
+		localStorage.setItem("language", lang)
+		if (lang == 'ar') {
+			$('html').attr('dir', 'rtl');
+			$('.navbar-nav').toggleClass('mr-auto');
+			$('.tab-body').addClass("text-right");
+		}else{
+			$('html').attr('dir', 'ltr');
+			$('.navbar-nav').toggleClass('mr-auto');
+			$('.tab-body').removeClass("text-right");
+		}
 	}
 }
