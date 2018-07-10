@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatStepperModule, MatNativeDateModule, MatDatepickerModule } from '@angular/material';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -33,6 +33,9 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { ProviderTabsComponent } from './components/provider-tabs/provider-tabs.component';
 import { InviteFreelancerComponent } from './pages/invite-freelancer/invite-freelancer.component';
 import { ForgetPasswordComponent } from './pages/forget-password/forget-password.component';
+import { SelectUserTypeComponent } from './pages/select-user-type/select-user-type.component';
+import { MembershipComponent } from './pages/membership/membership.component';
+import { CustomerAccountComponent } from './pages/customer-account/customer-account.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -62,7 +65,10 @@ export function createTranslateLoader(http: HttpClient) {
     ProfileComponent,
     ProviderTabsComponent,
     InviteFreelancerComponent,
-    ForgetPasswordComponent
+    ForgetPasswordComponent,
+    SelectUserTypeComponent,
+    MembershipComponent,
+    CustomerAccountComponent
   ],
   imports: [
     BrowserModule,

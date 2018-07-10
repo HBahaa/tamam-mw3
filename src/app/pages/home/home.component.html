@@ -17,35 +17,35 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 ">
-				<h1 class="text-center text-light lg display-4 mb-5">Main Features</h1>
+				<h1 class="text-center text-light lg display-4 mb-5">{{ 'HOME.features.title' | translate }}</h1>
 			</div>
 			
 			<div class="col-md-3 col-sm-6">
 				<div class="feature text-center">
 					<img src="../../assets/images/Tamam-Icon01.png" class="img-responsive" alt="Hire On Demand" />
-					<h4>HIRE ON DEMAND</h4>
-					<p>Provide the job to the service provider meeting the desired requirements</p>
+					<h4>{{ 'HOME.features.block1.title' | translate }}</h4>
+					<p>{{ 'HOME.features.block1.content' | translate }}</p>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="feature text-center">
 					<img src="../../assets/images/Tamam-Icon02.png" class="img-responsive" alt="Manage The Work" />
-					<h4>MANAGE THE WORK</h4>
-					<p>Track job progress as milestones are being achieved or delayed</p>
+					<h4>{{ 'HOME.features.block2.title' | translate }}</h4>
+					<p>{{ 'HOME.features.block2.content' | translate }}</p>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="feature text-center">
 					<img src="../../assets/images/Tamam-Icon03.png" class="img-responsive" alt="Post A Job" />
-					<h4>POST A JOB</h4>
-					<p>Post your job and hire the right service provider to get it done</p>
+					<h4>{{ 'HOME.features.block3.title' | translate }}</h4>
+					<p>{{ 'HOME.features.block3.content' | translate }}</p>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="feature text-center">
 					<img src="../../assets/images/Tamam-Icon04.png" class="img-responsive" alt="Certifications" />
-					<h4>CERTIFICATIONS</h4>
-					<p>The more certifications you have the better chances you have to get more jobs</p>
+					<h4>{{ 'HOME.features.block4.title' | translate }}</h4>
+					<p>{{ 'HOME.features.block4.content' | translate }}</p>
 				</div>
 			</div>
 		</div>
@@ -69,12 +69,13 @@
 <div class="community pb-5 pt-5">
 	<div class="container">
 		<div class="row d-animate d-from-left d-delay06 inviewport border-bottom">
-			<h1 class="col-sm-10 col-sm-offset-1 pb-4">Our Communities</h1>
+			<h1 class="col-sm-10 col-sm-offset-1 pb-4">{{ 'HOME.community.title' | translate }}</h1>
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<h3 class="my-5">Giving You an Edge in<br /> <span class="text-info font-weight-bold">TAMAM</span> MarketPlace</h3>
-				<p class="lead">Tamam's Communities are wide areas for Tamam's users to collaborate with each other, share their comments, ideas, content and experience <a href="#" class="text-info">Read More</a></p>
+				<!-- <h3 class="my-5">Giving You an Edge in<br /> <span class="text-info font-weight-bold">TAMAM</span> MarketPlace</h3> -->
+				<h3 class="my-5">{{ 'HOME.community.subtitle' | translate }}</h3>
+				<p class="lead">{{ 'HOME.community.content' | translate }}<a href="#" class="text-info">{{ 'HOME.community.read_more' | translate }}</a></p>
 			</div>
 			<div class="col-md-6">
 				<img src=".././assets/images/Community-Laptop.png" alt="TAMAM Community" title="TAMAM Community" />
@@ -86,10 +87,10 @@
 	<div class="container-fluid text-center my-3 p-5" >
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
 		  <li class="nav-item">
-		    <a class="nav-link active" id="service-tab" data-toggle="tab" href="#service" role="tab" aria-controls="service" aria-selected="true">Recommended Service Provider</a>
+		    <a class="nav-link active" id="service-tab" data-toggle="tab" href="#service" role="tab" aria-controls="service" aria-selected="true">{{ 'HOME.provider.service' | translate }}</a>
 		  </li>
 		  <li class="nav-item">
-		    <a class="nav-link" id="project-tab" data-toggle="tab" href="#project" role="tab" aria-controls="project" aria-selected="false">Featured Projects</a>
+		    <a class="nav-link" id="project-tab" data-toggle="tab" href="#project" role="tab" aria-controls="project" aria-selected="false">{{ 'HOME.provider.project' | translate }}</a>
 		  </li>
 		</ul>
 		<div class="tab-content" id="myTabContent">

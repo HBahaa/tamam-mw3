@@ -1,0 +1,14 @@
+.content{
+	.btn:not(.save){
+		width: 95%;
+		cursor: auto;
+	}
+	a{
+		img{
+			width: 95%;
+		}
+	}
+	label.custom-control-label{
+		display: initial;
+	}
+}

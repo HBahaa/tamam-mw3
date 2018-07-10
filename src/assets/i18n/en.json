@@ -135,6 +135,30 @@
 			}
 		}
 	},
+	"SLIDER" : {
+		"slide1" : {
+			"title" : "With Tamam",
+			"desc" : "Your Dreams Come True From Home",
+			"btn" : "Find Your Matching Job"
+		},
+		"slide2" : {
+			"title" : "BRING YOUR NEED TO",
+			"subtitle" : "TAMAM",
+			"desc" : "YOU WILL FIND THE RIGHT SKILL FOR IT",
+			"btn" : "Post Your Job"
+		},
+		"slide3" : {
+			"title" : "GET CERTIFIED WITH TAMAM",
+			"desc" : "BE AT THE TOP OF THE LIST",
+			"btn" : "Learn More..."
+		},
+		"slide4" : {
+			"title" : "Create Your Own",
+			"subtitle" : "Private Community",
+			"desc" : "As Simple As 1..2..3",
+			"btn" : "Give It A Try"
+		}
+	},
 	"LOGIN" : {
 		"title" : "LOGIN OR CREATE NEW ACCOUNT",
 		"block1" :{
@@ -151,5 +175,65 @@
 			"btn": "Login",
 			"forget-password" : "Forgot your password?"
 		}
+	},
+	"FORGET_PASSWORD" : {
+		"title" : "Forgot your password?",
+		"subtitle" : "Retrieve your password here",
+		"desc" : "Please enter your email address below. You will receive a link to reset your password.",
+		"email" : "Email Address",
+		"btn" : "Submit",
+		"msg" : "Required Fields",
+		"back-link" :"Back to Login"
+	},
+	"GROUPS" : {
+		"title" : "TAMAM COMMUNITY",
+		"tab1" : "Private",
+		"tab2" : "Public",
+		"btn1" : "Build a Private Community",
+		"btn2" : "Suggest a Public Community"
+	},
+	"HOME" : {
+		"FEATURES" : {
+			"title" : "Main Features",
+			"block1" : {
+				"title" : "HIRE ON DEMAND",
+				"content" : "Provide the job to the service provider meeting the desired requirements"
+			},
+			"block2" : {
+				"title" : "MANAGE THE WORK",
+				"content" : "Track job progress as milestones are being achieved or delayed"
+			},
+			"block3" : {
+				"title" : "POST A JOB",
+				"content" : "Post your job and hire the right service provider to get it done"
+			},
+			"block4" : {
+				"title" : "CERTIFICATIONS",
+				"content" : "The more certifications you have the better chances you have to get more jobs"
+			}
+		},
+		"community" : {
+			"title" : "Our Communities",
+			"subtitle" : "Giving You an Edge in TAMAM Marketplace",
+			"content" : "Tamam's Communities are wide areas for Tamam's users to collaborate with each other, share their comments, ideas, content and experience",
+			"read_more" : "Read More"
+		},
+		"provider" : {
+			"service" : "Recommended Service Provider",
+			"project" : "Featured Projects"
+		}
+	},
+	"SELECT_USER_TYPE" : {
+		"client" : {
+			"title" : "Client",
+			"image" : "Client.jpg",
+			"input" : "Post Jobs & Hire Service Providers"
+		},
+		"provider" : {
+			"title" : "Service Provider",
+			"image" : "FREELANCER.jpg",
+			"input" : "Find & Bid on Jobs"
+		},
+		"create_account": "Create An Account"
 	}
 } 

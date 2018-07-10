@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GroupsComponent implements OnInit {
 
-	title: string = "TAMAM COMMUNITY";
+	// title: string = "TAMAM COMMUNITY";
 
 	constructor() { }
 

@@ -21,11 +21,11 @@ export class AppComponent {
 	    if (lang == 'ar') {
 			$('html').attr('dir', 'rtl');
 			$('.navbar-nav').toggleClass('mr-auto');
-			$('.tab-body').addClass("text-right");
+			$('.tab-body, .reset-password').addClass("text-right");
 		}else{
 			$('html').attr('dir', 'ltr');
 			$('.navbar-nav').toggleClass('mr-auto');
-			$('.tab-body').removeClass("text-right");
+			$('.tab-body, .reset-password').removeClass("text-right");
 		}
 	}
 

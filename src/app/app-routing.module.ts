@@ -14,11 +14,18 @@ import { JobSearchComponent } from './pages/job-search/job-search.component';
 import { ProviderSearchComponent } from './pages/provider-search/provider-search.component';
 import { HowItWorkComponent } from './pages/how-it-work/how-it-work.component';
 import { HowCommunityWorkComponent } from './pages/how-community-work/how-community-work.component';
+import { SelectUserTypeComponent } from './pages/select-user-type/select-user-type.component';
+import { MembershipComponent } from './pages/membership/membership.component';
+import { CustomerAccountComponent } from './pages/customer-account/customer-account.component';
+
 
 const routes: Routes = [
 	{path:'login', component:LoginComponent },
-	{path:'register', component:RegisterComponent },
 	{path:'forget-password', component:ForgetPasswordComponent },
+	{path:'register', component:RegisterComponent },
+	{path:'select-user-type', component:SelectUserTypeComponent },
+	{path:'customer-account', component:CustomerAccountComponent },
+	{path:'membership', component:MembershipComponent },
 	{path:'profile', component:ProfileComponent },
 	{path:'submit-job', component:SubmitJobComponent },
 	{path:'find-job', component:FindJobComponent },
