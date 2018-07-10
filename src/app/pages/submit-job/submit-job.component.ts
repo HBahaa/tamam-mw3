@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubmitJobComponent implements OnInit {
 
-	title: string = "HOW TO SUBMIT A JOB AS A FREELANCER";
-
 	constructor() { }
 
 	ngOnInit() {

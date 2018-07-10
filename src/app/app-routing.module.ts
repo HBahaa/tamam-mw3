@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { Home } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
-import { RegisterComponent } from './pages/register/register.component';
 import { ForgetPasswordComponent } from './pages/forget-password/forget-password.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { GroupsComponent } from './pages/groups/groups.component';
@@ -16,15 +15,14 @@ import { HowItWorkComponent } from './pages/how-it-work/how-it-work.component';
 import { HowCommunityWorkComponent } from './pages/how-community-work/how-community-work.component';
 import { SelectUserTypeComponent } from './pages/select-user-type/select-user-type.component';
 import { MembershipComponent } from './pages/membership/membership.component';
-import { CustomerAccountComponent } from './pages/customer-account/customer-account.component';
+import { ClientAccountComponent } from './pages/client-account/client-account.component';
 
 
 const routes: Routes = [
 	{path:'login', component:LoginComponent },
 	{path:'forget-password', component:ForgetPasswordComponent },
-	{path:'register', component:RegisterComponent },
 	{path:'select-user-type', component:SelectUserTypeComponent },
-	{path:'customer-account', component:CustomerAccountComponent },
+	{path:'customer-account', component:ClientAccountComponent },
 	{path:'membership', component:MembershipComponent },
 	{path:'profile', component:ProfileComponent },
 	{path:'submit-job', component:SubmitJobComponent },

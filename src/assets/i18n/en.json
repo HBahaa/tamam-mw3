@@ -43,7 +43,15 @@
 			"submit_ticket" : "Submit A Ticket"
 		},
 		"certification" : "Certification",
-		"blog" : "Blog"
+		"blog" : "Blog",
+		"modal": {
+			"title" : "Login",
+			"email" : "Email Address",
+			"password" : "Password",
+			"forget_password": "Forgot Password",
+			"register": "Register",
+			"login" : "Login"
+		}
 	},
 	"FOOTER" : {
 		"contactus" : "Contact Us",
@@ -164,7 +172,9 @@
 		"block1" :{
 			"title" : "Create New Account",
 			"content" : "Creating new accounts with Tamam enables you to get your jobs done as a client or build your successful career as a freelancer.",
-			"create-account": "Create An Account"
+			"create-account": "Create An Account",
+			"client_image" : "Client_1.jpg",
+			"provider_image" : "FREELANCER_1.jpg"
 		},
 		"block2" :{
 			"title" : "Login",
@@ -174,6 +184,14 @@
 			"msg" : "Required Fields",
 			"btn": "Login",
 			"forget-password" : "Forgot your password?"
+		},
+		"block3" : {
+			"image" : "Registration-banner-06.jpg"
+		},
+		"slider" : {
+			"img1" : "Registration-banner-06.jpg",
+			"img2" : "Client.jpg",
+			"img3" : "FREELANCER.jpg"
 		}
 	},
 	"FORGET_PASSWORD" : {
@@ -224,6 +242,7 @@
 		}
 	},
 	"SELECT_USER_TYPE" : {
+		"title" : "SELECT USER TYPE",
 		"client" : {
 			"title" : "Client",
 			"image" : "Client.jpg",
@@ -235,5 +254,94 @@
 			"input" : "Find & Bid on Jobs"
 		},
 		"create_account": "Create An Account"
+	},
+	"CLIENT_ACCOUNT" : {
+		"title" : "CLIENT REGISTRATION",
+		"personal" : {
+			"title" : "Personal Information",
+			"fname" : "First Name",
+			"lname" : "Last Name",
+			"email" : "Email Address",
+			"notifications" : "Receive Notifications in"
+		},
+		"login" : {
+			"title" : "Login Information",
+			"password" : "Password",
+			"confirm_password" : "Confirm Password"
+		},
+		"location" : {
+			"title" : "Map location",
+			"step1" : {
+				"title" : "Step1",
+				"subtitle": "Search",
+				"address" : "Address",
+				"zoom" : "Zoom nearby"
+			},
+			"step2" : {
+				"title" : "Step2",
+				"subtitle": "Click on your position"
+			},
+			"step3" : {
+				"title" : "Step3",
+				"subtitle" : "Info appears on the map",
+				"name" : "Name",
+				"url" : "URL",
+				"info" : "Additional Info"
+			}
+		},
+		"submit" : "Submit",
+		"back" : "<< Back"
+	},
+	"MEMBERSHIP" : {
+		"title" : "SELECT YOUR MEMBERSHIP",
+		"btn" : "Subscribe",
+		"block1" : {
+			"header" : "Silver",
+			"title": "Free",
+			"subtitle" : "for Unlimited Month",
+			"list" : {
+				"item1" : "Skills Available to add - 5",
+				"item2" : "No. of bids - 5 Per 5 extra for $5",
+				"item3" : "Add category - 1"
+			}
+		},
+		"block2" : {
+			"header" : "Gold",
+			"title": "$10",
+			"subtitle" : "for 12 Month",
+			"list" : {
+				"item1" : "Skills Available to add - 15",
+				"item2" : "No. of bids - 10 Per/day 5 extra for $10",
+				"item3" : "Add category - 5"
+			}
+		},
+		"block3" : {
+			"header" : "Platinum",
+			"title": "$20",
+			"subtitle" : "for 12 Month",
+			"list" : {
+				"item1" : "Skills available to add - Unlimited",
+				"item2" : "No. of bids - Unlimited",
+				"item3" : "Add category - Unlimited"
+			}
+		}
+	},
+	"FIND_JOB" : {
+		"title" : "HOW TO FIND WORK AS A FREELANCER"
+	},
+	"SUBMIT_JOB" : {
+		"title" : "HOW TO SUBMIT A JOB AS A FREELANCER"
+	},
+	"PROVIDER_SEARCH" : {
+		"title" : "SEARCH FOR JOBS AS A SERVICE PROVIDER AT TAMAM'S MARKETPLACE"
+	},
+	"INVITE_FREELANCER" :{
+		"title" : "INVITE FREELANCERS TO TAMAM'S MARKETPLACE"
+	},
+	"JOB_SEARCH" : {
+		"title" : "SEARCH FOR JOBS AS A FREELANCER"
+	},
+	"INVITE_OWNER" : {
+		"title" : "INVITE A JOB OWNER TO TAMAM MARKETPLACE"
 	}
 } 

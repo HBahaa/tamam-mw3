@@ -24,7 +24,6 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { HowCommunityWorkComponent } from './pages/how-community-work/how-community-work.component';
 import { HowItWorkComponent } from './pages/how-it-work/how-it-work.component';
 import { LoginComponent } from './pages/login/login.component';
-import { RegisterComponent } from './pages/register/register.component';
 import { JobSearchComponent } from './pages/job-search/job-search.component';
 import { JobTabsComponent } from './components/job-tabs/job-tabs.component';
 import { InviteOwnerComponent } from './pages/invite-owner/invite-owner.component';
@@ -35,7 +34,9 @@ import { InviteFreelancerComponent } from './pages/invite-freelancer/invite-free
 import { ForgetPasswordComponent } from './pages/forget-password/forget-password.component';
 import { SelectUserTypeComponent } from './pages/select-user-type/select-user-type.component';
 import { MembershipComponent } from './pages/membership/membership.component';
-import { CustomerAccountComponent } from './pages/customer-account/customer-account.component';
+import { ClientAccountComponent } from './pages/client-account/client-account.component';
+import { CardComponent } from './components/card/card.component';
+
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -57,7 +58,6 @@ export function createTranslateLoader(http: HttpClient) {
     HowCommunityWorkComponent,
     HowItWorkComponent,
     LoginComponent,
-    RegisterComponent,
     JobSearchComponent,
     JobTabsComponent,
     InviteOwnerComponent,
@@ -68,7 +68,8 @@ export function createTranslateLoader(http: HttpClient) {
     ForgetPasswordComponent,
     SelectUserTypeComponent,
     MembershipComponent,
-    CustomerAccountComponent
+    ClientAccountComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

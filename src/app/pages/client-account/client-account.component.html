@@ -1,0 +1,97 @@
+<app-bottom-header title="{{ 'CLIENT_ACCOUNT.title' | translate }}"></app-bottom-header>
+
+<div class="client-account mt-5 mb-5">
+	<div class="container">
+		<form>
+			<div>
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="border-bottom pb-3 mb-4">{{ 'CLIENT_ACCOUNT.personal.title' | translate }}</h2>
+					</div>
+				</div>
+				<div class="form-row">
+				    <div class="form-group col-md-6">
+				      <label for="fname">{{ 'CLIENT_ACCOUNT.personal.fname' | translate }} <span class="text-danger">*</span> </label>
+				      <input type="text" class="form-control" id="fname" placeholder="{{ 'CLIENT_ACCOUNT.personal.fname' | translate }}">
+				    </div>
+				    <div class="form-group col-md-6">
+				      <label for="lname">{{ 'CLIENT_ACCOUNT.personal.lname' | translate }} <span class="text-danger">*</span> </label>
+				      <input type="text" class="form-control" id="lname" placeholder="{{ 'CLIENT_ACCOUNT.personal.lname' | translate }}">
+				    </div>
+				</div>
+			  	<div class="form-row">
+				    <div class="form-group col-md-6">
+				      <label for="email">{{ 'CLIENT_ACCOUNT.personal.email' | translate }} <span class="text-danger">*</span> </label>
+				      <input type="email" class="form-control" id="email" placeholder="{{ 'CLIENT_ACCOUNT.personal.email' | translate }}">
+				    </div>
+				    <div class="form-group col-md-6">
+				     	
+				    </div>
+				</div>
+			</div>
+		  	<div class="mt-5">
+		  		<div class="row">
+					<div class="col-md-12">
+						<h2 class="border-bottom pb-3 mb-4">{{ 'CLIENT_ACCOUNT.login.title' | translate }}</h2>
+					</div>
+				</div>
+			  	<div class="form-row">
+				    <div class="form-group col-md-6">
+				    	<label for="password">{{ 'CLIENT_ACCOUNT.login.password' | translate }} <span class="text-danger">*</span> </label>
+				    	<input type="password" class="form-control" id="password" placeholder="{{ 'CLIENT_ACCOUNT.login.password' | translate }}">
+				    </div>
+				    <div class="form-group col-md-6">
+				    	<label for="confirm-password">{{ 'CLIENT_ACCOUNT.login.confirm_password' | translate }} <span class="text-danger">*</span> </label>
+				    	<input type="password" class="form-control" id="confirm-password" placeholder="{{ 'CLIENT_ACCOUNT.login.confirm_password' | translate }}">
+				    </div>
+				</div>
+		  	</div>
+
+		  	<div class="mt-5 border-bottom">
+		  		<div class="row">
+					<div class="col-md-12">
+						<h2 class="border-bottom pb-3 mb-4">{{ 'CLIENT_ACCOUNT.location.title' | translate }}</h2>
+					</div>
+					<div class="col-md-4">
+						<h4 class="mb-3">{{ 'CLIENT_ACCOUNT.location.step1.title' | translate }}</h4>
+						<h5>{{ 'CLIENT_ACCOUNT.location.step1.subtitle' | translate }}</h5>
+
+						<div class="form-group">
+							<select class="form-control">
+								<option value=""> Please choose a country...</option>
+					            <option value="AF">Afghanistan</option>
+					            <option value="AX">Åland Islands</option>
+						     </select>
+						</div>
+						<div class="form-group">
+							<input type="text" name="address" class="form-control" placeholder="{{ 'CLIENT_ACCOUNT.location.step1.address' | translate }}">
+						</div>
+						<button class="btn btn-default">{{ 'CLIENT_ACCOUNT.location.step1.zoom' | translate }}</button>
+					</div>
+					<div class="col-md-4">
+						<h4 class="mb-3">{{ 'CLIENT_ACCOUNT.location.step2.title' | translate }}</h4>
+						<h5>{{ 'CLIENT_ACCOUNT.location.step2.subtitle' | translate }}</h5>
+						
+					</div>
+					<div class="col-md-4">
+						<h4 class="mb-3">{{ 'CLIENT_ACCOUNT.location.step3.title' | translate }}</h4>
+						<h5>{{ 'CLIENT_ACCOUNT.location.step3.subtitle' | translate }}</h5>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="{{ 'CLIENT_ACCOUNT.location.step3.name' | translate }}">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="{{ 'CLIENT_ACCOUNT.location.step3.url' | translate }}">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="{{ 'CLIENT_ACCOUNT.location.step3.info' | translate }}">
+						</div>
+					</div>
+				</div>
+		  	</div>
+		  	
+		  <button type="submit" class="btn btn-primary mt-5 float-right">{{ 'CLIENT_ACCOUNT.submit' | translate }}</button>
+		  <a class="float-left" routerLink="/select-user-type">{{ 'CLIENT_ACCOUNT.back' | translate }}</a>
+		  <div style="clear: both;"></div>
+		</form>
+	</div>
+</div>

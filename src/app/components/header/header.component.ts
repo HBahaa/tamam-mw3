@@ -20,11 +20,11 @@ export class HeaderComponent implements OnInit {
 		if (lang == 'ar') {
 			$('html').attr('dir', 'rtl');
 			$('.navbar-nav').toggleClass('mr-auto');
-			$('.tab-body, .reset-password').addClass("text-right");
+			$('.tab-body, .reset-password, .client-account, .list-group, .dropdown-menu').addClass("text-right");
 		}else{
 			$('html').attr('dir', 'ltr');
 			$('.navbar-nav').toggleClass('mr-auto');
-			$('.tab-body, .reset-password').removeClass("text-right");
+			$('.tab-body, .reset-password, .client-account, .list-group, .dropdown-menu').removeClass("text-right");
 		}
 	}
 }
