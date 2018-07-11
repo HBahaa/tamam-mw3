@@ -2,10 +2,13 @@
 	<div class="content">
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
 			<li class="nav-item">
-			    <a [ngClass]="activeTab == 1 ? 'active' : ''"  class="nav-link" id="tab1" data-toggle="tab" href="#content1" role="tab" aria-controls="content1">Service Provider Search</a>
+			    <a [ngClass]="activeTab == 1 ? 'active' : ''"  class="nav-link" id="tab1" data-toggle="tab" routerLink="/provider-search" role="tab" aria-controls="content1">{{ 'PROVIDER_TABS.tab1.title' | translate }}</a>
 			</li>
 			<li class="nav-item">
-			    <a [ngClass]="activeTab == 2 ? 'active' : ''"  class="nav-link" id="tab2" data-toggle="tab" href="#content2" role="tab" aria-controls="content2">Invinte A service Provider</a>
+			    <a [ngClass]="activeTab == 2 ? 'active' : ''"  class="nav-link" id="tab2" data-toggle="tab" routerLink="/specialist-watchlist" role="tab" aria-controls="content2">{{ 'PROVIDER_TABS.tab2.title' | translate }}</a>
+			</li>
+			<li class="nav-item">
+			    <a [ngClass]="activeTab == 3 ? 'active' : ''"  class="nav-link" id="tab3" data-toggle="tab" routerLink="/invite-freelancer" role="tab" aria-controls="content3">{{ 'PROVIDER_TABS.tab3.title' | translate }}</a>
 			</li>
 		</ul>
 		<div class="tab-content" id="myContent">
@@ -14,9 +17,9 @@
 					<div class="row">
 		    			<div class="col-md-3 col-xs-6">
 							<div class="form-group">
-								<label class="my-1 mr-2" for="category">Category</label>
+								<label class="my-1 mr-2" for="category">{{ 'PROVIDER_TABS.tab1.category' | translate }}</label>
 								<select class="custom-select my-1 mr-sm-2" id="category">
-								    <option value="">Show All</option>
+								    <option value="">{{ 'PROVIDER_TABS.tab1.show_all' | translate }}</option>
                                     <option value="165">Design &amp; Multimedia</option>
                                     <option value="129">Information services </option>
                                     <option value="189">Writing &amp; Translation</option>
@@ -35,24 +38,24 @@
 		    			</div>
 		    			<div class="col-md-3 col-xs-6">
 							<div class="form-group">
-								<label class="my-1 mr-2" for="subcategory">Subcategory</label>
+								<label class="my-1 mr-2" for="subcategory">{{ 'PROVIDER_TABS.tab1.subcategory' | translate }}</label>
 								<select class="custom-select my-1 mr-sm-2" id="subcategory">
 								    <option selected></option>
-								    <option value="1">Show All</option>
+								    <option value="1">{{ 'PROVIDER_TABS.tab1.show_all' | translate }}</option>
 								</select>
 							</div>
 		    			</div>
 		    			<div class="col-md-3 col-xs-6">
 							<div class="form-group">
-								<label class="my-1 mr-2" for="skill">Skill</label>
+								<label class="my-1 mr-2" for="skill">{{ 'PROVIDER_TABS.tab1.skill' | translate }}</label>
 								<input type="text" name="skill" id="skill" class="form-control" />
 							</div>
 		    			</div>
 		    			<div class="col-md-3 col-xs-6">
 							<div class="form-group">
-								<label class="my-1 mr-2" for="review">Reviews</label>
+								<label class="my-1 mr-2" for="review">{{ 'PROVIDER_TABS.tab1.reviews' | translate }}</label>
 								<select class="custom-select my-1 mr-sm-2" id="review">
-								    <option selected>Show All</option>
+								    <option selected>{{ 'PROVIDER_TABS.tab1.show_all' | translate }}</option>
 								    <option value="5">At Least 5</option>
 								    <option value="4">At Least 4</option>
 								    <option value="3">At Least 3</option>
@@ -60,7 +63,7 @@
 							</div>
 		    			</div>
 		    			<div class="col-md-12 text-right">
-		    				<a class="text-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><u>Advanced Search</u></a>
+		    				<a class="text-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><u>{{ 'PROVIDER_TABS.tab1.advanced_search' | translate }}</u></a>
 						</div>
 						<div class="col-md-12">
 							<div class="collapse" id="collapseExample">
@@ -68,7 +71,7 @@
 									<div class="row">
 										<div class="col-md-3">
 											<div class="form-group">
-												<label class="my-1 mr-2" for="city">City</label>
+												<label class="my-1 mr-2" for="city">{{ 'PROVIDER_TABS.tab1.city' | translate }}</label>
 												<select class="selectpicker" id="city">
 													<option>Mustard</option>
 													<option>Ketchup</option>
@@ -78,9 +81,9 @@
 										</div>
 										<div class="col-md-3">
 											<div class="form-group">
-												<label class="my-1 mr-2" for="term">Term Type</label>
+												<label class="my-1 mr-2" for="term">{{ 'PROVIDER_TABS.tab1.term_type' | translate }}</label>
 												<select class="custom-select my-1 mr-sm-2" id="term">
-												    <option selected>Show All</option>
+												    <option selected>{{ 'PROVIDER_TABS.tab1.show_all' | translate }}</option>
 												    <option value="5">At Least 5</option>
 												    <option value="4">At Least 4</option>
 												    <option value="3">At Least 3</option>
@@ -95,17 +98,17 @@
 
 	    			<div class="row">
 	    				<div class="col-md-12 text-left">
-	    					<h5>Sort By</h5>
+	    					<h5>{{ 'PROVIDER_TABS.tab1.sort_by' | translate }}</h5>
 	    				</div>
 	    				<div class="col-md-12 text-left">
-	    					<a class="p-3" href="#">Hourly Rate</a><span>|</span>
-	    					<a class="p-3" href="#">Fixed Rate</a><span>|</span>
-	    					<a class="p-3" href="#">Reviews</a>
+	    					<a class="p-3" href="#">{{ 'PROVIDER_TABS.tab1.hourly_rate' | translate }}</a><span>|</span>
+	    					<a class="p-3" href="#">{{ 'PROVIDER_TABS.tab1.fixed_rate' | translate }}</a><span>|</span>
+	    					<a class="p-3" href="#">{{ 'PROVIDER_TABS.tab1.reviews' | translate }}</a>
 	    				</div>
 	    				<div class="col-md-12">
 	    					<div class="float-right">
-	    						<button class="btn btn-primary mr-3">Reset</button>
-	    						<button class="btn btn-primary">Search</button>
+	    						<button class="btn btn-primary mr-3">{{ 'PROVIDER_TABS.tab1.reset' | translate }}</button>
+	    						<button class="btn btn-primary">{{ 'PROVIDER_TABS.tab1.search' | translate }}</button>
 	    					</div>
 	    				</div>
 	    			</div>
@@ -122,37 +125,37 @@
 									</p>
 					    		</div>
 					    		<div>
-									<p><b>Category:</b>Contractor</p>
-									<p><b>Required Skills:</b> Electrical Engineering, Electronics, Semiconductor, Wi-Fi</p>
-									<a href="/profile"><u>My Profile</u></a>
+									<p><b>{{ 'PROVIDER_TABS.tab1.category' | translate }}:</b>Contractor</p>
+									<p><b>{{ 'PROVIDER_TABS.tab1.skill' | translate }}:</b> Electrical Engineering, Electronics, Semiconductor, Wi-Fi</p>
+									<a href="/profile"><u>{{ 'PROVIDER_TABS.tab1.my_profile' | translate }}</u></a>
 					    		</div>
 					    	</div>
 					    	<div class="col-sm-4">
 					    		<table class="table table-hover">
 		                            <tbody>
 		                                <tr>
-		                                	<td>Fixed Rate</td><td>Based on Job Budget</td>
+		                                	<td>{{ 'PROVIDER_TABS.tab1.fixed_rate' | translate }}</td><td>Based on Job Budget</td>
 										</tr>
 										<tr>
-		                                	<td>Hourly Rate</td><td>Based on Job Budget</td>
+		                                	<td>{{ 'PROVIDER_TABS.tab1.hourly_rate' | translate }}</td><td>Based on Job Budget</td>
 										</tr>
 										<tr>
-		                                	<td>Rate</td><td>No Term defined</td>
+		                                	<td>{{ 'PROVIDER_TABS.tab1.job' | translate }}</td><td>No Term defined</td>
 										</tr>   
 		                                <tr>
-		                                	<td>Location</td><td>Egypt&nbsp; &nbsp;Cairo</td>
+		                                	<td>{{ 'PROVIDER_TABS.tab1.location' | translate }}</td><td>Egypt&nbsp; &nbsp;Cairo</td>
 		                                </tr>                                                                           
 										<tr>
-											<td>Type</td><td>Individual</td>
+											<td>{{ 'PROVIDER_TABS.tab1.type' | translate }}</td><td>Individual</td>
 										</tr>                                  										
 										<tr>
-											<td>Job</td><td>1</td>
+											<td>{{ 'PROVIDER_TABS.tab1.job' | translate }}</td><td>1</td>
 										</tr>
 										<tr>
-											<td>Reviews</td><td>No Rating</td>
+											<td>{{ 'PROVIDER_TABS.tab1.reviews' | translate }}</td><td>No Rating</td>
 										</tr>
 		                                <tr>
-		                                    <td>Certifications</td><td>No Certification</td>
+		                                    <td>{{ 'PROVIDER_TABS.tab1.certifications' | translate }}</td><td>No Certification</td>
 		                                </tr>
 		                            </tbody>
 		                        </table>
@@ -181,12 +184,103 @@
 				 	</ul>
 				</nav>
 		    </div>
+			
+			<div [ngClass]="activeTab == 2 ? 'show active' : ''" class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="tab2">
+				<ul class="items">
+			    	<li>
+		    			<div class="row p-3">
+					    	<div class="col-sm-5">
+					    		<div style="width: 100%">
+					    			<img class="item-img" src="../../assets/images/a1.jpg" alt="">
+						    		<div class="item-content">
+						    			<h4>Mourad Samy</h4>
+										<p>
+											web developer
+										</p>
+						    		</div>
+					    		</div>
+					    		<div>
+									<p><b>{{ 'PROVIDER_TABS.tab2.category' | translate }}: </b>Contractor</p>
+									<p><b>{{ 'PROVIDER_TABS.tab2.skill' | translate }}: </b> Electrical Engineering, Electronics, Semiconductor, Wi-Fi</p>
+									<a href="/profile"><u>{{ 'PROVIDER_TABS.tab2.my_profile' | translate }}</u></a> <span> | </span>
+									<a href="/profile"><u>{{ 'PROVIDER_TABS.tab2.remove_from_watchlist' | translate }}</u></a> 
+					    		</div>
+					    	</div>
+					    	<div class="col-sm-4">
+					    		<table class="table table-hover">
+		                            <tbody>
+		                                <tr>
+		                                	<td>{{ 'PROVIDER_TABS.tab2.fixed_rate' | translate }}</td><td>Based on Job Budget</td>
+										</tr>
+										<tr>
+		                                	<td>{{ 'PROVIDER_TABS.tab2.hourly_rate' | translate }}</td><td>Based on Job Budget</td>
+										</tr>
+										<tr>
+		                                	<td>{{ 'PROVIDER_TABS.tab2.job' | translate }}</td><td>No Term defined</td>
+										</tr>   
+		                                <tr>
+		                                	<td>{{ 'PROVIDER_TABS.tab2.location' | translate }}</td><td>Egypt&nbsp; &nbsp;Cairo</td>
+		                                </tr>                                                                           
+										<tr>
+											<td>{{ 'PROVIDER_TABS.tab2.type' | translate }}</td><td>Individual</td>
+										</tr>                                  										
+										<tr>
+											<td>{{ 'PROVIDER_TABS.tab2.job' | translate }}</td><td>1</td>
+										</tr>
+										<tr>
+											<td>{{ 'PROVIDER_TABS.tab2.reviews' | translate }}</td><td>No Rating</td>
+										</tr>
+		                                <tr>
+		                                    <td>{{ 'PROVIDER_TABS.tab2.certifications' | translate }}</td><td>No Certification</td>
+		                                </tr>
+		                            </tbody>
+		                        </table>
+					    	</div>
+					    	<div class="col-sm-3">
+					    		<div class="form-group">
+								    <textarea class="form-control" rows="10" placeholder="{{ 'PROVIDER_TABS.tab2.take_notes' | translate }}"></textarea>
+								</div>
+					    	</div>
+			    		</div>
+			    		<hr />
+			    	</li>
+			    </ul>
+			    <div class="p-3 text-right">
+				    <button class="btn btn-primary">{{ 'PROVIDER_TABS.tab2.save_btn' | translate }}</button>
+				</div>
+			</div>
 
-		    <div [ngClass]="activeTab == 2 ? 'show active' : ''" class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="tab2">
+		    <div [ngClass]="activeTab == 3 ? 'show active' : ''" class="tab-pane fade" id="content3" role="tabpanel" aria-labelledby="tab3">
 				<div class="row">
-					<div class="col-md-12">
-						<p>Only registered users are permitted to view the form</p>
+					<div *ngIf="!user_login; else temp" class="col-md-12">
+						<p>{{ 'PROVIDER_TABS.tab3.msg' | translate }}</p>
 					</div>
+					<ng-template #temp>
+						<div class="col-md-7">
+							<form class="p-3">
+								<div class="form-group">
+								    <label for="fname">{{ 'PROVIDER_TABS.tab3.fname' | translate }}<span class="text-danger">*</span></label>
+								    <input type="text" class="form-control" id="fname" placeholder="">
+								</div>
+								<div class="form-group">
+								    <label for="lname">{{ 'PROVIDER_TABS.tab3.lname' | translate }}<span class="text-danger">*</span></label>
+								    <input type="text" class="form-control" id="lname" placeholder="">
+								</div>
+								<div class="form-group">
+								    <label for="email">{{ 'PROVIDER_TABS.tab3.email' | translate }}<span class="text-danger">*</span></label>
+								    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+								</div>
+								<div class="form-group">
+								    <label for="invitation">{{ 'PROVIDER_TABS.tab3.invitation_msg' | translate }}<span class="text-danger">*</span></label>
+								    <textarea class="form-control" id="invitation" rows="5">{{ 'PROVIDER_TABS.tab3.invitation_msg_content' | translate }}</textarea>
+								</div>
+								<button class="btn btn-primary">{{ 'PROVIDER_TABS.tab3.save_btn' | translate }}</button>
+							</form>
+						</div>
+						<div class="col-md-5">
+							<img class="m-3" src="../../assets/images/Inv.png" alt="">
+						</div>
+					</ng-template>
 				</div>
 		    </div>
 		    

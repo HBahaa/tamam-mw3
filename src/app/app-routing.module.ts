@@ -16,19 +16,24 @@ import { HowCommunityWorkComponent } from './pages/how-community-work/how-commun
 import { SelectUserTypeComponent } from './pages/select-user-type/select-user-type.component';
 import { MembershipComponent } from './pages/membership/membership.component';
 import { ClientAccountComponent } from './pages/client-account/client-account.component';
-
+import { PlanComponent } from './pages/plan/plan.component';
+import { JobWatchlistComponent } from './pages/job-watchlist/job-watchlist.component';
+import { SpecialistWatchlistComponent } from './pages/specialist-watchlist/specialist-watchlist.component';
 
 const routes: Routes = [
 	{path:'login', component:LoginComponent },
 	{path:'forget-password', component:ForgetPasswordComponent },
 	{path:'select-user-type', component:SelectUserTypeComponent },
 	{path:'customer-account', component:ClientAccountComponent },
+	{path:'membership/plan', component:PlanComponent },
 	{path:'membership', component:MembershipComponent },
 	{path:'profile', component:ProfileComponent },
 	{path:'submit-job', component:SubmitJobComponent },
 	{path:'find-job', component:FindJobComponent },
 	{path:'job-search', component:JobSearchComponent },
+	{path:'job-watchlist', component:JobWatchlistComponent },
 	{path:'provider-search', component:ProviderSearchComponent },
+	{path:'specialist-watchlist', component:SpecialistWatchlistComponent },
 	{path:'invite-freelancer', component:InviteFreelancerComponent },
 	{path:'invite-owner', component:InviteOwnerComponent },
 	{path:'groups', component:GroupsComponent },

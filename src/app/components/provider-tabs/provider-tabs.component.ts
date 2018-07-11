@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ProviderTabsComponent implements OnInit {
 
 	@Input() activeTab;
+	user_login: boolean = true;
 	
 	constructor() { }
 

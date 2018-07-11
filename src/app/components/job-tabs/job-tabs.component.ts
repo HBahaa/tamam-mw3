@@ -10,6 +10,7 @@ export class JobTabsComponent implements OnInit {
 
 	@Input() activeTab;
 	date = new FormControl(new Date());
+	user_login = true;
 	
 	constructor() { }
 

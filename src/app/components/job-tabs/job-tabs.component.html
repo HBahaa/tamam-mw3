@@ -2,10 +2,13 @@
 	<div class="content">
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
 			<li class="nav-item">
-			    <a [ngClass]="activeTab == 1 ? 'active' : ''"  class="nav-link" id="tab1" data-toggle="tab" href="#content1" role="tab" aria-controls="content1">Job Search</a>
+			    <a [ngClass]="activeTab == 1 ? 'active' : ''"  class="nav-link" id="tab1" data-toggle="tab" routerLink="/job-search" role="tab" aria-controls="content1">{{ 'JOBS_TABS.tab1.title' | translate }}</a>
 			</li>
 			<li class="nav-item">
-			    <a [ngClass]="activeTab == 2 ? 'active' : ''"  class="nav-link" id="tab2" data-toggle="tab" href="#content2" role="tab" aria-controls="content2">Invinte A Job Owner</a>
+			    <a [ngClass]=" user_login ? '' : 'd-none'" [ngClass]="activeTab == 2 ? 'active' : ''" class="nav-link" id="tab2" data-toggle="tab" routerLink="/job-watchlist" role="tab" aria-controls="content2">{{ 'JOBS_TABS.tab2.title' | translate }}</a>
+			</li>
+			<li class="nav-item">
+			    <a [ngClass]="activeTab == 3 ? 'active' : ''"  class="nav-link" id="tab3" data-toggle="tab" routerLink="/invite-owner" role="tab" aria-controls="content3">{{ 'JOBS_TABS.tab3.title' | translate }}</a>
 			</li>
 		</ul>
 		<div class="tab-content" id="myContent">
@@ -14,9 +17,9 @@
 					<div class="row">
 		    			<div class="col-md-3 col-xs-6">
 							<div class="form-group">
-								<label class="my-1 mr-2" for="category">Category</label>
+								<label class="my-1 mr-2" for="category">{{ 'JOBS_TABS.tab1.category' | translate }}</label>
 								<select class="custom-select my-1 mr-sm-2" id="category">
-								    <option value="">Show All</option>
+								    <option value="">{{ 'JOBS_TABS.tab1.show_all' | translate }}</option>
                                     <option value="165">Design &amp; Multimedia</option>
                                     <option value="129">Information services </option>
                                     <option value="189">Writing &amp; Translation</option>
@@ -35,29 +38,29 @@
 		    			</div>
 		    			<div class="col-md-3 col-xs-6">
 							<div class="form-group">
-								<label class="my-1 mr-2" for="subcategory">Subcategory</label>
+								<label class="my-1 mr-2" for="subcategory">{{ 'JOBS_TABS.tab1.subcategory' | translate }}</label>
 								<select class="custom-select my-1 mr-sm-2" id="subcategory">
 								    <option selected></option>
-								    <option value="1">Show All</option>
+								    <option value="1">{{ 'JOBS_TABS.tab1.show_all' | translate }}</option>
 								</select>
 							</div>
 		    			</div>
 		    			<div class="col-md-3 col-xs-6">
 							<div class="form-group">
-								<label class="my-1 mr-2" for="skill">Skill</label>
+								<label class="my-1 mr-2" for="skill">{{ 'JOBS_TABS.tab1.skill' | translate }}</label>
 								<input type="text" name="skill" id="skill" class="form-control" />
 							</div>
 		    			</div>
 		    			<div class="col-md-3 col-xs-6">
 							<!-- <mat-form-field> -->
-								<label for="">Start Date</label>
+								<label for="">{{ 'JOBS_TABS.tab1.start_date' | translate }}</label>
 								<input matInput [matDatepicker]="picker1" placeholder="Angular forms" [formControl]="date">
 								<mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
 								<mat-datepicker #picker1></mat-datepicker>
 							<!-- </mat-form-field> -->
 		    			</div>
 		    			<div class="col-md-12 text-right">
-		    				<a class="text-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><u>Advanced Search</u></a>
+		    				<a class="text-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><u>{{ 'JOBS_TABS.tab1.advanced_search' | translate }}</u></a>
 						</div>
 		    			<div class="col-md-12">
 							<div class="collapse" id="collapseExample">
@@ -65,7 +68,7 @@
 									<div class="row">
 										<div class="col-md-3">
 											<div class="form-group">
-												<label class="my-1 mr-2" for="city">City</label>
+												<label class="my-1 mr-2" for="city">{{ 'JOBS_TABS.tab1.city' | translate }}</label>
 												<select class="selectpicker" id="city">
 													<option>Mustard</option>
 													<option>Ketchup</option>
@@ -74,14 +77,14 @@
 											</div>
 											<div class="form-check form-check-inline">
 												<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-												<label class="form-check-label" for="inlineCheckbox1">Featured</label>
+												<label class="form-check-label" for="inlineCheckbox1">{{ 'JOBS_TABS.tab1.featured' | translate }}</label>
 											</div>
 										</div>
 										<div class="col-md-3">
 											<div class="form-group">
-												<label class="my-1 mr-2" for="term">Term Type</label>
+												<label class="my-1 mr-2" for="term">{{ 'JOBS_TABS.tab1.term_type' | translate }}</label>
 												<select class="custom-select my-1 mr-sm-2" id="term">
-												    <option selected>Show All</option>
+												    <option selected>{{ 'JOBS_TABS.tab1.show_all' | translate }}</option>
 												    <option value="5">At Least 5</option>
 												    <option value="4">At Least 4</option>
 												    <option value="3">At Least 3</option>
@@ -89,7 +92,7 @@
 											</div>
 											<div class="form-check form-check-inline">
 												<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-												<label class="form-check-label" for="inlineCheckbox2">Exclude Closed Jobs</label>
+												<label class="form-check-label" for="inlineCheckbox2">{{ 'JOBS_TABS.tab1.closed_jobs' | translate }}</label>
 											</div>
 										</div>
 									</div>
@@ -100,19 +103,19 @@
 
 	    			<div class="row">
 	    				<div class="col-md-12 text-left">
-	    					<h5>Sort By</h5>
+	    					<h5>{{ 'JOBS_TABS.tab1.sort_by' | translate }}</h5>
 	    				</div>
 	    				<div class="col-md-12 text-left">
-	    					<a class="p-3" href="#">Job Name</a><span>|</span>
-	    					<a class="p-3" href="#">Hourly Rate</a><span>|</span>
-	    					<a class="p-3" href="#">Fixed Rate</a><span>|</span>
-	    					<a class="p-3" href="#">Start Date</a><span>|</span>
-	    					<a class="p-3" href="#">Time Left</a>
+	    					<a class="p-3" href="#">{{ 'JOBS_TABS.tab1.job_name' | translate }}</a><span>|</span>
+	    					<a class="p-3" href="#">{{ 'JOBS_TABS.tab1.hourly_rate' | translate }}</a><span>|</span>
+	    					<a class="p-3" href="#">{{ 'JOBS_TABS.tab1.fixed_rate' | translate }}</a><span>|</span>
+	    					<a class="p-3" href="#">{{ 'JOBS_TABS.tab1.start_date' | translate }}</a><span>|</span>
+	    					<a class="p-3" href="#">{{ 'JOBS_TABS.tab1.time_left' | translate }}</a>
 	    				</div>
 	    				<div class="col-md-12">
 	    					<div class="float-right">
-	    						<button class="btn btn-primary mr-3">Reset</button>
-	    						<button class="btn btn-primary">Search</button>
+	    						<button class="btn btn-primary ml-3">{{ 'JOBS_TABS.tab1.reset' | translate }}</button>
+	    						<button class="btn btn-primary ml-3">{{ 'JOBS_TABS.tab1.search' | translate }}</button>
 	    					</div>
 	    				</div>
 	    			</div>
@@ -121,40 +124,37 @@
 			    	<li>
 		    			<div class="row p-3">
 					    	<div class="col-sm-8">
-					    		<img class="float-left item-img" src="../../assets/images/a1.jpg" alt="">
-					    		<div class="m-3 float-left item-content">
+					    		<img class= "profile_img item-img" src="../../assets/images/a1.jpg" alt="">
+					    		<div class="m-3 item-content">
 					    			<h4>test</h4>
-									<p>
-										test
-									</p>
+									<p>test</p>
 					    		</div>
 					    		<div>
-									<p><b>Category:</b>Admin Support</p>
-									<p><b>Required Skills:</b> English</p>
-									<a href="/profile"><u>Read More</u></a>
+									<p><b>{{ 'JOBS_TABS.tab1.category' | translate }}:</b>Admin Support</p>
+									<p><b>{{ 'JOBS_TABS.tab1.skill' | translate }}:</b> English</p>
+									<a routerLink="/profile"><u>{{ 'JOBS_TABS.tab1.read_more' | translate }}</u></a>
 					    		</div>
 					    	</div>
 					    	<div class="col-sm-4">
 					    		<table class="table table-hover">
 		                            <tbody>
 		                                <tr>
-		                                	<td>Hourly Rate</td><td>About 25USD - 30USD/hr</td>
+		                                	<td>{{ 'JOBS_TABS.tab1.hourly_rate' | translate }}</td><td>About 25USD - 30USD/hr</td>
 										</tr>
 										<tr>
-		                                	<td>Fixed Rate</td><td>Based on Job Budget</td>
+		                                	<td>{{ 'JOBS_TABS.tab1.fixed_rate' | translate }}</td><td>Based on Job Budget</td>
 										</tr>
 		                                <tr>
-		                                	<td>Location</td><td>Egypt&nbsp; &nbsp;Cairo</td>
+		                                	<td>{{ 'JOBS_TABS.tab1.location' | translate }}</td><td>Egypt&nbsp; &nbsp;Cairo</td>
 		                                </tr>                                                                           
 										<tr>
-											<td>Start Date</td>
-											<td>	2017-07-27</td>
+											<td>{{ 'JOBS_TABS.tab1.start_date' | translate }}</td><td>	2017-07-27</td>
 										</tr>                                  										
 										<tr>
-											<td>Time Left (Days)</td><td>Closed</td>
+											<td>{{ 'JOBS_TABS.tab1.time_left' | translate }}</td><td>Closed</td>
 										</tr>
 										<tr>
-											<td>Proposal</td><td>0</td>
+											<td>{{ 'JOBS_TABS.tab1.proposal' | translate }}</td><td>0</td>
 										</tr>
 		                            </tbody>
 		                        </table>
@@ -183,12 +183,90 @@
 				 	</ul>
 				</nav>
 		    </div>
-
-		    <div [ngClass]="activeTab == 2 ? 'show active' : ''" class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="tab2">
+			<div [ngClass]="activeTab == 2 ? 'show active' : ''" class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="tab2">
+				<ul class="items">
+			    	<li>
+		    			<div class="row p-3">
+					    	<div class="col-sm-5">
+					    		<img class="profile_img item-img" src="../../assets/images/a1.jpg" alt="">
+					    		<div class="m-3 item-content">
+					    			<h4>test</h4>
+									<p>test</p>
+					    		</div>
+					    		<div>
+									<p><b>{{ 'JOBS_TABS.tab2.category' | translate }}:</b>Admin Support</p>
+									<p><b>{{ 'JOBS_TABS.tab2.skill' | translate }}:</b> English</p>
+									<a href="#"><u>{{ 'JOBS_TABS.tab2.remove' | translate }}</u></a>
+					    		</div>
+					    	</div>
+					    	<div class="col-sm-4">
+					    		<table class="table table-border table-hover">
+		                            <tbody>
+		                                <tr>
+		                                	<td>{{ 'JOBS_TABS.tab2.hourly_rate' | translate }}</td><td>About 25USD - 30USD/hr</td>
+										</tr>
+										<tr>
+		                                	<td>{{ 'JOBS_TABS.tab2.fixed_rate' | translate }}</td><td>Based on Job Budget</td>
+										</tr>
+		                                <tr>
+		                                	<td>{{ 'JOBS_TABS.tab2.location' | translate }}</td><td>Egypt&nbsp; &nbsp;Cairo</td>
+		                                </tr>                                                                           
+										<tr>
+											<td>{{ 'JOBS_TABS.tab2.start_date' | translate }}</td><td>	2017-07-27</td>
+										</tr>                                  										
+										<tr>
+											<td>{{ 'JOBS_TABS.tab2.time_left' | translate }}</td><td>Closed</td>
+										</tr>
+										<tr>
+											<td>{{ 'JOBS_TABS.tab2.proposal' | translate }}</td><td>0</td>
+										</tr>
+		                            </tbody>
+		                        </table>
+					    	</div>
+					    	<div class="col-sm-3">
+					    		<div class="form-group">
+								    <textarea class="form-control" rows="5"></textarea>
+								</div>
+					    	</div>
+			    		</div>
+			    		<hr />
+			    	</li>
+			    </ul>
+				<div class="p-3 text-right">
+				    <button class="btn btn-primary">{{ 'JOBS_TABS.tab2.save_btn' | translate }}</button>
+				</div>
+		    </div>
+		    <div [ngClass]="activeTab == 3 ? 'show active' : ''" class="tab-pane fade" id="content3" role="tabpanel" aria-labelledby="tab3">
 				<div class="row">
-					<div class="col-md-12">
-						<p>Only registered users are permitted to view the form</p>
+					<div *ngIf="!user_login; else temp" class="col-md-12">
+						<p>{{ 'JOBS_TABS.tab3.msg' | translate }}</p>
 					</div>
+					<ng-template #temp>
+						<div class="col-md-7">
+							<form class="p-3">
+								<div class="form-group">
+								    <label for="fname">{{ 'JOBS_TABS.tab3.fname' | translate }}<span class="text-danger">*</span></label>
+								    <input type="text" class="form-control" id="fname" placeholder="">
+								</div>
+								<div class="form-group">
+								    <label for="lname">{{ 'JOBS_TABS.tab3.lname' | translate }}<span class="text-danger">*</span></label>
+								    <input type="text" class="form-control" id="lname" placeholder="">
+								</div>
+								<div class="form-group">
+								    <label for="email">{{ 'JOBS_TABS.tab3.email' | translate }}<span class="text-danger">*</span></label>
+								    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+								</div>
+								<div class="form-group">
+								    <label for="invitation">{{ 'JOBS_TABS.tab3.invitation_msg' | translate }}<span class="text-danger">*</span></label>
+								    <textarea class="form-control" id="invitation" rows="5">{{ 'JOBS_TABS.tab3.invitation_msg_content' | translate }}</textarea>
+								</div>
+								<button class="btn btn-primary">{{ 'JOBS_TABS.tab3.save_btn' | translate }}</button>
+							</form>
+						</div>
+						<div class="col-md-5">
+							<img class="m-3" src="../../assets/images/Inv.png" alt="">
+						</div>
+					</ng-template>
 				</div>
 		    </div>
 		    

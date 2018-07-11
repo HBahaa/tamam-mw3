@@ -18,14 +18,14 @@ export class AppComponent {
 
   	setLanguage(){
 	    let lang = localStorage.getItem("language")
-	    if (lang == 'ar') {
+	   if (lang == 'ar') {
 			$('html').attr('dir', 'rtl');
 			$('.navbar-nav').toggleClass('mr-auto');
-			$('.tab-body, .reset-password').addClass("text-right");
+			$('.tab-body, .reset-password, .client-account, .list-group, .dropdown-menu, .tab-content').addClass("text-right");
 		}else{
 			$('html').attr('dir', 'ltr');
 			$('.navbar-nav').toggleClass('mr-auto');
-			$('.tab-body, .reset-password').removeClass("text-right");
+			$('.tab-body, .reset-password, .client-account, .list-group, .dropdown-menu, .tab-content').removeClass("text-right");
 		}
 	}
 

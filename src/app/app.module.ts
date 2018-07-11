@@ -36,6 +36,9 @@ import { SelectUserTypeComponent } from './pages/select-user-type/select-user-ty
 import { MembershipComponent } from './pages/membership/membership.component';
 import { ClientAccountComponent } from './pages/client-account/client-account.component';
 import { CardComponent } from './components/card/card.component';
+import { PlanComponent } from './pages/plan/plan.component';
+import { JobWatchlistComponent } from './pages/job-watchlist/job-watchlist.component';
+import { SpecialistWatchlistComponent } from './pages/specialist-watchlist/specialist-watchlist.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -69,7 +72,10 @@ export function createTranslateLoader(http: HttpClient) {
     SelectUserTypeComponent,
     MembershipComponent,
     ClientAccountComponent,
-    CardComponent
+    CardComponent,
+    PlanComponent,
+    JobWatchlistComponent,
+    SpecialistWatchlistComponent
   ],
   imports: [
     BrowserModule,

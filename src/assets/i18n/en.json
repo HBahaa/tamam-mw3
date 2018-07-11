@@ -143,6 +143,107 @@
 			}
 		}
 	},
+	"JOBS_TABS" : {
+		"tab1" : {
+			"title": "Job Search",
+			"category" : "Category",
+			"subcategory" : "Subcategory",
+			"skill" : "Skill",
+			"start_date" : "Start Date",
+			"advanced_search" : "Advanced Search",
+			"cite" : "City",
+			"term_type" : "Term Type",
+			"show_all" : "Show All",
+			"featured" : "Featured",
+			"closed_jobs" : "Exclude Closed Jobs",
+			"sort_by" : "Sort By",
+			"job_name" : "Job Name",
+			"hourly_rate" : "Hourly Rate",
+			"fixed_rate" : "Fixed Rate",
+			"time_left" : "Time Left",
+			"location" : "Location",
+			"reset" : "Reset",
+			"search" : "Search",
+			"read_more" : "Read More",
+			"add_to_watchlist" : "Add to Watchlist",
+			"proposal" : "Proposal"
+		},
+		"tab2" : {
+			"title" : "Jobs Watchlist",
+			"category" : "Category",
+			"skill" : "Skill",
+			"hourly_rate" : "Hourly Rate",
+			"fixed_rate" : "Fixed Rate",
+			"start_date" : "Start Date",
+			"time_left" : "Time Left",
+			"proposal" : "Proposal",
+			"remove" : "Remove",
+			"location" : "Location",
+			"save_btn" : "Save"
+
+		},
+		"tab3" : {
+			"title" : "Invite A Job Owner",
+			"msg" : "Only registered users are permitted to view the form",
+			"fname" : "First Name of the Invitee",
+			"lname" : "Last Name",
+			"email" : "Email",
+			"invitation_msg" : "Invitation Message",
+			"invitation_msg_content" : "TAMAM is a marketplace that offers opportunities for hiring and connects you with skilled Service Providers who can help you finish your jobs , I would like to invite you to register......",
+			"save_btn" : "Save"
+		}
+	},
+	"PROVIDER_TABS" : {
+		"tab1" : {
+			"title": "Service Providers Search",
+			"category" : "Category",
+			"subcategory" : "Subcategory",
+			"skill" : "Skill",
+			"start_date" : "Start Date",
+			"advanced_search" : "Advanced Search",
+			"cite" : "City",
+			"term_type" : "Term Type",
+			"show_all" : "Show All",
+			"sort_by" : "Sort By",
+			"hourly_rate" : "Hourly Rate",
+			"fixed_rate" : "Fixed Rate",
+			"type" : "Type",
+			"job" : "Job",
+			"location" : "Location",
+			"reviews" : "Reviews",
+			"reset" : "Reset",
+			"search" : "Search",
+			"remove_from_watchlist" : "Remove from Watchlist",
+			"my_profile" : "My Profile",
+			"certifications" : "Certifications"
+		},
+		"tab2" : {
+			"title" : "Service Providers Watchlist",
+			"category" : "Category",
+			"skill" : "Skill",
+			"hourly_rate" : "Hourly Rate",
+			"fixed_rate" : "Fixed Rate",
+			"type" : "Type",
+			"job" : "Job",
+			"location" : "Location",
+			"reviews" : "Reviews",
+			"certifications" : "Certifications",
+			"my_profile" : "My Profile",
+			"remove_from_watchlist" : "Remove from Watchlist",
+			"take_notes" : "Take Notes",
+			"save_btn" : "Save"
+		},
+		"tab3" : {
+			"title" : "Invite A Service Provider",
+			"msg" : "Only registered users are permitted to view the form",
+			"fname" : "First Name of the Invitee",
+			"lname" : "Last Name",
+			"email" : "Email",
+			"invitation_msg" : "Invitation Message",
+			"invitation_msg_content" : "TAMAM is a marketplace that offers opportunities for hiring and connects you with skilled Service Providers who can help you finish your jobs , I would like to invite you to register......",
+			"save_btn" : "Save"
+		}
+	},
 	"SLIDER" : {
 		"slide1" : {
 			"title" : "With Tamam",
@@ -338,10 +439,43 @@
 	"INVITE_FREELANCER" :{
 		"title" : "INVITE FREELANCERS TO TAMAM'S MARKETPLACE"
 	},
+	"SPECIALIST_WATCHLIST" :{
+		"title" : "ADD JOBS OR PROJECTS TO YOUR WATCHLIST HERE"
+	},
 	"JOB_SEARCH" : {
 		"title" : "SEARCH FOR JOBS AS A FREELANCER"
 	},
 	"INVITE_OWNER" : {
 		"title" : "INVITE A JOB OWNER TO TAMAM MARKETPLACE"
+	},
+	"JOB_WATCHLIST" : {
+		"title" : "WATCHLIST AVAILABLE JOBS ON TAMAM AS A JOB OWNER"
+	},
+	"PLAN" : {
+		"title" : "MEMBERSHIP PLAN",
+		"tab1" : {
+			"title" : "My Jobs",
+			"content" : ""
+		},
+		"tab2" : {
+			"title" : "Membership",
+			"subtitle" : "My Plan",
+			"content" : {
+				"plan" : "Plan",
+				"start_date" : "Start Date",
+				"expiry_date" : "Expiry Date",
+				"status" : "Status",
+				"renew" : "Renew",
+				"update_btn": "Update Now"
+			}
+		},
+		"tab3" : {
+			"title" : "Payments",
+			"content" : ""
+		},
+		"tab4" : {
+			"title" : "Reviews/Feedback",
+			"content" : ""
+		}
 	}
-} 
+}

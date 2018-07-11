@@ -8,10 +8,19 @@ import * as $ from 'jquery';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+	lang: any;
 
-	constructor(private translate: TranslateService) { }
+	constructor(private translate: TranslateService) {}
 
 	ngOnInit() {
+		// this.lang = localStorage.getItem("language");
+		// 	console.log("lang", this.lang)
+		// if (this.lang) {
+		// 	console.log("ghag", this.lang)
+		// 	this.changeLanguage(this.lang);
+		// }else{
+		// 	this.changeLanguage('en');
+		// }
 	}
 
 	changeLanguage(lang){
@@ -20,11 +29,11 @@ export class HeaderComponent implements OnInit {
 		if (lang == 'ar') {
 			$('html').attr('dir', 'rtl');
 			$('.navbar-nav').toggleClass('mr-auto');
-			$('.tab-body, .reset-password, .client-account, .list-group, .dropdown-menu').addClass("text-right");
+			$('.tab-body, .reset-password, .client-account, .list-group, .dropdown-menu, .tab-content').addClass("text-right");
 		}else{
 			$('html').attr('dir', 'ltr');
 			$('.navbar-nav').toggleClass('mr-auto');
-			$('.tab-body, .reset-password, .client-account, .list-group, .dropdown-menu').removeClass("text-right");
+			$('.tab-body, .reset-password, .client-account, .list-group, .dropdown-menu, .tab-content').removeClass("text-right");
 		}
 	}
 }
