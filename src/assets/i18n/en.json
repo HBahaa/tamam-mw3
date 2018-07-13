@@ -312,7 +312,7 @@
 		"btn2" : "Suggest a Public Community"
 	},
 	"HOME" : {
-		"FEATURES" : {
+		"features" : {
 			"title" : "Main Features",
 			"block1" : {
 				"title" : "HIRE ON DEMAND",
