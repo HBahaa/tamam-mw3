@@ -342,6 +342,84 @@
 			"project" : "Featured Projects"
 		}
 	},
+	"HOW_COMMUNITY_WOK" : {
+		"tab1" : {
+			"title" : "Public Community",
+			"content1" : {
+				"title": "Joining A Community",
+				"body" : "To join a community, you need to be registered in TAMAM Marketplace. Click on the image of the community and submit to 'Join' the Community that you are interested to be one of its members. Once you confirm the joining request, you will be able to enjoy the community's products and benefits."
+			},
+			"content2" : {
+				"title": "Uploading Product",
+				"body" : "After becoming one of the community members, you can upload your own work by filling and submitting a form with the required data. In 5-7 working days, a Team of Specialists from TAMAM Marketplace will test your work and send you an email with approval/regection of the uploaded work"
+			},
+			"content3" : {
+				"title": "Publishing On TAMAM",
+				"body" : "In case you received positive reviews and comments on your uploaded work from your community members, and you would like to publish your work on TAMAM Marketplace out of your community, you will need to fill and submit a form, wait for approval from TAMAM's Admin. After receiving the confirmation on your Work, all TAMAM's visitors will be able to enjoy your products on the marketplace."
+			},
+			"content4" : {
+				"title": "Suggest A Community",
+				"body" : "The community member can suggest a new public community to be published, and the most requested community will be added to the group of the public communities."
+			}
+		},
+		"tab2" : {
+			"title" : "Private Community",
+			"content1" : {
+				"title": "Web Site Registration",
+				"body" : "The user signs up in TAMAM Marketplace by creating a new account."
+			},
+			"content2" : {
+				"title": "Access The Community",
+				"body" : "If the signed up user is a member of a Private community, he will be able to access it and enjoy all the benefits that are provided in this Community."
+			},
+			"content3" : {
+				"title": "Build your Own Community",
+				"body" : "The signed up user has the option to create his own Private community, to do so he will need to fill and submit a request form. After submitting the request, the signed up user will receive a confirmation from the portal's admin. Next step is that he will receive the credentials for his Community members needed to access the new Private Community."
+			},
+			"content4" : {
+				"title": "Uploading Product",
+				"body" : "After becoming one of the Private Community members, you can upload your own work by filling and submitting a form with the required data to your Community Admin. In 5-7 working days, the Admin of your community will test your work and send you an email with approval/regection of the uploaded work."
+			}
+		},
+		"tab3" : {
+			"title" : "Building Community",
+			"content1" : {
+				"title": "Web Site Registration",
+				"body" : "The user signs up in TAMAM Marketplace by creating a new account."
+			},
+			"content2" : {
+				"title": "Access The Community",
+				"body" : "If the signed up user is a member of a Private Community, he will be able to access it and enjoy all the benefits that are provided in this Private Community."
+			},
+			"content3" : {
+				"title": "Building the community",
+				"body" : "A signed up user can build his own community by filling up a form with the required data. TAMAM's Admin will analyze the request and email the requester with the approval/rejection."
+			},
+			"content4" : {
+				"title": "Approval Email",
+				"body" : "Once TAMAM's team approves the new Private Community, the Admin will recieve a confirmation email with the code needed for the community members to use it in order to access the community."
+			}
+		},
+		"tab4" : {
+			"title" : "Uploading your Work",
+			"content1" : {
+				"title": "Web Site Registration",
+				"body" : "The user signs up in TAMAM Marketplace by creating a new account."
+			},
+			"content2" : {
+				"title": "Access The Community",
+				"body" : "If the signed up user is a member of a Private Community, he will be able to access it and enjoy all the benefits that are provided in this Private Community."
+			},
+			"content3" : {
+				"title": "Uploading the product",
+				"body" : "After becoming one of the Community members (Private/Public), you can upload your own work by filling and submitting a form with the required data In 5-7 working days, you work will be tested and you will recieve an email with approval/rejection of the uploaded work."
+			},
+			"content4" : {
+				"title": "Approval Step",
+				"body" : "The product will be tested by specialists from TAMAM Marketplace. Once the product’s owner gets the approval, his product will be published on HodHod's Marketplace."
+			}
+		}
+	},
 	"SELECT_USER_TYPE" : {
 		"title" : "SELECT USER TYPE",
 		"client" : {

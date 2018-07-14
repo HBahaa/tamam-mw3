@@ -28,12 +28,16 @@ export class HeaderComponent implements OnInit {
 		localStorage.setItem("language", lang)
 		if (lang == 'ar') {
 			$('html').attr('dir', 'rtl');
-			$('.navbar-nav').toggleClass('mr-auto');
+			$('.navbar-nav').removeClass('mr-auto');
+			$('.navbar-right').addClass('mr-auto');
 			$('.tab-body, .reset-password, .client-account, .list-group, .dropdown-menu, .tab-content').addClass("text-right");
+			$('.item-img').removeClass('float-left');
 		}else{
 			$('html').attr('dir', 'ltr');
-			$('.navbar-nav').toggleClass('mr-auto');
+			$('.navbar-nav').addClass('mr-auto');
+			$('.navbar-right').removeClass('mr-auto');
 			$('.tab-body, .reset-password, .client-account, .list-group, .dropdown-menu, .tab-content').removeClass("text-right");
+			$('.item-img').addClass('float-left');
 		}
 	}
 }
