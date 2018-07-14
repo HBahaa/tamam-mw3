@@ -340,6 +340,10 @@
 		"provider" : {
 			"service" : "Recommended Service Provider",
 			"project" : "Featured Projects"
+		},
+		"bottom_header" : {
+			"text" : "WANT TO SAVE MONEY ON YOUR PROJECT WITHOUT COMPROMISING QUALITY...",
+			"btn" : "POST YOUR JOB NOW"
 		}
 	},
 	"HOW_COMMUNITY_WOK" : {
@@ -555,5 +559,24 @@
 			"title" : "Reviews/Feedback",
 			"content" : ""
 		}
+	},
+	"SUBMIT_TICKET" : {
+		"title" : "MY SUPPORT TICKETS",
+		"table" : {
+			"show" : "Show",
+			"item" : "Item",
+			"id" : "ID",
+			"department" : "Department",
+			"title" : "Title",
+			"replies" : "Replies",
+			"status" : "Status"
+		},
+		"form" : {
+			"form_title" : "Create new ticket",
+			"title" : "Title",
+			"message" : "Message",
+			"send" : "Submit ticket"
+		},
+		"back" : "Back"
 	}
 }
