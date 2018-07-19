@@ -1,3 +1,119 @@
-<p>
-  profile works!
-</p>
+<app-bottom-header title="{{ 'PROFILE.title' | translate }}"></app-bottom-header>
+
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+				<a class="nav-link active" id="overview-tab" data-toggle="pill" href="#overview" role="tab" aria-controls="overview" aria-selected="true">{{ 'PROFILE.tab1.title' | translate }}</a>
+				<a class="nav-link" id="category-tab" data-toggle="pill" href="#category" role="tab" aria-controls="category" aria-selected="false">{{ 'PROFILE.tab2.title' | translate }}</a>
+				<a class="nav-link" id="portfolio-tab" data-toggle="pill" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">{{ 'PROFILE.tab3.title' | translate }}</a>
+				<a class="nav-link" id="certifications-tab" data-toggle="pill" href="#certifications" role="tab" aria-controls="certifications" aria-selected="false">{{ 'PROFILE.tab4.title' | translate }}</a>
+				<a class="nav-link" id="jobs-tab" data-toggle="pill" href="#jobs" role="tab" aria-controls="jobs" aria-selected="false">{{ 'PROFILE.tab5.title' | translate }}</a>
+				<a class="nav-link" id="reviews-tab" data-toggle="pill" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">{{ 'PROFILE.tab6.title' | translate }}</a>
+			</div>
+			<div class="tab-content p-3" id="v-pills-tabContent">
+				<div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+					<div class="row">
+						<div class="col-md-12">
+							<h5>Mohamed  Gamal</h5>
+						</div>
+						<div class="col-md-2 col-xs-4">
+							<img class="w-100" src="https://tamam.mw3-cloud.com/media/avatar/1/9/88227ce5219d3ad5ca1a33972eaaf5d2-1411493985.jpg" />
+						</div>
+						<div class="col-md-10 col-xs-8">	
+							<h5>{{ 'PROFILE.tab1.overview' | translate }}</h5>
+							<p>Telecommunication Engineer</p>
+							<h5>{{ 'PROFILE.tab1.description' | translate }}</h5>
+							<p>No Service Description Defined</p>
+							<h5>{{ 'PROFILE.tab1.keywords' | translate }}</h5>
+							<p>Installation, Maintenance, Configuration, Asset Tracking, Smart Building, POS, Vending Machine, </p>
+							<h5>{{ 'PROFILE.tab1.type' | translate }}</h5>
+							<p>Individual</p>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="category" role="tabpanel" aria-labelledby="category-tab">
+					<div class="row">
+						<div class="col-md-12">		
+							<h5>{{ 'PROFILE.tab2.category' | translate }}</h5>
+							<p>Engineering,Information services ,Cars,Professions,Business Services,Engineering,Engineering</p>
+							<h5>{{ 'PROFILE.tab2.subcategory' | translate }}</h5>
+							<p>Electrical,Embedded SW,Electricity ,Medical resources ,Technical Support,Product Design,Home Maintenance </p>
+							<h5>{{ 'PROFILE.tab2.skills' | translate }}</h5>
+							<p>C, C++, CCNA, Windows 7, Windows 8, Windows Vista, Windows XP, PIC Programmer, PIC Microcontrollers, PIC18, PIC16, ATMEL, Research, 3GSM, Computer Engineering, Electrical Engineering, Embedded Systems, GPS, Microcontroller, PLC &amp; SCADA, RTOS, Telecommunications Engineering</p>
+							<h5>{{ 'PROFILE.tab2.payment_term' | translate }}</h5>
+							<p>Hourly Rate 20 $ </p>
+                        </div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+					<div class="row">
+						<div class="col-md-12">
+							<h5>{{ 'PROFILE.tab3.no_portfolio' | translate }}</h5>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="certifications" role="tabpanel" aria-labelledby="certifications-tab">
+					<div class="row">
+						<div class="col-md-12">
+							<h5 class="border-bottom">{{ 'PROFILE.tab4.completed' | translate }}</h5>
+						</div>
+						<div class="col-md-12">
+							<img class="w-50" src="http://cert.mw3-cloud.com/pluginfile.php/221/course/overviewfiles/TESOLtraining.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="jobs" role="tabpanel" aria-labelledby="jobs-tab">
+					<div class="row">
+						<div class="col-md-12">
+							<h5>{{ 'PROFILE.tab5.no_jobs' | translate }}</h5>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+					<table class="table table-hover table-bordered">
+					  	<thead class="thead-primary">
+						    <tr>
+						      <th scope="col">{{ 'PROFILE.tab6.project_title' | translate }}</th>
+						      <th scope="col">{{ 'PROFILE.tab6.from_user' | translate }}</th>
+						      <th scope="col">{{ 'PROFILE.tab6.start_date' | translate }}</th>
+						      <th scope="col">{{ 'PROFILE.tab6.end_date' | translate }}</th>
+						      <th scope="col">{{ 'PROFILE.tab6.feedback' | translate }}</th>
+						      <th scope="col">{{ 'PROFILE.tab6.action' | translate }}</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row"><a class="mr-2" routerLink="/project-details"><img src="./assets/images/transportation.gif"></a><a routerLink="/project-details">Car Maintenance</a></th>
+						      <td><a routerLink="/profile">Samar Elfarkh</a></td>
+						      <td>16-Aug-2015</td>
+						      <td>16-Aug-2015</td>
+						      <td>08-Feb-2016</td>
+						      <td><a class="text-primary" data-toggle="modal" data-target="#viewModal">{{ 'PROFILE.tab6.btn' | translate }}</a></td>
+						    </tr>
+					  	</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="viewModalLabel" aria-hidden="true">
+  	<div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	  		<div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		    </div>
+	      	<div class="modal-body">
+		        <h3>Rating:</h3>
+				<p>4/5</p>
+				<h3>Comment:</h3>
+				<p>He did a good job but was somewhat late in delivery</p>
+		    </div>
+	    </div>
+	</div>
+</div>

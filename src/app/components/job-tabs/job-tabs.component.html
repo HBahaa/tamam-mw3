@@ -5,7 +5,7 @@
 			    <a [ngClass]="activeTab == 1 ? 'active' : ''"  class="nav-link" id="tab1" data-toggle="tab" routerLink="/job-search" role="tab" aria-controls="content1">{{ 'JOBS_TABS.tab1.title' | translate }}</a>
 			</li>
 			<li class="nav-item">
-			    <a [ngClass]=" user_login ? '' : 'd-none'" [ngClass]="activeTab == 2 ? 'active' : ''" class="nav-link" id="tab2" data-toggle="tab" routerLink="/job-watchlist" role="tab" aria-controls="content2">{{ 'JOBS_TABS.tab2.title' | translate }}</a>
+			    <a *ngIf="isLoggedIn$ | async" [ngClass]="activeTab == 2 ? 'active' : ''" class="nav-link" id="tab2" data-toggle="tab" routerLink="/job-watchlist" role="tab" aria-controls="content2">{{ 'JOBS_TABS.tab2.title' | translate }}</a>
 			</li>
 			<li class="nav-item">
 			    <a [ngClass]="activeTab == 3 ? 'active' : ''"  class="nav-link" id="tab3" data-toggle="tab" routerLink="/invite-owner" role="tab" aria-controls="content3">{{ 'JOBS_TABS.tab3.title' | translate }}</a>
@@ -124,7 +124,7 @@
 			    	<li>
 		    			<div class="row p-3">
 					    	<div class="col-sm-8">
-					    		<img class= "profile_img float-left  item-img" src="../../assets/images/a1.jpg" alt="">
+					    		<img class= "profile_img float-left item-img" src="./assets/images/a1.jpg" alt="">
 					    		<div class="m-3 float-left item-content">
 					    			<h4>test</h4>
 									<p>test</p>
@@ -189,11 +189,12 @@
 			    	<li>
 		    			<div class="row p-3">
 					    	<div class="col-sm-5">
-					    		<img class="profile_img item-img" src="../../assets/images/a1.jpg" alt="">
-					    		<div class="m-3 item-content">
+					    		<img class= "profile_img float-left item-img" src="./assets/images/a1.jpg" alt="">
+					    		<div class="m-3 float-left item-content">
 					    			<h4>test</h4>
 									<p>test</p>
 					    		</div>
+					    		<div style="clear: both;"></div>
 					    		<div>
 									<p><b>{{ 'JOBS_TABS.tab2.category' | translate }}:</b>Admin Support</p>
 									<p><b>{{ 'JOBS_TABS.tab2.skill' | translate }}:</b> English</p>
@@ -239,10 +240,10 @@
 		    </div>
 		    <div [ngClass]="activeTab == 3 ? 'show active' : ''" class="tab-pane fade" id="content3" role="tabpanel" aria-labelledby="tab3">
 				<div class="row">
-					<div *ngIf="!user_login; else temp" class="col-md-12">
+					<!-- <div *ngIf="!user_login; else temp" class="col-md-12">
 						<p>{{ 'JOBS_TABS.tab3.msg' | translate }}</p>
 					</div>
-					<ng-template #temp>
+					<ng-template #temp> -->
 						<div class="col-md-7">
 							<form class="p-3">
 								<div class="form-group">
@@ -265,9 +266,9 @@
 							</form>
 						</div>
 						<div class="col-md-5">
-							<img class="m-3" src="../../assets/images/Inv.png" alt="">
+							<img class="m-3" src="./assets/images/Inv.png" alt="">
 						</div>
-					</ng-template>
+					<!-- </ng-template> -->
 				</div>
 		    </div>
 		    

@@ -1,0 +1,27 @@
+.content{
+	span, h5{
+		font-weight: bold;
+	}
+	a.add-watchlist{
+		padding: 10px;
+		background-color: #535353;
+		border-radius: 3px;
+
+		.fa{
+			color: #fff;
+		}
+	}
+	a.add-watchlist:hover{
+		background-color: #1b75bc;
+	}
+	.tab-content{
+		.short-description{
+			h5{
+				color: #939393;
+			}
+		}
+	}
+	agm-map {
+		height: 300px;
+	}
+}

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg">
+<nav *ngIf="isLoggedIn$ | async; else anotherNav" class="navbar navbar-expand-lg">
 	<div class="container-fluid">
 		<!-- <a class="navbar-brand" routerLink="/crisis-center" routerLinkActive="active">Tamam</a> -->
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,11 +13,11 @@
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		          <a class="dropdown-item" routerLink="/submit-job">{{ 'NAVBAR.jobs_projects.how_it_work' | translate }}</a>
-		          <a class="dropdown-item" routerLink="/login">{{ 'NAVBAR.jobs_projects.submit_job' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/membership/plan">{{ 'NAVBAR.jobs_projects.submit_job' | translate }}</a>
 		          <a class="dropdown-item" routerLink="/job-search">{{ 'NAVBAR.jobs_projects.search_for_job' | translate }}</a>
-		          <a class="dropdown-item" routerLink="/login">{{ 'NAVBAR.jobs_projects.jobs_watchlist' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/job-watchlist">{{ 'NAVBAR.jobs_projects.jobs_watchlist' | translate }}</a>
 		          <a class="dropdown-item" routerLink="/invite-owner">{{ 'NAVBAR.jobs_projects.invite_job_owner' | translate }}</a>
-		          <a class="dropdown-item" routerLink="/login">{{ 'NAVBAR.jobs_projects.job_owner_account' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/membership/plan">{{ 'NAVBAR.jobs_projects.job_owner_account' | translate }}</a>
 		        </div>
 		      </li>
 		      <li class="nav-item dropdown">
@@ -27,9 +27,9 @@
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		          <a class="dropdown-item" routerLink="/find-job">{{ 'NAVBAR.service_providers.how_it_work' | translate }}</a>
 		          <a class="dropdown-item" routerLink="/provider-search">{{ 'NAVBAR.service_providers.search_for_service_providers' | translate }}</a>
-		          <a class="dropdown-item" routerLink="/login">{{ 'NAVBAR.service_providers.service_providers_watchlist' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/specialist-watchlist">{{ 'NAVBAR.service_providers.service_providers_watchlist' | translate }}</a>
 		          <a class="dropdown-item" routerLink="/invite-freelancer">{{ 'NAVBAR.service_providers.invite_service_provider' | translate }}</a>
-		          <a class="dropdown-item" routerLink="/login">{{ 'NAVBAR.service_providers.service_provider_account' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/membership/plan">{{ 'NAVBAR.service_providers.service_provider_account' | translate }}</a>
 		        </div>
 		      </li>
 			  <li class="nav-item dropdown">
@@ -52,46 +52,93 @@
 		          {{ 'NAVBAR.support.title' | translate }}
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" routerLink="/login">{{ 'NAVBAR.support.submit_ticket' | translate }}</a>
+		          <a class="dropdown-item" routerLink="/submit-ticket">{{ 'NAVBAR.support.submit_ticket' | translate }}</a>
 		        </div>
 		      </li>
 		    </ul>
 		    <ul class="nav navbar-nav navbar-right">
 			    <li class="nav-item"><p class="my-2">{{ 'HEADER.welcome' | translate }}</p></li>
 			    <li class="nav-item">
-			        <a class="nav-link" routerLink="/login" routerLinkActive="active">{{ 'HEADER.login' | translate }} </a>
+			        <a class="nav-link" (click)="onLogout()" routerLinkActive="active">Logout </a>
 			    </li>
-			    <li class="nav-item"><p class="my-2">|</p></li>
+			    <!-- <li class="nav-item"><p class="my-2">|</p></li>
 			    <li class="nav-item">
 			        <a class="nav-link" routerLink="/select-user-type" routerLinkActive="active">{{ 'HEADER.register' | translate }}</a>
-			    </li>
+			    </li> -->
 		    </ul>
 	    </div>
 	</div>
 </nav>
+<ng-template #anotherNav>
+	<nav class="navbar navbar-expand-lg">
+		<div class="container-fluid">
+			<!-- <a class="navbar-brand" routerLink="/crisis-center" routerLinkActive="active">Tamam</a> -->
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		    </button>
 
-<!-- Modal -->
-<!-- <div class="modal fade" id="client" tabindex="-1" role="dialog" aria-labelledby="clientLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      	<div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		          <span aria-hidden="true">&times;</span>
-		        </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          {{ 'NAVBAR.jobs_projects.title' | translate }} <span class="sr-only">(current)</span>
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" routerLink="/submit-job">{{ 'NAVBAR.jobs_projects.how_it_work' | translate }}</a>
+			          <a class="dropdown-item" routerLink="/login">{{ 'NAVBAR.jobs_projects.submit_job' | translate }}</a>
+			          <a class="dropdown-item" routerLink="/job-search">{{ 'NAVBAR.jobs_projects.search_for_job' | translate }}</a>
+			          <a class="dropdown-item" routerLink="/login">{{ 'NAVBAR.jobs_projects.jobs_watchlist' | translate }}</a>
+			          <a class="dropdown-item" routerLink="/invite-owner">{{ 'NAVBAR.jobs_projects.invite_job_owner' | translate }}</a>
+			          <a class="dropdown-item" routerLink="/login">{{ 'NAVBAR.jobs_projects.job_owner_account' | translate }}</a>
+			        </div>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          {{ 'NAVBAR.service_providers.title' | translate }}
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" routerLink="/find-job">{{ 'NAVBAR.service_providers.how_it_work' | translate }}</a>
+			          <a class="dropdown-item" routerLink="/provider-search">{{ 'NAVBAR.service_providers.search_for_service_providers' | translate }}</a>
+			          <a class="dropdown-item" routerLink="/login">{{ 'NAVBAR.service_providers.service_providers_watchlist' | translate }}</a>
+			          <a class="dropdown-item" routerLink="/invite-freelancer">{{ 'NAVBAR.service_providers.invite_service_provider' | translate }}</a>
+			          <a class="dropdown-item" routerLink="/login">{{ 'NAVBAR.service_providers.service_provider_account' | translate }}</a>
+			        </div>
+			      </li>
+				  <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          {{ 'NAVBAR.community.title' | translate }}
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" routerLink="/groups">{{ 'NAVBAR.community.explore_join' | translate }}</a>
+			          <a class="dropdown-item" routerLink="/how-does-a-public-community-work">{{ 'NAVBAR.community.how_it_work' | translate }}</a>
+			        </div>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" routerLink="/" routerLinkActive="active">{{ 'NAVBAR.certification' | translate }}</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" routerLink="/" routerLinkActive="active">{{ 'NAVBAR.blog' | translate }}</a>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          {{ 'NAVBAR.support.title' | translate }}
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" routerLink="/login">{{ 'NAVBAR.support.submit_ticket' | translate }}</a>
+			        </div>
+			      </li>
+			    </ul>
+			    <ul class="nav navbar-nav navbar-right">
+				    <li class="nav-item"><p class="my-2">{{ 'HEADER.welcome' | translate }}</p></li>
+				    <li class="nav-item">
+				        <a class="nav-link" routerLink="/login" routerLinkActive="active">{{ 'HEADER.login' | translate }} </a>
+				    </li>
+				    <li class="nav-item"><p class="my-2">|</p></li>
+				    <li class="nav-item">
+				        <a class="nav-link" routerLink="/select-user-type" routerLinkActive="active">{{ 'HEADER.register' | translate }}</a>
+				    </li>
+			    </ul>
 		    </div>
-	     	<div class="modal-body">
-	        	<form>
-				 	<div class="form-group">
-				    	<label for="email">Email</label>
-				    	<input type="text" class="form-control" id="email" placeholder="email">
-				  	</div>
-				  	<div class="form-group">
-				    	<label for="password">Password</label>
-				    	<input type="text" class="form-control" id="password" placeholder="password">
-				  	</div>
-				  	<button class="btn btn-primary"></button>
-				</form>
-	      	</div>
-	    </div>
-    </div>
-</div> -->
+		</div>
+	</nav>	
+</ng-template>

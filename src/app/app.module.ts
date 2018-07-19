@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { AgmCoreModule } from '@agm/core';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatStepperModule, MatNativeDateModule, MatDatepickerModule } from '@angular/material';
+import { MatStepperModule, MatNativeDateModule, MatDatepickerModule, MatPaginatorModule, MatProgressBarModule, MatSortModule, MatTableModule, MatInputModule, MatFormFieldModule,} from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -39,6 +41,11 @@ import { CardComponent } from './components/card/card.component';
 import { PlanComponent } from './pages/plan/plan.component';
 import { JobWatchlistComponent } from './pages/job-watchlist/job-watchlist.component';
 import { SpecialistWatchlistComponent } from './pages/specialist-watchlist/specialist-watchlist.component';
+import { SubmitTicketComponent } from './pages/submit-ticket/submit-ticket.component';
+
+import { AuthService } from './services/auth/auth.service';
+import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
+import { EditCustomerAccountComponent } from './pages/edit-customer-account/edit-customer-account.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -75,7 +82,10 @@ export function createTranslateLoader(http: HttpClient) {
     CardComponent,
     PlanComponent,
     JobWatchlistComponent,
-    SpecialistWatchlistComponent
+    SpecialistWatchlistComponent,
+    SubmitTicketComponent,
+    ProjectDetailsComponent,
+    EditCustomerAccountComponent
   ],
   imports: [
     BrowserModule,
@@ -85,6 +95,11 @@ export function createTranslateLoader(http: HttpClient) {
     MatStepperModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatPaginatorModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSortModule,
+    MatTableModule,
     ReactiveFormsModule,
     FormsModule,
     TranslateModule.forRoot({
@@ -93,9 +108,14 @@ export function createTranslateLoader(http: HttpClient) {
             useFactory: (createTranslateLoader),
             deps: [HttpClient]
         }
+    }),
+    AgmCoreModule.forRoot({
+        apiKey: 'AIzaSyA8PSfgqsMQa5rFju5Fl3OfIXyyFEyVjMw'
     })
   ],
-  providers: [],
+  providers: [
+      AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

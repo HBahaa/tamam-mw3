@@ -1,0 +1,66 @@
+<app-bottom-header title="{{ 'SUBMIT_TICKET.title' | translate }}"></app-bottom-header>
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>{{ 'SUBMIT_TICKET.title' | translate }}</h3>
+				<div class="mat-elevation-z8">
+				  <table mat-table [dataSource]="dataSource">
+
+				    <!-- id Column -->
+				    <ng-container matColumnDef="id">
+				      <th mat-header-cell *matHeaderCellDef> {{ 'SUBMIT_TICKET.table.id' | translate }} </th>
+				      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+				    </ng-container>
+
+				    <!-- department Column -->
+				    <ng-container matColumnDef="department">
+				    	<th mat-header-cell *matHeaderCellDef> {{ 'SUBMIT_TICKET.table.department' | translate }} </th>
+				    	<td mat-cell *matCellDef="let element"> {{element.department}} </td>
+				    </ng-container>
+
+				    <!-- title Column -->
+				    <ng-container matColumnDef="title">
+				      <th mat-header-cell *matHeaderCellDef> {{ 'SUBMIT_TICKET.table.title' | translate }} </th>
+				      <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+				    </ng-container>
+
+				    <!-- replies Column -->
+				    <ng-container matColumnDef="replies">
+				      <th mat-header-cell *matHeaderCellDef> {{ 'SUBMIT_TICKET.table.replies' | translate }} </th>
+				      <td mat-cell *matCellDef="let element"> {{element.replies}} </td>
+				    </ng-container>
+
+					<!-- stauus Column -->
+				    <ng-container matColumnDef="status">
+				      <th mat-header-cell *matHeaderCellDef> {{ 'SUBMIT_TICKET.table.status' | translate }} </th>
+				      <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+				    </ng-container>
+
+				    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+				    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+				  </table>
+
+				  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<h3 class="mt-5">{{ 'SUBMIT_TICKET.form.form_title' | translate }}</h3>
+				<form>
+					<div class="form-group">
+					    <label for="title">{{ 'SUBMIT_TICKET.form.title' | translate }} <span class="text-danger">*</span></label>
+					    <input type="text" class="form-control" id="title">
+					</div>
+					<div class="form-group">
+					    <label for="message">{{ 'SUBMIT_TICKET.form.message' | translate }} <span class="text-danger">*</span></label>
+					    <textarea class="form-control" id="message" rows="8"></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary">{{ 'SUBMIT_TICKET.form.send' | translate }}</button>
+				</form>
+			</div>
+			<div class="col-md-5 text-center">
+				<img src="./assets/images/ticket.png" alt="">
+			</div>
+		</div>
+	</div>
+</div>

@@ -9,7 +9,8 @@ header{
 		width: 30%;
 	}
 	.container img.logo{
-		width: 70%;
+		/*width: 70%;*/
+		width: 12em;
 	}
 
 	@media (min-width: 576px){
@@ -19,6 +20,10 @@ header{
 	}
 	form{
 		height: 100%;
+
+		.form-control{
+			width: auto;
+		}
 	}
 	.btn.search{
 		border-radius: .25rem 0 0 .25rem;

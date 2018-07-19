@@ -1,0 +1,639 @@
+<app-bottom-header title="{{ 'EDIT_CUSTOMER_ACCOUNT.title' | translate }}"></app-bottom-header>
+
+<div class="content">
+	<div class="container">
+			<ul class="nav nav-tabs" id="EDIT_CUSTOMER_ACCOUNT" role="tablist">
+				<li class="nav-item">
+				    <a class="nav-link active" id="tab1" data-toggle="tab" href="#content1" role="tab" aria-controls="content1">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.title' | translate }}</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" id="tab2" data-toggle="tab" href="#content2" role="tab" aria-controls="content2">{{ 'EDIT_CUSTOMER_ACCOUNT.tab2.title' | translate }}</a>
+				</li>
+			</ul>
+			<div class="tab-content p-2" id="myContent">
+			    <div class="tab-pane fade show active" id="content1" role="tabpanel" aria-labelledby="tab1">
+			    	<div class="row">
+			    		<div class="col-md-3">
+							<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								<a class="nav-link active" id="info-tab" data-toggle="pill" href="#info" role="tab" aria-controls="info" aria-selected="true">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab1.title' | translate }}</a>
+								<a class="nav-link" id="resume-tab" data-toggle="pill" href="#resume" role="tab" aria-controls="resume" aria-selected="false">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.title' | translate }}</a>
+								<a class="nav-link" id="portfolio-tab" data-toggle="pill" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab3.title' | translate }}</a>
+								<a class="nav-link" id="skills-tab" data-toggle="pill" href="#skills" role="tab" aria-controls="skills" aria-selected="false">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab4.title' | translate }}</a>
+								<a class="nav-link" id="terms-tab" data-toggle="pill" href="#terms" role="tab" aria-controls="terms" aria-selected="false">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab5.title' | translate }}</a>
+								<a class="nav-link" id="certifications-tab" data-toggle="pill" href="#certifications" role="tab" aria-controls="certifications" aria-selected="false">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab6.title' | translate }}</a>
+							</div>
+						</div>
+						<div class="col-md-9">
+							<div class="tab-content" id="v-pills-tabContent">
+								<div class="tab-pane fade show active p-3" id="info" role="tabpanel" aria-labelledby="info-tab">
+									<form>
+										<div class="mb-3">
+											<h4 class="border-bottom pb-2 mb-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab1.title' | translate }}</h4>
+											<h4 class="mb-3">Radwa Rashed</h4>
+										  	<div class="form-row">
+												<div class="form-group col-md-6">
+											    	<label for="fname">{{ 'EDIT_CUSTOMER_ACCOUNT.tab2.fname' | translate }} <span class="text-danger">*</span></label>
+											    	<input type="text" class="form-control" id="fname" />
+												</div>
+												<div class="form-group col-md-6">
+											    	<label for="lname">{{ 'EDIT_CUSTOMER_ACCOUNT.tab2.lname' | translate }} <span class="text-danger">*</span></label>
+											    	<input type="text" class="form-control" id="lname" />
+												</div>
+										  	</div>
+										</div>
+
+									  	<div class="mb-3">
+									  		<h4 class="border-bottom pb-2 mb-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab1.address' | translate }}</h4>
+									  		<div class="form-row">
+												<div class="form-group col-md-4">
+												    <label for="street">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab1.street_address' | translate }} <span class="text-danger">*</span></label>
+												    <input type="street" class="form-control" id="street" />
+											  	</div>
+									  		</div>
+										  	<div class="form-row">
+												<div class="form-group col-md-4">
+												    <label for="country">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab1.country' | translate }} <span class="text-danger">*</span></label>
+													<select id="country" class="form-control">
+												    	<option selected>Choose...</option>
+												    	<option>...</option>
+												    </select>
+												</div>
+										  		<div class="form-group col-md-4">
+												    <label for="city">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab1.city' | translate }} <span class="text-danger">*</span></label>
+												    <input type="city" class="form-control" id="city" />
+											  	</div>
+											  	<div class="form-group col-md-4">
+												    <label for="state">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab1.state' | translate }} <span class="text-danger">*</span></label>
+													<select id="state" class="form-control">
+												    	<option selected>Choose...</option>
+												    	<option>...</option>
+												    </select>
+												</div>
+										  	</div>
+										  	<div class="form-row">
+												<div class="form-group col-md-4">
+												    <label for="zipcode">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab1.zipcode' | translate }} <span class="text-danger">*</span></label>
+												    <input type="zipcode" class="form-control" id="zipcode" />
+											  	</div>
+									  		</div>
+								  			<div class="form-group">
+											    <div class="form-check">
+													<input class="form-check-input" type="checkbox" id="check1">
+													<label class="form-check-label" for="check1">
+											        	{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab1.check1' | translate }} 
+													</label>
+											    </div>
+										  	</div>
+										  	<div class="form-group">
+											    <div class="form-check">
+													<input class="form-check-input" type="checkbox" id="check2">
+													<label class="form-check-label" for="check2">
+											        	{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab1.check2' | translate }} 
+													</label>
+											    </div>
+										  	</div>
+									  	</div>
+									</form>
+									<div class="mt-4 border-top">
+										<a routerLink="/customer-address">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.back' | translate }}</a>
+										<div class="text-right">
+											<button class="btn btn-primary ml-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.save' | translate }}</button>
+											<button class="btn btn-primary ml-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.next_step' | translate }}</button>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="resume" role="tabpanel" aria-labelledby="resume-tab">
+									<div class="mb-3">
+										<h4 class="border-bottom pb-2 mb-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.overview' | translate }}</h4>
+										<div class="form-group">
+											<textarea name="overview" id="overview" class="form-control" rows="6">I am a specialist in multiple categories in Electrical & Writing, Translation.
+											</textarea>
+										</div>
+									</div>
+									<div class="mb-3 mt-5">
+										<h4 class="border-bottom pb-2 mb-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.description' | translate }}</h4>
+										<div class="form-group">
+											<textarea name="description" id="description" class="form-control" rows="6">I am CCNA Certified.
+											</textarea>
+										</div>
+									</div>
+									<div class="mb-3 mt-5">
+										<h4 class="border-bottom pb-2 mb-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.keywords' | translate }}</h4>
+										<div class="form-group">
+											<textarea name="keywords" id="keywords" class="form-control" rows="2">Engineering, Networking, Writing, Translation
+											</textarea>
+											<small class="text-danger">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.msg' | translate }}</small>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-4">
+											<label for="category_0">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.category' | translate }}</label>
+											<select class="form-control" id="category_0">
+		                           				<option value="225" selected="">Admin Support</option>
+		                                        <option value="165">Design &amp; Multimedia</option>
+		                                        <option value="129">Information services </option>
+		                                        <option value="189">Writing &amp; Translation</option>
+		                                        <option value="207">Sales &amp; Marketing</option>
+		                                        <option value="225">Admin Support</option>
+		                                        <option value="239">Engineering</option>
+		                                        <option value="253">Business Services</option>
+		                                        <option value="274">Art </option>
+		                                        <option value="282">Social Services</option>
+		                                        <option value="292">Education</option>
+		                                        <option value="299">Contractor</option>
+		                                        <option value="309">Cars</option>
+		                                        <option value="320">Professions</option>
+		                                   </select>
+										</div>
+										<div class="form-group col-md-4">
+											<label for="subcat_0">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.subcategory' | translate }}</label>
+											<select class="form-control" id="subcat_0">
+					                            <option value="230" selected="">Customer Service</option>
+					                        </select>
+										</div>
+										<div class="form-group col-md-4">
+											<label for="type">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.type' | translate }}</label>
+											<select class="form-control" id="type">
+												<option value=""></option>
+												<option value="Individual">Individual</option>
+												<option value="Company" selected="">Company</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-4">
+											<label for="category_2">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.category' | translate }}</label>
+											<select class="form-control" id="category_2">
+		                           				<option value="253" selected="">Business Services</option>
+		                                        <option value="165">Design &amp; Multimedia</option>
+		                                        <option value="129">Information services </option>
+		                                        <option value="189">Writing &amp; Translation</option>
+		                                        <option value="207">Sales &amp; Marketing</option>
+		                                        <option value="225">Admin Support</option>
+		                                        <option value="239">Engineering</option>
+		                                        <option value="253">Business Services</option>
+		                                        <option value="274">Art </option>
+		                                        <option value="282">Social Services</option>
+		                                        <option value="292">Education</option>
+		                                        <option value="299">Contractor</option>
+		                                        <option value="309">Cars</option>
+		                                        <option value="320">Professions</option>
+		                                   </select>
+										</div>
+										<div class="form-group col-md-4">
+											<label for="subcat_2">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.subcategory' | translate }}</label>
+											<select class="form-control" id="subcat_2">
+												<option value="270" selected="">Technical Support</option>
+											</select>
+										</div>
+										<div class="form-group col-md-4">
+											
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-4">
+											<label for="category_3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.category' | translate }}</label>
+											<select class="form-control" id="category_3">
+		                           				<option value="129" selected="">Information services </option>
+												<option value="165">Design &amp; Multimedia</option>
+												<option value="129">Information services </option>
+												<option value="189">Writing &amp; Translation</option>
+												<option value="207">Sales &amp; Marketing</option>
+												<option value="225">Admin Support</option>
+												<option value="239">Engineering</option>
+												<option value="253">Business Services</option>
+												<option value="274">Art </option>
+												<option value="282">Social Services</option>
+												<option value="292">Education</option>
+												<option value="299">Contractor</option>
+												<option value="309">Cars</option>
+												<option value="320">Professions</option>
+											</select>
+										</div>
+
+										<div class="form-group col-md-4">
+											<label for="subcat_3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.subcategory' | translate }}</label>
+											<select class="form-control" id="subcat_3">
+												<option value="157" selected="">Embedded SW</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-4">
+											<label for="category_4">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.category' | translate }}</label>
+											<select class="form-control" id="category_4">
+		                           				<option value="165" selected="">Design &amp; Multimedia</option>
+		                                            <option value="165">Design &amp; Multimedia</option>
+		                                            <option value="129">Information services </option>
+		                                            <option value="189">Writing &amp; Translation</option>
+		                                            <option value="207">Sales &amp; Marketing</option>
+		                                            <option value="225">Admin Support</option>
+		                                            <option value="239">Engineering</option>
+		                                            <option value="253">Business Services</option>
+		                                            <option value="274">Art </option>
+		                                            <option value="282">Social Services</option>
+		                                            <option value="292">Education</option>
+		                                            <option value="299">Contractor</option>
+		                                            <option value="309">Cars</option>
+		                                            <option value="320">Professions</option>
+		                                       </select>
+										</div>
+
+										<div class="form-group col-md-4">
+											<label for="subcat_4">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.subcategory' | translate }}</label>
+											<select class="form-control" id="subcat_4">
+												<option value="167" selected="">Logos</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-4">
+											<label for="category_5">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.category' | translate }}</label>
+											<select class="form-control" id="category_5">
+		                           				<option value="309" selected="">Cars</option>
+		                                        <option value="165">Design &amp; Multimedia</option>
+		                                        <option value="129">Information services </option>
+		                                        <option value="189">Writing &amp; Translation</option>
+		                                        <option value="207">Sales &amp; Marketing</option>
+		                                        <option value="225">Admin Support</option>
+		                                        <option value="239">Engineering</option>
+		                                        <option value="253">Business Services</option>
+		                                        <option value="274">Art </option>
+		                                        <option value="282">Social Services</option>
+		                                        <option value="292">Education</option>
+		                                        <option value="299">Contractor</option>
+		                                        <option value="309">Cars</option>
+		                                        <option value="320">Professions</option>
+		                                   </select>
+										</div>
+
+										<div class="form-group col-md-4">
+											<label for="subcat_5">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.subcategory' | translate }}</label>
+											<select class="form-control" id="subcat_5">
+												<option value="311" selected="">Selling </option>
+											</select>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-4">
+											<label for="category_6">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.category' | translate }}</label>
+											<select class="form-control" id="category_6">
+		                           				<option value="299" selected="">Contractor</option>
+		                                        <option value="165">Design &amp; Multimedia</option>
+		                                        <option value="129">Information services </option>
+		                                        <option value="189">Writing &amp; Translation</option>
+		                                        <option value="207">Sales &amp; Marketing</option>
+		                                        <option value="225">Admin Support</option>
+		                                        <option value="239">Engineering</option>
+		                                        <option value="253">Business Services</option>
+		                                        <option value="274">Art </option>
+		                                        <option value="282">Social Services</option>
+		                                        <option value="292">Education</option>
+		                                        <option value="299">Contractor</option>
+		                                        <option value="309">Cars</option>
+		                                        <option value="320">Professions</option>
+		                                   </select>
+										</div>
+
+										<div class="form-group col-md-4">
+											<label for="subcat_6">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.subcategory' | translate }}</label>
+											<select class="form-control" id="subcat_6">
+												<option value="304" selected="">Flooring</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-4">
+											<label for="category_7">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.category' | translate }}</label>
+											<select class="form-control" id="category_7">
+		                           				<option value="189" selected="">Writing &amp; Translation</option>
+		                                        <option value="165">Design &amp; Multimedia</option>
+		                                        <option value="129">Information services </option>
+		                                        <option value="189">Writing &amp; Translation</option>
+		                                        <option value="207">Sales &amp; Marketing</option>
+		                                        <option value="225">Admin Support</option>
+		                                        <option value="239">Engineering</option>
+		                                        <option value="253">Business Services</option>
+		                                        <option value="274">Art </option>
+		                                        <option value="282">Social Services</option>
+		                                        <option value="292">Education</option>
+		                                        <option value="299">Contractor</option>
+		                                        <option value="309">Cars</option>
+		                                        <option value="320">Professions</option>
+		                                   </select>
+										</div>
+
+										<div class="form-group col-md-4">
+											<label for="subcat_7">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.subcategory' | translate }}</label>
+											<select class="form-control" id="subcat_7">
+												<option value="202" selected="">Sales Writing</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-4">
+											<label for="category_8">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.category' | translate }}</label>
+											<select class="form-control" id="category_8">
+		                           				<option value="239" selected="">Engineering</option>
+		                                        <option value="165">Design &amp; Multimedia</option>
+		                                        <option value="129">Information services </option>
+		                                        <option value="189">Writing &amp; Translation</option>
+		                                        <option value="207">Sales &amp; Marketing</option>
+		                                        <option value="225">Admin Support</option>
+		                                        <option value="239">Engineering</option>
+		                                        <option value="253">Business Services</option>
+		                                        <option value="274">Art </option>
+		                                        <option value="282">Social Services</option>
+		                                        <option value="292">Education</option>
+		                                        <option value="299">Contractor</option>
+		                                        <option value="309">Cars</option>
+		                                        <option value="320">Professions</option>
+		                                   </select>
+										</div>
+
+										<div class="form-group col-md-4">
+											<label for="subcat_8">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.subcategory' | translate }}</label>
+											<select class="form-control" id="subcat_8">
+												<option value="250" selected="">Car Tuning</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-4">
+											<label for="category_9">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.category' | translate }}</label>
+											<select class="form-control" id="category_9">
+		                           				<option value="292" selected="">Education</option>
+		                                        <option value="165">Design &amp; Multimedia</option>
+		                                        <option value="129">Information services </option>
+		                                        <option value="189">Writing &amp; Translation</option>
+		                                        <option value="207">Sales &amp; Marketing</option>
+		                                        <option value="225">Admin Support</option>
+		                                        <option value="239">Engineering</option>
+		                                        <option value="253">Business Services</option>
+		                                        <option value="274">Art </option>
+		                                        <option value="282">Social Services</option>
+		                                        <option value="292">Education</option>
+		                                        <option value="299">Contractor</option>
+		                                        <option value="309">Cars</option>
+		                                        <option value="320">Professions</option>
+		                                   </select>
+										</div>
+
+										<div class="form-group col-md-4">
+											<label for="subcat_9">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.subcategory' | translate }}</label>
+											<select class="form-control" id="subcat_9">
+												<option value="293" selected="">Primary Education Tutors</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-4">
+											<label for="category_10">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.category' | translate }}</label>
+											<select class="form-control" id="category_10">
+		                           				<option value="274" selected="">Art </option>
+		                                        <option value="165">Design &amp; Multimedia</option>
+		                                        <option value="129">Information services </option>
+		                                        <option value="189">Writing &amp; Translation</option>
+		                                        <option value="207">Sales &amp; Marketing</option>
+		                                        <option value="225">Admin Support</option>
+		                                        <option value="239">Engineering</option>
+		                                        <option value="253">Business Services</option>
+		                                        <option value="274">Art </option>
+		                                        <option value="282">Social Services</option>
+		                                        <option value="292">Education</option>
+		                                        <option value="299">Contractor</option>
+		                                        <option value="309">Cars</option>
+		                                        <option value="320">Professions</option>
+		                                   </select>
+										</div>
+
+										<div class="form-group col-md-4">
+											<label for="subcat_10">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.subcategory' | translate }}</label>
+											<select class="form-control" id="subcat_10">
+												<option value="277" selected="">Poetry</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-4">
+											<label for="category_11">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.category' | translate }}</label>
+											<select class="form-control" id="category_11">
+		                           				<option value="282" selected="">Social Services</option>
+		                                        <option value="165">Design &amp; Multimedia</option>
+		                                        <option value="129">Information services </option>
+		                                        <option value="189">Writing &amp; Translation</option>
+		                                        <option value="207">Sales &amp; Marketing</option>
+		                                        <option value="225">Admin Support</option>
+		                                        <option value="239">Engineering</option>
+		                                        <option value="253">Business Services</option>
+		                                        <option value="274">Art </option>
+		                                        <option value="282">Social Services</option>
+		                                        <option value="292">Education</option>
+		                                        <option value="299">Contractor</option>
+		                                        <option value="309">Cars</option>
+		                                        <option value="320">Professions</option>
+		                                   </select>
+										</div>
+
+										<div class="form-group col-md-4">
+											<label for="subcat_11">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.subcategory' | translate }}</label>
+											<select class="form-control" id="subcat_11">
+												<option value="290" selected="">Other - Social Services</option>
+											</select>
+										</div>
+									</div>
+									<button class="btn btn-primary">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab2.add_more' | translate }}</button>
+
+									<div class="text-right mt-5 pt-3 border-top">
+										<button class="btn btn-primary ml-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.save' | translate }}</button>
+										<button class="btn btn-primary ml-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.next_step' | translate }}</button>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+									
+									<h4 class="border-bottom pb-3 mt-3 mb-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab3.title' | translate }}</h4>
+
+									<label class="custom-file-upload">
+									    <input type="file"/>
+									    <i class="fa fa-cloud-upload"></i> Custom Upload
+									</label>
+
+									<table class="table table-hover table-bordered text-center mt-4">
+									  	<thead class="thead-primary">
+										    <tr>
+										      <th scope="col">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab3.order' | translate }}</th>
+										      <th scope="col">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab3.link' | translate }}</th>
+										      <th scope="col">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab3.action' | translate }}</th>
+										    </tr>
+										  </thead>
+										  <tbody>
+										    <tr>
+										      <td>1</td>
+										      <td><a href="https://tamam.mw3-cloud.com/portfoliofiles/1426181152magento-feature-list.pdf" target="_blank"> <img src="https://tamam.mw3-cloud.com/portfoliofiles/other.png" width="50" height="50"> </a></td>
+										      <td><a><i class="fa fa-close"></i></a></td>
+										    </tr>
+									  	</tbody>
+									</table>
+									<div class="text-right mt-5 pt-3 border-top">
+										<button class="btn btn-primary ml-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.save' | translate }}</button>
+										<button class="btn btn-primary ml-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.next_step' | translate }}</button>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+									<h4 class="border-bottom pb-3 mt-3 mb-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab3.title' | translate }}</h4>
+
+									<table class="table table-hover table-bordered text-center mt-4">
+									  	<thead class="thead-primary">
+										    <tr>
+										      <th scope="col">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab4.order' | translate }}</th>
+										      <th scope="col">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab4.skill_name' | translate }}</th>
+										      <th scope="col">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab4.display' | translate }}</th>
+										      <th scope="col">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab4.action' | translate }}</th>
+										    </tr>
+										  </thead>
+										  <tbody>
+										    <tr>
+										        <td>1</td>
+										     	<td>Arabic</td>
+										        <td>
+													<div class=" custom-radio">
+														<input type="radio" id="yes" name="display" value="1" class="custom-control-input" />
+														<label class="custom-control-label text-primary pt-1" for="yes">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab4.yes' | translate }}</label>
+													</div>
+													<div class=" custom-radio">
+														<input type="radio" id="no" name="display" value="0" class="custom-control-input" />
+														<label class="custom-control-label text-primary pt-1" for="no">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab4.no' | translate }}</label>
+													</div>
+											    </td>
+										        <td><a><i class="fa fa-close"></i></a></td>
+										    </tr>
+									  	</tbody>
+									</table>
+
+									<div class="mt-4 p-4text-right">
+										<button class="btn btn-primary ml-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab4.add_skill' | translate }}</button>
+										<button class="btn btn-primary ml-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.next_step' | translate }}</button>
+										<button class="btn btn-primary ml-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab4.update' | translate }}</button>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="terms" role="tabpanel" aria-labelledby="terms-tab">
+									<div class="mb-4">
+										<h4 class="border-bottom pb-3 mt-3 mb-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab5.title' | translate }}</h4>
+										<div class="form-row">
+											<div class="form-group col-md-3">
+												<div class=" custom-radio">
+													<input type="radio" id="hourly" name="terms" value="1" class="custom-control-input" />
+													<label class="custom-control-label text-primary pt-1" for="hourly">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab5.hourly' | translate }}</label>
+												</div>
+											</div>
+											<div class="form-group col-md-6">
+												<div class=" custom-radio">
+													<input type="radio" id="fixed" name="terms" value="1" class="custom-control-input" />
+													<label class="custom-control-label text-primary pt-1" for="fixed">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab5.fixed' | translate }}</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="mb-4">
+										<h4 class="border-bottom pb-3 mt-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab5.fees' | translate }}</h4>
+										<div class="form-group col-md-6">
+											<input type="text" class="form-control" />
+										</div>
+									</div>
+									<div class="text-right mt-5 pt-3 border-top">
+										<button class="btn btn-primary ml-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.save' | translate }}</button>
+										<button class="btn btn-primary ml-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.next_step' | translate }}</button>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="certifications" role="tabpanel" aria-labelledby="certifications-tab">
+									<h4 class="border-bottom pb-3 mt-3 mb-3">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab6.completed_certifications' | translate }}</h4>
+									<p>{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab6.not_found' | translate }}</p>
+									<div class="text-right">
+										<button class="btn btn-primary">{{ 'EDIT_CUSTOMER_ACCOUNT.tab1.vertical_tab6.get_certification' | translate }}</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+			    </div>
+
+			    <div class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="tab2">
+					<div class="row">
+						<div class="col-md-12">
+							<form class="p-3">
+							  	<div class="form-row">
+									<div class="form-group col-md-5">
+								    	<label for="fname">{{ 'EDIT_CUSTOMER_ACCOUNT.tab2.fname' | translate }}</label>
+								    	<input type="text" class="form-control" id="fname" />
+									</div>
+									<div class="form-group col-md-5">
+								    	<label for="lname">{{ 'EDIT_CUSTOMER_ACCOUNT.tab2.lname' | translate }}</label>
+								    	<input type="text" class="form-control" id="lname" />
+									</div>
+							  		<div class="form-group col-md-5">
+									    <label for="email">{{ 'EDIT_CUSTOMER_ACCOUNT.tab2.email' | translate }}</label>
+									    <input type="email" class="form-control" id="email" />
+								  	</div>
+									<div class="form-group col-md-5">
+									    <label for="notifications">{{ 'EDIT_CUSTOMER_ACCOUNT.tab2.notifications' | translate }}</label>
+										<select id="notifications" class="form-control">
+									    	<option selected>Choose...</option>
+									    	<option>...</option>
+									    </select>
+									</div>
+									<div class="form-group col-md-5">
+										<label for="date">{{ 'EDIT_CUSTOMER_ACCOUNT.tab2.birthday' | translate }}</label>
+										<input class="form-control" type="date" value="2011-08-19" id="date" />
+									</div>
+							  	</div>
+								<div class="form-row">
+									<div>
+										<h5>{{ 'EDIT_CUSTOMER_ACCOUNT.tab2.image' | translate }}</h5>
+										<img src="http://via.placeholder.com/100x100" class="d-block mb-3" />
+										<label class="custom-file-upload">
+										    <input type="file"/>
+										    <i class="fa fa-cloud-upload"></i> {{ 'EDIT_CUSTOMER_ACCOUNT.tab2.browse' | translate }}
+										</label>
+										<p>{{ 'EDIT_CUSTOMER_ACCOUNT.tab2.type' | translate }}</p>
+										<p>{{ 'EDIT_CUSTOMER_ACCOUNT.tab2.msg' | translate }}</p>
+									</div>
+								</div>
+								<div class="form-group">
+								    <div class="form-check">
+										<input class="form-check-input" type="checkbox" id="gridCheck">
+										<label class="form-check-label" for="gridCheck">
+								        	Check me out
+										</label>
+								    </div>
+							  	</div>
+								<h3 class="mb-3 pb-3 border-bottom">{{ 'EDIT_CUSTOMER_ACCOUNT.tab2.change_password' | translate }}</h3>
+
+							  	<div class="form-row">
+							  		<div class="form-group col-md-5">
+							  			<label for="cpassword">{{ 'EDIT_CUSTOMER_ACCOUNT.tab2.current_password' | translate }}</label>
+							  			<input type="text" class="form-control" />
+							  		</div>
+							  	</div>
+							  	<div class="form-row">
+							  		<div class="form-group col-md-5">
+							  			<label for="cpassword">{{ 'EDIT_CUSTOMER_ACCOUNT.tab2.new_password' | translate }}</label>
+							  			<input type="text" class="form-control" />
+							  		</div>
+							  		<div class="form-group col-md-5">
+							  			<label for="cpassword">{{ 'EDIT_CUSTOMER_ACCOUNT.tab2.confirm_new_password' | translate }}</label>
+							  			<input type="text" class="form-control" />
+							  		</div>
+							  	</div>
+								<div class="text-right mt-4 border-top p-3">
+									<button type="submit" class="btn btn-primary">{{ 'EDIT_CUSTOMER_ACCOUNT.tab2.save' | translate }}</button>
+								</div>
+							</form>
+						</div>
+					</div>
+			    </div>
+			</div>
+
+
+	</div>
+</div> 

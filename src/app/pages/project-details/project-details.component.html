@@ -1,0 +1,144 @@
+<app-bottom-header title="{{ 'PROJECTDETAILS.title' | translate }}"></app-bottom-header>
+
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="./assets/images/transportation.gif" alt="">
+			</div>
+			<div class="col-sm-5">
+				<h3 class="pb-3 border-bottom">Car Maintenance</h3>
+				<div class="border-bottom mb-3">
+					<p><span>{{ 'PROJECTDETAILS.category' | translate }}: </span>Engineering</p>
+					<p><span>{{ 'PROJECTDETAILS.subcategory' | translate }}: </span> Car Tuning</p>
+					<p><span>{{ 'PROJECTDETAILS.payment_term' | translate }}: </span>Fixed</p>
+					<p><span>{{ 'PROJECTDETAILS.fixed_rate' | translate }}: </span>Between (50USD - 500USD)</p>
+					<p><span>{{ 'PROJECTDETAILS.job_status' | translate }}: </span>Closed</p>
+				</div>
+				<a class="add-watchlist" data-toggle="modal" data-target="#addToWatchlistModal"><i class="fa fa-heart" aria-hidden="true"></i></a>
+			</div>
+			<div class="col-sm-3">
+				<div class="short-description">
+					<h5>{{ 'PROJECTDETAILS.country' | translate }}</h5>
+					<p>مصر</p>
+					<h5>{{ 'PROJECTDETAILS.city' | translate }}</h5>
+					<p>Giza</p>
+					<h5>{{ 'PROJECTDETAILS.start_date' | translate }}</h5>
+					<p>2015-08-16</p>
+					<h5>{{ 'PROJECTDETAILS.end_date' | translate }}</h5>
+					<p>2015-08-31</p>
+					<h5>{{ 'PROJECTDETAILS.time_left' | translate }}</h5>
+					<p>Closed </p>
+				</div>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">{{ 'PROJECTDETAILS.tab1.title' | translate }}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="client-details-tab" data-toggle="tab" href="#client-details" role="tab" aria-controls="client-details" aria-selected="false">{{ 'PROJECTDETAILS.tab2.title' | translate }}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="posted-bids-tab" data-toggle="tab" href="#posted-bids" role="tab" aria-controls="posted-bids" aria-selected="false">{{ 'PROJECTDETAILS.tab3.title' | translate }}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="job-files-tab" data-toggle="tab" href="#job-files" role="tab" aria-controls="job-files" aria-selected="false">{{ 'PROJECTDETAILS.tab4.title' | translate }}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="map-tab" data-toggle="tab" href="#map" role="tab" aria-controls="map" aria-selected="false">{{ 'PROJECTDETAILS.tab5.title' | translate }}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="other-details-tab" data-toggle="tab" href="#other-details" role="tab" aria-controls="other-details" aria-selected="false">{{ 'PROJECTDETAILS.tab6.title' | translate }}</a>
+					</li>
+				</ul>
+				<div class="tab-content p-4" id="myTabContent">
+					<div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+						<p>I would like to have a checkup on my car .. Which includes oil, water and electricity.</p>
+					</div>
+					<div class="tab-pane fade" id="client-details" role="tabpanel" aria-labelledby="client-details-tab">
+						<p><span>{{ 'PROJECTDETAILS.tab2.posts_by' | translate }}:</span> Samar Elfarkh</p>
+						<p><span>{{ 'PROJECTDETAILS.tab2.feedback' | translate }}:</span> 4.6</p>
+						<p><span>{{ 'PROJECTDETAILS.tab2.has_created' | translate }}:</span> 68 project(s)</p>
+						<p><span>{{ 'PROJECTDETAILS.tab2.has_closed' | translate }}:</span> 9 project(s)</p>
+						<p><span>{{ 'PROJECTDETAILS.tab2.has_rated' | translate }}:</span> 6 service provider(s)</p>
+						<a routerLink="/profile">{{ 'PROJECTDETAILS.tab2.view_profile' | translate }}</a>
+					</div>
+					<div class="tab-pane fade" id="posted-bids" role="tabpanel" aria-labelledby="posted-bids-tab">
+						<table class="table table-hover table-bordered">
+						  	<thead class="thead-primary">
+							    <tr>
+							      <th scope="col">{{ 'PROJECTDETAILS.tab3.order' | translate }}</th>
+							      <th scope="col">{{ 'PROJECTDETAILS.tab3.name' | translate }}</th>
+							      <th scope="col">{{ 'PROJECTDETAILS.tab3.bid_price' | translate }}</th>
+							      <th scope="col">{{ 'PROJECTDETAILS.tab3.days_to_complete' | translate }}</th>
+							      <th scope="col">{{ 'PROJECTDETAILS.tab3.bid_date' | translate }}</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <th scope="row">1</th>
+							      <td><a routerLink="/profile">Mohamed Gamal</a></td>
+							      <td>sealed</td>
+							      <td>10</td>
+							      <td>16/08/2015</td>
+							    </tr>
+						  	</tbody>
+						</table>
+					</div>
+					<div class="tab-pane fade" id="job-files" role="tabpanel" aria-labelledby="job-files-tab">
+						<table class="table table-hover table-bordered">
+					  	<thead class="thead-primary">
+						    <tr>
+						      <th scope="col">{{ 'PROJECTDETAILS.tab4.order' | translate }}</th>
+						      <th scope="col">{{ 'PROJECTDETAILS.tab4.file_name' | translate }}</th>
+
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <td scope="row">1</td>
+						      <td><a href="https://tamam.mw3-cloud.com/projectfiles/1439733786M2M_eCall.pdf" target="_blank">M2M_ECALL.PDF</a></td>
+						    </tr>
+					  	</tbody>
+					</table>
+					</div>
+					<div class="tab-pane fade" id="map" role="tabpanel" aria-labelledby="map-tab">
+						<agm-map [latitude]="lat" [longitude]="lng">
+							<agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+						</agm-map>
+					</div>
+					<div class="tab-pane fade" id="other-details" role="tabpanel" aria-labelledby="other-details-tab">
+						<p><span>{{ 'PROJECTDETAILS.tab6.bids' | translate }}:</span> 1</p>
+						<p><span>{{ 'PROJECTDETAILS.tab6.skill' | translate }}:</span> Electrical Engineering</p>
+						<p><span>{{ 'PROJECTDETAILS.tab6.tags' | translate }}:</span> car, oil, water, gas, electricity</p>
+						<p><span>{{ 'PROJECTDETAILS.tab6.address' | translate }}:</span> Manial Street</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="addToWatchlistModal" tabindex="-1" role="dialog" aria-labelledby="addToWatchlistModalLabel" aria-hidden="true">
+  	<div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	  		<div class="modal-header">
+	  			<h5 class="modal-title" id="exampleModalLongTitle">{{ 'PROJECTDETAILS.wishlist' | translate }}</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		    </div>
+	      	<div class="modal-body">
+		        <p>You need to login for that action! Click on confirm to login</p>
+		    </div>
+		    <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">{{ 'PROJECTDETAILS.close' | translate }}</button>
+		        <button type="button" class="btn btn-primary">{{ 'PROJECTDETAILS.confirm' | translate }}</button>
+		    </div>
+	    </div>
+	</div>
+</div>

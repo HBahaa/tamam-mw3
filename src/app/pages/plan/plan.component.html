@@ -2,6 +2,10 @@
 
 <div class="container">
 	<div class="content">
+		<div class="alert alert-danger" role="alert">
+			Your account is still being reviewed. Please make sure to complete your service provider profile to be able to bid on jobs... <a routerLink="/edit-customer-account/1">Click here</a>
+		</div>
+
 		<ul class="nav nav-tabs" id="plan" role="tablist">
 			<li class="nav-item">
 			    <a class="nav-link" id="tab1" data-toggle="tab" href="#content2" role="tab" aria-controls="content2">{{ 'PLAN.tab1.title' | translate }}</a>
@@ -40,7 +44,7 @@
 							      <td>2017-01-29</td>
 							      <td>2018-01-29</td>
 							      <td>Active</td>
-							      <td><button class="btn btn-primary">{{ 'PLAN.tab2.content.update_btn' | translate }}</button></td>
+							      <td><a routerLink="/membership" class="btn btn-primary">{{ 'PLAN.tab2.content.update_btn' | translate }}</a></td>
 							    </tr>
 						  	</tbody>
 						</table>

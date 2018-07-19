@@ -2,8 +2,20 @@
 	<div id="empty-div"></div>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-6">
 				<img class="logo" src="./assets/images/Tamam-Logo.png" alt="Tamam Skills Marketplace" title="Tamam Skills Marketplace">
+			</div>
+			<div class="col-md-3 col-sm-6 order-md-last">
+				<div class="dropdown show my-4 float-right">
+				  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    {{ 'LANGUAGE.selectLanguage' | translate }} 
+				  </a>
+
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+				    <a class="dropdown-item" (click)="changeLanguage('ar')"><img class="flag" src="./assets/images/eg.png"> {{ 'LANGUAGE.ar' | translate }} </a>
+				    <a class="dropdown-item" (click)="changeLanguage('en')"><img class="flag" src="./assets/images/us.png"> {{ 'LANGUAGE.en' | translate }} </a>
+				  </div>
+				</div>
 			</div>
 			<div class="col-md-6">
 				<form class="form-inline my-0">
@@ -19,18 +31,6 @@
 			      <input class="form-control" type="search" placeholder="{{ 'HEADER.search' | translate }}" aria-label="Search">
 			      <button class="btn btn-primary my-2 my-sm-0" type="submit">{{ 'HEADER.go' | translate }}</button>
 			    </form>
-			</div>
-			<div class="col-md-3">
-				<div class="dropdown show my-4 float-right">
-				  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				    {{ 'LANGUAGE.selectLanguage' | translate }} 
-				  </a>
-
-				  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-				    <a class="dropdown-item" (click)="changeLanguage('ar')"><img class="flag" src="./assets/images/eg.png"> {{ 'LANGUAGE.ar' | translate }} </a>
-				    <a class="dropdown-item" (click)="changeLanguage('en')"><img class="flag" src="./assets/images/us.png"> {{ 'LANGUAGE.en' | translate }} </a>
-				  </div>
-				</div>
 			</div>
 		</div>
 	</div>

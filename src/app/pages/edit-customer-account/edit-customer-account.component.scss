@@ -1,0 +1,32 @@
+.content{
+	.nav-pills{
+		.nav-link:not(.active){
+			background: #efefef;
+			border: 1px solid #ddd;
+			border-radius: 0;
+		}
+	}
+	#v-pills-tabContent{
+		border: 0px;
+	}
+
+	input[type="file"] {
+	    display: none;
+	}
+	.custom-file-upload {
+	    border: 1px solid #ccc;
+	    display: inline-block;
+	    padding: 6px 12px;
+	    cursor: pointer;
+	    background-color: #efefef;
+	}
+	.custom-radio{
+		display: inline-block;
+	}
+	.custom-radio:last-child{
+		margin-left: 50px;
+	}
+	label.custom-control-label{
+		display: initial;
+	}
+}

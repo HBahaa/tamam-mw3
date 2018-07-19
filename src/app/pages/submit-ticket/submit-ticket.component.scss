@@ -1,0 +1,30 @@
+.content{
+	margin: 5em 0;
+
+	h3{
+		margin-bottom: 1em;
+		text-transform: capitalize;
+	}
+
+	table {
+	  	width: 100%;
+		text-align: center;
+
+		td, th {
+			width: 20%;
+		}
+		th.mat-header-cell{
+			text-align: center;
+		}
+	}
+
+	.mat-form-field {
+		font-size: 14px;
+		width: 100%;
+	}
+
+	img{
+		margin-top: 5em;
+	}
+
+}

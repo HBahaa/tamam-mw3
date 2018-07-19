@@ -19,15 +19,21 @@ import { ClientAccountComponent } from './pages/client-account/client-account.co
 import { PlanComponent } from './pages/plan/plan.component';
 import { JobWatchlistComponent } from './pages/job-watchlist/job-watchlist.component';
 import { SpecialistWatchlistComponent } from './pages/specialist-watchlist/specialist-watchlist.component';
+import { SubmitTicketComponent } from './pages/submit-ticket/submit-ticket.component';
+import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
+import { EditCustomerAccountComponent } from './pages/edit-customer-account/edit-customer-account.component';
+
 
 const routes: Routes = [
 	{path:'login', component:LoginComponent },
 	{path:'forget-password', component:ForgetPasswordComponent },
 	{path:'select-user-type', component:SelectUserTypeComponent },
+	{path:'edit-customer-account/:id', component:EditCustomerAccountComponent },
 	{path:'customer-account', component:ClientAccountComponent },
 	{path:'membership/plan', component:PlanComponent },
 	{path:'membership', component:MembershipComponent },
 	{path:'profile', component:ProfileComponent },
+	{path:'project-details', component:ProjectDetailsComponent },
 	{path:'submit-job', component:SubmitJobComponent },
 	{path:'find-job', component:FindJobComponent },
 	{path:'job-search', component:JobSearchComponent },
@@ -36,6 +42,7 @@ const routes: Routes = [
 	{path:'specialist-watchlist', component:SpecialistWatchlistComponent },
 	{path:'invite-freelancer', component:InviteFreelancerComponent },
 	{path:'invite-owner', component:InviteOwnerComponent },
+	{path:'submit-ticket', component:SubmitTicketComponent },
 	{path:'groups', component:GroupsComponent },
 	{path:'how-it-work', component:HowItWorkComponent },
 	{path:'how-does-a-public-community-work', component:HowCommunityWorkComponent },

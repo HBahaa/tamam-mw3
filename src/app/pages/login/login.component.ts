@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { AuthService } from '../../services/auth/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -6,12 +8,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+	form: FormGroup;
+  	private formSubmitAttempt: boolean;
 
-	// title: string = "LOGIN OR CREATE NEW ACCOUNT";
-
-	constructor() { }
+	constructor(
+		private fb: FormBuilder,
+    	private authService: AuthService
+    ) { }
 
 	ngOnInit() {
+	    this.form = this.fb.group({
+			email: ['', Validators.required],
+			password: ['', Validators.required]
+	    });
+	}
+
+	isFieldInvalid(field: string) {
+	    return (
+	    	(!this.form.get(field).valid && this.form.get(field).touched) ||
+	    	(this.form.get(field).untouched && this.formSubmitAttempt)
+	    );
+	}
+
+
+	onSubmit() {
+	    if (this.form.valid) {
+	      this.authService.login(this.form.value);
+	    }
+	    this.formSubmitAttempt = true;
 	}
 
 }

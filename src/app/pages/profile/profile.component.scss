@@ -1,0 +1,21 @@
+.content{
+	min-height: 300px;
+
+	.nav-pills{
+		.nav-link:not(.active){
+			background: #efefef;
+			border: 1px solid #ddd;
+			border-radius: 0;
+		}
+	}
+	.tab-content{
+		width: 80%;
+
+		table{
+			img{
+				width: 70px;
+				height: 70px;
+			}
+		}
+	}
+}

@@ -1,4 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Observable} from 'rxjs';
+
+import { AuthService } from '../../services/auth/auth.service';
 
 @Component({
   selector: 'app-provider-tabs',
@@ -8,11 +11,12 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ProviderTabsComponent implements OnInit {
 
 	@Input() activeTab;
-	user_login: boolean = true;
-	
-	constructor() { }
+	isLoggedIn$: Observable<boolean>;
+
+	constructor(private authService: AuthService) { }
 
 	ngOnInit() {
+		this.isLoggedIn$ = this.authService.isLoggedIn;
 	}
 
 }

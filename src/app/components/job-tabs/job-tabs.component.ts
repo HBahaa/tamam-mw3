@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {FormControl} from '@angular/forms';
+import { Observable} from 'rxjs';
+
+import { AuthService } from '../../services/auth/auth.service';
 
 @Component({
   selector: 'app-job-tabs',
@@ -10,11 +13,12 @@ export class JobTabsComponent implements OnInit {
 
 	@Input() activeTab;
 	date = new FormControl(new Date());
-	user_login = true;
-	
-	constructor() { }
+	isLoggedIn$: Observable<boolean>;
+
+	constructor(private authService: AuthService) { }
 
 	ngOnInit() {
+		this.isLoggedIn$ = this.authService.isLoggedIn;
 	}
 
 }
