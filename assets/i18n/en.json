@@ -151,7 +151,7 @@
 			"skill" : "Skill",
 			"start_date" : "Start Date",
 			"advanced_search" : "Advanced Search",
-			"cite" : "City",
+			"city" : "City",
 			"term_type" : "Term Type",
 			"show_all" : "Show All",
 			"featured" : "Featured",
@@ -201,7 +201,7 @@
 			"skill" : "Skill",
 			"start_date" : "Start Date",
 			"advanced_search" : "Advanced Search",
-			"cite" : "City",
+			"city" : "City",
 			"term_type" : "Term Type",
 			"show_all" : "Show All",
 			"sort_by" : "Sort By",
@@ -577,6 +577,190 @@
 			"message" : "Message",
 			"send" : "Submit ticket"
 		},
+		"back" : "Back"
+	},
+	"PROFILE" : {
+		"title" : "PUBLIC PROFILE",
+		"tab1" : {
+			"title" : "Overview & Service Desc.",
+			"overview" : "Overview",
+			"description" : "Service Description",
+			"keywords" : "Keywords",
+			"type" : "Type"
+		},
+		"tab2" : {
+			"title" : "Category, Skills & Terms",
+			"category" : "Category",
+			"subcategory" : "Subcategory",
+			"skills" : "Required Skills",
+			"payment_term" : "Payment Term"
+		},
+		"tab3" : {
+			"title" : "My Portfolio",
+			"no_portfolio" : "No Portfolio"
+		},
+		"tab4" : {
+			"title" : "Certifications",
+			"completed" : "Completed"
+		},
+		"tab5" : {
+			"title" : "Jobs Won",
+			"no_jobs" : "No Jobs"
+		},
+		"tab6" : {
+			"title": "Reviews",
+			"project_title": "Project Title",
+			"from_user" : "From User",
+			"start_date": "Start Date",
+			"end_date" : "End Date",
+			"feedback" : "Feedback Posted Date",
+			"action" : "Action",
+			"btn" : "View"
+		}
+	},
+	"PROJECTDETAILS" : {
+		"title": "JOB DETAILS",
+		"category" : "Category",
+		"subcategory" : "Subcategory",
+		"job_status" : "Job Status",
+		"payment_term" : "Payment Term",
+		"fixed_rate" : "Fixed Rate",
+		"city" : "City",
+		"country" : "Country",
+		"start_date" : "Start Date",
+		"end_date" : "End Date",
+		"time_left" : "Time Left",
+		"wishlist" : "Wishlist",
+		"close": "Close",
+		"confirm" : "Confirm",
+		"tab1": {
+			"title" : "Description"
+		},
+		"tab2" : {
+			"title" : "Client Details",
+			"posts_by" : "Posted by",
+			"feedback" : "Feedback",
+			"has_created"  : "Has created",
+			"has_closed" : "Has closed",
+			"has_rated" : "Has rated",
+			"view_profile" : "View Profile"
+		},
+		"tab3" : {
+			"title" : "Posted Bids",
+			"order" : "Order",
+			"name" : "Name",
+			"bid_price" : "Bid Price",
+			"days_to_complete" : "Days to Complete",
+			"bid_date" : "Bid Date"
+		},
+		"tab4" : {
+			"title" : "Job Files",
+			"order" : "Order",
+			"file_name" : "File Name"
+		},
+		"tab5" : {
+			"title" : "Map Location"
+		},
+		"tab6" : {
+			"title": "Other Details",
+			"bids" : "Bids",
+			"skill" : "Skill",
+			"tags" : "Tags",
+			"address" : "Address"
+		}
+	},
+	"EDIT_CUSTOMER_ACCOUNT" : {
+		"title" : "MY CONTACT INFO",
+		"tab1" : {
+			"title" : "My Profile",
+			"back" : "<< Back",
+			"save" : "Save",
+			"next_step" : "Next Step",
+			"vertical_tab1" : {
+				"title" : "My Contact Info",
+				"mobile" : "Mobile No",
+				"telephone" : "Telephone",
+				"address" : "Address",
+				"street_address" : "Street Address",
+				"country" : "Country",
+				"city" : "City",
+				"state" : "State/Province",
+				"zipcode" : "Zip/Postal Code",
+				"check1" : "Use as my default billing address",
+				"check2" : "Use as my default shipping address"
+			},
+			"vertical_tab2" : {
+				"title" : "MY RESUME",
+				"overview" : "Overview",
+				"description" : "Service Description",
+				"keywords" : "Keywords",
+				"note" : "Use comma separated value ','for multiple Keywords",
+				"category" : "Category",
+				"subcategory" : "Subcategory",
+				"type" : "Type",
+				"add_more" : "Add More"
+			},
+			"vertical_tab3" : {
+				"title" : "My Portfolio",
+				"choose_file" : "Choose File",
+				"order" : "Order",
+				"link" : "Portfolio Link",
+				"action" : "Action"
+			},
+			"vertical_tab4" : {
+				"title" : "Required Skills",
+				"order" : "Order",
+				"skill_name" : "Skill Name",
+				"display" : "Display",
+				"action" : "Action",
+				"yes" : "Yes",
+				"no" : "No",
+				"update" : "Update",
+				"add_skill" : "Add More Skills"
+			},
+			"vertical_tab5" : {
+				"title" : "Payment Terms",
+				"price_type" : "My Price Type",
+				"hourly" : " Hourly",
+				"fixed" : " Fixed-Based on Job Budget",
+				"fees" : "Our Fees %"
+			},
+			"vertical_tab6" : {
+				"title" : "MY CERTIFICATES",
+				"completed_certifications" : "Completed Certifications",
+				"not_found" : "Not Found",
+				"get_certification" : "Get Certified Now"
+			}
+		},
+		"tab2" : {
+			"title" : "ACCOUNT INFORMATION",
+			"fname" : "First Name",
+			"lname" : "Last Name",
+			"email" : "Email Address",
+			"notifications" : "Receive Notifications in :English",
+			"birthday" : "Date of Birth",
+			"image" : "Image",
+			"browse" : "Browse",
+			"type" : "Account Type:",
+			"msg" : "Waiting for admin Approval",
+			"change_password" : "Change Password",
+			"current_password" : "Current Password",
+			"new_password" : "New Password",
+			"confirm_new_password" : "Confirm New Password",
+			"save" : "Save"
+		}
+	},
+	"CUSTOMER_ADDRESS" : {
+		"title" : "Address Book",
+		"default_address" : "Default Address",
+		"billing_address" : "Default Billing Address",
+		"change_billing_address" : "Change Billing Address",
+		"shipping_address" : "Default Shipping Address",
+		"change_shipping_address" : "Change Shipping Address",
+		"additional_address" : "Additional Address Entries",
+		"my_contact_info" : "My Contact Info",
+		"delete_address" : "Delete Address",
+		"add_new_address" : "Add New Address",
 		"back" : "Back"
 	}
 }
