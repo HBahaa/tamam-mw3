@@ -1,0 +1,57 @@
+<app-bottom-header title="{{ 'CUSTOMER_ADDRESS.title' | translate }}"></app-bottom-header>
+
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 border-bottom mb-5">
+				<h1 class="d-inline-block">{{ 'CUSTOMER_ADDRESS.title' | translate }}</h1>
+				<a class="float-right d-inline-block add_address" routerLink="/customer-address/new/1">
+					<button class="btn btn-primary">{{ 'CUSTOMER_ADDRESS.add_new_address' | translate }}</button>
+				</a>
+				
+			</div>
+			<div class="col-md-6">
+				<h3>{{ 'CUSTOMER_ADDRESS.default_address' | translate }}</h3>
+				<div class="border p-2 mb-3">
+					<h5>{{ 'CUSTOMER_ADDRESS.billing_address' | translate }}</h5>
+					<p>Radwa Rashed</p>
+					<p>Abc 123</p>
+					<p>Test, Test, </p>
+					<p>Egypt</p>
+					<p>T: 9002762732</p>
+
+					<a routerLink="/customer-address/edit/1">{{ 'CUSTOMER_ADDRESS.change_billing_address' | translate }}</a>
+				</div>
+				<div class="border p-2 mb-3">
+					<h5>{{ 'CUSTOMER_ADDRESS.shipping_address' | translate }}</h5>
+					<p>Radwa Rashed</p>
+					<p>Abc 123</p>
+					<p>Test, Test, </p>
+					<p>Egypt</p>
+					<p>T: 9002762732</p>
+					<a routerLink="/customer-address/edit/1">{{ 'CUSTOMER_ADDRESS.change_shipping_address' | translate }}</a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<h3>{{ 'CUSTOMER_ADDRESS.additional_address' | translate }}</h3>
+				<div class="border p-2 mb-3">
+					<h5>{{ 'CUSTOMER_ADDRESS.billing_address' | translate }}</h5>
+					<p>Radwa Rashed</p>
+					<p>2 Naguib Mahfouz Street, Abbas El Akkad</p>
+					<p>Cairo, 11514</p>
+					<p>Egypt</p>
+					<p>T: 9002762732</p>
+					<p>F: 01100900096</p>
+					<p>
+						<a routerLink="/customer-address/edit/1">{{ 'CUSTOMER_ADDRESS.my_contact_info' | translate }}</a>
+						<span> | </span>
+						<a routerLink="/customer-address/edit/1">{{ 'CUSTOMER_ADDRESS.delete_address' | translate }}</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="p-3 mt-3 border-top">
+			<a routerLink="/">{{ 'CUSTOMER_ADDRESS.back' | translate }}</a>
+		</div>
+	</div>
+</div>

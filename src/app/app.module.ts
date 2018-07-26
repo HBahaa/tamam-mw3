@@ -46,6 +46,7 @@ import { SubmitTicketComponent } from './pages/submit-ticket/submit-ticket.compo
 import { AuthService } from './services/auth/auth.service';
 import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
 import { EditCustomerAccountComponent } from './pages/edit-customer-account/edit-customer-account.component';
+import { CustomerAddressComponent } from './pages/customer-address/customer-address.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -85,7 +86,8 @@ export function createTranslateLoader(http: HttpClient) {
     SpecialistWatchlistComponent,
     SubmitTicketComponent,
     ProjectDetailsComponent,
-    EditCustomerAccountComponent
+    EditCustomerAccountComponent,
+    CustomerAddressComponent
   ],
   imports: [
     BrowserModule,

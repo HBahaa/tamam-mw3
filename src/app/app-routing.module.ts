@@ -22,13 +22,16 @@ import { SpecialistWatchlistComponent } from './pages/specialist-watchlist/speci
 import { SubmitTicketComponent } from './pages/submit-ticket/submit-ticket.component';
 import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
 import { EditCustomerAccountComponent } from './pages/edit-customer-account/edit-customer-account.component';
+import { CustomerAddressComponent } from './pages/customer-address/customer-address.component';
 
 
 const routes: Routes = [
 	{path:'login', component:LoginComponent },
 	{path:'forget-password', component:ForgetPasswordComponent },
 	{path:'select-user-type', component:SelectUserTypeComponent },
-	{path:'edit-customer-account/:id', component:EditCustomerAccountComponent },
+	{path:'customer-address/edit/:id', component:EditCustomerAccountComponent },
+	{path:'customer-address/new/:id', component:EditCustomerAccountComponent },
+	{path:'customer-address', component:CustomerAddressComponent },
 	{path:'customer-account', component:ClientAccountComponent },
 	{path:'membership/plan', component:PlanComponent },
 	{path:'membership', component:MembershipComponent },

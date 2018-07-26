@@ -749,5 +749,18 @@
 			"confirm_new_password" : "Confirm New Password",
 			"save" : "Save"
 		}
+	},
+	"CUSTOMER_ADDRESS" : {
+		"title" : "Address Book",
+		"default_address" : "Default Address",
+		"billing_address" : "Default Billing Address",
+		"change_billing_address" : "Change Billing Address",
+		"shipping_address" : "Default Shipping Address",
+		"change_shipping_address" : "Change Shipping Address",
+		"additional_address" : "Additional Address Entries",
+		"my_contact_info" : "My Contact Info",
+		"delete_address" : "Delete Address",
+		"add_new_address" : "Add New Address",
+		"back" : "Back"
 	}
 }

@@ -746,5 +746,18 @@
 			"confirm_new_password" : "تأكيـد كلمـة السر الجديدة",
 			"save" : "حفـظ"
 		}
+	},
+	"CUSTOMER_ADDRESS" : {
+		"title" : "دفتر العناوين",
+		"default_address" : "العناوين الإفتراضية",
+		"billing_address" : "عنوان الدفع الافتراضي",
+		"change_billing_address" : "تغيير عنوان الدفع",
+		"shipping_address" : "عنوان الشحن الافتراضي",
+		"change_shipping_address" : "تغيير عنوان الشحن",
+		"additional_address" : "العناوين الإضافية",
+		"my_contact_info" : "معلـــومات الحســـاب",
+		"delete_address" : "خـذف العنوان",
+		"add_new_address" : "أضف عنـوان جديـد",
+		"back" : "رجـــوع"
 	}
 }
