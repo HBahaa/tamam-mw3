@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
+import { ChangeLanguageService } from '../../services/change-language/change-language.service';
 
 @Component({
   selector: 'app-submit-ticket',
@@ -11,11 +12,17 @@ export class SubmitTicketComponent implements OnInit {
 	displayedColumns: string[] = ['id', 'department', 'title', 'replies', 'status'];
 	dataSource = new MatTableDataSource<ticket>(ELEMENT_DATA);
 
+	constructor( private changeLnaguage: ChangeLanguageService ) { }
+
 	@ViewChild(MatPaginator) paginator: MatPaginator;
 
 	ngOnInit() {
+		this.changeLnaguage.checkLanguage();
 		this.dataSource.paginator = this.paginator;
 	}
+
+
+
 }
 
 export interface ticket {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChangeLanguageService } from '../../services/change-language/change-language.service';
 
 @Component({
   selector: 'app-client-account',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientAccountComponent implements OnInit {
 
-  constructor() { }
+	constructor( private changeLnaguage: ChangeLanguageService ) { }
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+		this.changeLnaguage.checkLanguage()
+	}
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChangeLanguageService } from '../../services/change-language/change-language.service';
 
 @Component({
   selector: 'app-groups',
@@ -7,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GroupsComponent implements OnInit {
 
-	// title: string = "TAMAM COMMUNITY";
-
-	constructor() { }
+	constructor( private changeLnaguage: ChangeLanguageService ) { }
 
 	ngOnInit() {
+		this.changeLnaguage.checkLanguage()
 	}
+
 
 }

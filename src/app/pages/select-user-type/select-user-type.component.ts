@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
+import { ChangeLanguageService } from '../../services/change-language/change-language.service';
 
 @Component({
   selector: 'app-select-user-type',
@@ -10,9 +11,10 @@ import { NgForm } from '@angular/forms';
 export class SelectUserTypeComponent implements OnInit {
 	type: any;
 
-	constructor(private router: Router) { }
+	constructor(private router: Router, private changeLnaguage: ChangeLanguageService) { }
 
 	ngOnInit() {
+		this.changeLnaguage.checkLanguage()
 	}
 
 	onFormSubmit(form: NgForm){

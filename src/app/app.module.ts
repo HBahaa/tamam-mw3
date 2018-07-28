@@ -43,10 +43,12 @@ import { JobWatchlistComponent } from './pages/job-watchlist/job-watchlist.compo
 import { SpecialistWatchlistComponent } from './pages/specialist-watchlist/specialist-watchlist.component';
 import { SubmitTicketComponent } from './pages/submit-ticket/submit-ticket.component';
 
-import { AuthService } from './services/auth/auth.service';
 import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
 import { EditCustomerAccountComponent } from './pages/edit-customer-account/edit-customer-account.component';
 import { CustomerAddressComponent } from './pages/customer-address/customer-address.component';
+
+import { AuthService } from './services/auth/auth.service';
+import { ChangeLanguageService } from './services/change-language/change-language.service';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -116,7 +118,8 @@ export function createTranslateLoader(http: HttpClient) {
     })
   ],
   providers: [
-      AuthService
+      AuthService,
+      ChangeLanguageService
   ],
   bootstrap: [AppComponent]
 })

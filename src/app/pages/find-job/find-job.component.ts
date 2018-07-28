@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChangeLanguageService } from '../../services/change-language/change-language.service';
 
 @Component({
   selector: 'app-find-job',
@@ -6,11 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./find-job.component.scss']
 })
 export class FindJobComponent implements OnInit {
-	title:string = "HOW TO FIND WORK AS A FREELANCER";
 
-	constructor() { }
-
+	constructor( private changeLnaguage: ChangeLanguageService ){}
 	ngOnInit() {
+		this.changeLnaguage.checkLanguage()
 	}
 
 }

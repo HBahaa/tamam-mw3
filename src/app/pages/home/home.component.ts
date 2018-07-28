@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChangeLanguageService } from '../../services/change-language/change-language.service';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Home implements OnInit {
 
-  constructor() { }
+  constructor( private changeLnaguage: ChangeLanguageService ) { }
 
   ngOnInit() {
+    this.changeLnaguage.checkLanguage();
   }
+
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChangeLanguageService } from '../../services/change-language/change-language.service';
 
 @Component({
   selector: 'app-invite-owner',
@@ -6,11 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./invite-owner.component.scss']
 })
 export class InviteOwnerComponent implements OnInit {
-	title: string = "INVITE A JOB OWNER TO TAMAM MARKETPLACE";
-
-	constructor() { }
+	
+	constructor( private changeLnaguage: ChangeLanguageService ) { }
 
 	ngOnInit() {
+	this.changeLnaguage.checkLanguage()
 	}
+
 
 }

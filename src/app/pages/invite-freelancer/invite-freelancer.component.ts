@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChangeLanguageService } from '../../services/change-language/change-language.service';
 
 @Component({
   selector: 'app-invite-freelancer',
@@ -7,11 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InviteFreelancerComponent implements OnInit {
 
-	title:string = "INVITE FREELANCERS TO TAMAM'S MARKETPLACE";
-
-	constructor() { }
+	constructor( private changeLnaguage: ChangeLanguageService ) { }
 
 	ngOnInit() {
+		this.changeLnaguage.checkLanguage()
 	}
 
 }

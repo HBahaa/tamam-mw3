@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../../services/auth/auth.service';
+import { ChangeLanguageService } from '../../services/change-language/change-language.service';
 
 @Component({
   selector: 'app-login',
@@ -13,10 +14,12 @@ export class LoginComponent implements OnInit {
 
 	constructor(
 		private fb: FormBuilder,
-    	private authService: AuthService
+    	private authService: AuthService,
+    	private changeLnaguage: ChangeLanguageService
     ) { }
 
 	ngOnInit() {
+		this.changeLnaguage.checkLanguage()
 	    this.form = this.fb.group({
 			email: ['', Validators.required],
 			password: ['', Validators.required]

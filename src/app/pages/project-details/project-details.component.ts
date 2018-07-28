@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChangeLanguageService } from '../../services/change-language/change-language.service';
 
 @Component({
   selector: 'app-project-details',
@@ -10,10 +11,11 @@ export class ProjectDetailsComponent implements OnInit {
 	lat: number = 30.678418;
 	lng: number = 30.809007;
 
-	constructor() {
-	}
+	constructor( private changeLnaguage: ChangeLanguageService ) { }
 
 	ngOnInit() {
+		this.changeLnaguage.checkLanguage()
 	}
+	
 
 }
