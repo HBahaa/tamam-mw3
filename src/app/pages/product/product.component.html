@@ -1,0 +1,246 @@
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div id="myCarousel" class="carousel slide">
+          <!-- main slider carousel items -->
+          <div class="carousel-inner">
+            <div class="active item carousel-item" data-slide-number="0">
+                <img src="http://placehold.it/1200x480&amp;text=one" class="img-fluid">
+            </div>
+            <div class="item carousel-item" data-slide-number="1">
+                <img src="http://placehold.it/1200x480/888/FFF" class="img-fluid">
+            </div>
+            <div class="item carousel-item" data-slide-number="2">
+                <img src="http://placehold.it/1200x480&amp;text=three" class="img-fluid">
+            </div>
+            <div class="item carousel-item" data-slide-number="3">
+                <img src="http://placehold.it/1200x480&amp;text=four" class="img-fluid">
+            </div>
+            <div class="item carousel-item" data-slide-number="4">
+                <img src="http://placehold.it/1200x480&amp;text=five" class="img-fluid">
+            </div>
+            <div class="item carousel-item" data-slide-number="5">
+                <img src="http://placehold.it/1200x480&amp;text=six" class="img-fluid">
+            </div>
+            <div class="item carousel-item" data-slide-number="6">
+                <img src="http://placehold.it/1200x480&amp;text=seven" class="img-fluid">
+            </div>
+            <div class="item carousel-item" data-slide-number="7">
+                <img src="http://placehold.it/1200x480&amp;text=eight" class="img-fluid">
+            </div>
+          </div>
+          <!-- main slider carousel nav controls -->
+          <ul class="carousel-indicators list-inline">
+            <li class="list-inline-item active">
+                <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#myCarousel">
+                    <img src="http://placehold.it/80x60&amp;text=one" class="img-fluid">
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a id="carousel-selector-1" data-slide-to="1" data-target="#myCarousel">
+                    <img src="http://placehold.it/80x60&amp;text=two" class="img-fluid">
+                </a>
+            </li>   
+            <li class="list-inline-item">
+                <a id="carousel-selector-2" data-slide-to="2" data-target="#myCarousel">
+                    <img src="http://placehold.it/80x60&amp;text=three" class="img-fluid">
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a id="carousel-selector-3" data-slide-to="3" data-target="#myCarousel">
+                    <img src="http://placehold.it/80x60&amp;text=four" class="img-fluid">
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a id="carousel-selector-4" data-slide-to="4" data-target="#myCarousel">
+                    <img src="http://placehold.it/80x60&amp;text=five" class="img-fluid">
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a id="carousel-selector-5" data-slide-to="5" data-target="#myCarousel">
+                    <img src="http://placehold.it/80x60&amp;text=six" class="img-fluid">
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a id="carousel-selector-6" data-slide-to="6" data-target="#myCarousel">
+                    <img src="http://placehold.it/80x60&amp;text=seven" class="img-fluid">
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a id="carousel-selector-7" data-slide-to="7" data-target="#myCarousel">
+                    <img src="http://placehold.it/80x60&amp;text=eight" class="img-fluid">
+                </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="product">
+          <h3 class="product-title">men's shoes fashion</h3>
+          <div class="rating">
+            <div class="stars">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <span class="review-no">41 reviews</span>
+          </div>
+          <p class="product-description">Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
+          <h4 class="price">{{ 'PRODUCTS.price' | translate }}: <span>$180</span></h4>
+          
+          <div class="qty">
+            <h5>{{ 'PRODUCTS.quantity' | translate }}:   </h5>
+            <button class="btn btn-default" (click)="incrementQuantity()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            <input class="form-control" value="1" />
+            <button class="btn btn-default" (click)="decrementQuantity()"><i class="fa fa-minus" aria-hidden="true"></i></button>
+          </div>
+          <div class="action">
+            <button class="add-to-cart btn btn-success mr-2" type="button" (click)="addProductToCart()">{{ 'PRODUCTS.add_to_cart' | translate }}</button>
+            <button class="btn btn-danger mr-2" type="button"><span class="fa fa-heart"></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+          <a href="#content1" class="nav-link active" id="tab1" data-toggle="tab" role="tab" aria-controls="content1" aria-selected="true">
+            {{ 'PRODUCTS.description' | translate }}
+          </a>
+      </li>
+      <li class="nav-item">
+          <a href="#content2" class="nav-link" id="tab2" data-toggle="tab" role="tab" aria-controls="content2" aria-selected="false">
+            {{ 'PRODUCTS.features_benefits' | translate }}
+          </a>
+      </li>
+      <li class="nav-item">
+          <a href="#content3" class="nav-link" id="tab3" data-toggle="tab" role="tab" aria-controls="content3" aria-selected="false">
+            {{ 'PRODUCTS.video' | translate }}
+          </a>
+      </li>
+      <li class="nav-item">
+          <a href="#content4" class="nav-link" id="tab4" data-toggle="tab" role="tab" aria-controls="content4" aria-selected="false">
+            {{ 'PRODUCTS.perquesities' | translate }}
+          </a>
+      </li>
+      <li class="nav-item">
+          <a href="#content5" class="nav-link" id="tab5" data-toggle="tab" role="tab" aria-controls="content5" aria-selected="false">
+            {{ 'PRODUCTS.frequent_questions' | translate }}
+          </a>
+      </li>
+      <li class="nav-item">
+          <a href="#content6" class="nav-link" id="tab6" data-toggle="tab" role="tab" aria-controls="content6" aria-selected="false">
+            {{ 'PRODUCTS.bundle' | translate }}
+          </a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myContent">
+      <div class="tab-pane fade show active" id="content1" role="tabpanel" aria-labelledby="tab1">
+        <div class="row">
+          <div class="col-md-12 p-4">
+            <p>
+              <span class="text-success">The GlucoDock technology will amaze you. Managing blood sugar with your iPhone has never been that easy!</span>
+              GlucoDock is a huge supporter for anyone that has to check his blood sugar on a daily basis. All readings are stored on the Smartphone. Annotations can be added to e.g. compare blood sugar results before and after meal.
+
+              GlucoDock transforms your iPhone®, iPod touch® and iPad® instantaneously into a blood sugar measuring device of the newest generation. Smaller than a matchbox, it fits in every pocket and can be accessed everywhere.
+
+              GlucoDock relieves you from the work of keeping a diary. Each entry is stored immediately and is presented in various forms and designs. This way you save much time and can concentrate on what is most important - your health!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="tab2">
+        <div class="row">
+          <div class="col-md-12 p-4">
+            <h3 >Features</h3>
+            <ul>
+              <li>Measuring blood glucose&nbsp;with iPhone®, iPod touch® or iPad®</li>
+              <li>No coding measuring time within 5 seconds</li>
+              <li>Convenient creation of multiple user profiles with measurement unit</li>
+              <li>Design GlucoDock according to your own wishes</li>
+              <li>Individual comments at every reading. As soon as the result is displayed, further comments can be added.&nbsp;</li>
+              <li>Send results to your own PC&nbsp;</li>
+            </ul>
+
+            <h3>Benefits</h3>
+            <ul>
+
+              <li>Keep track of insulin and food.</li>
+              <li>Diary, statistics, and monthly reports&nbsp;.</li>
+              <li>The 30-day chart - receive all results fast in an overview.</li>
+              <li>Compare blood sugar before and after your meals!</li>
+              <li>Transfer monthly reports to your own e-mail address, for example, in order to retain your data on your own computer.&nbsp;</li>
+              <li>Diabetes management in a new dimension.&nbsp;</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="content3" role="tabpanel" aria-labelledby="tab3">
+        <div class="row">
+          <div class="col-md-12 p-4">
+            <!-- <iframe width="330" height="253" src="//www.youtube.com/embed/Sqqa-tNdjJM" frameborder="0" allowfullscreen=""></iframe> -->
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="content4" role="tabpanel" aria-labelledby="tab4">
+        <div class="row">
+          <div class="col-md-12 p-4">
+            <h4>In order to activate GlucoDock you need:</h4>
+            <ul>
+              <li>iPhone (3GS and newer generations),&nbsp;iPhone 5&nbsp;only via Apple "Lightning" Dock Connector.</li>
+              <li>iPad (all generations).</li>
+              <li>iPod touch (3rd generation and newer),&nbsp;iPod touch 5th generation only via Apple "Lightning" Dock Connector.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="content5" role="tabpanel" aria-labelledby="tab5">
+        <div class="row">
+          <div class="col-md-12 p-4">
+            <h6 class="text-danger">Q1. What is GlucoDock®?</h6>
+            <p>GlucoDock® is a blood glucose monitoring module to detect the glucose level in human blood. GlucoDock® can be used in combination with iPhone (3GS and newer generations), iPod touch (3. Generation and newer) or iPad (all generations) and the VitaDock® App. </p>
+
+            <h6 class="text-danger">Q2. Is GlucoDock® a certified medical device?</h6> 
+            <p>Yes, GlucoDock® is certified by an authorized organization in accordance to the directive IVD 98/79/EG. </p>
+
+            <h6 class="text-danger">Q3. Which devices are compatible with GlucoDock®? </h6>
+            <p>You can use GlucoDock® with your iPhone (3GS and newer generations), iPod touch (3. Generation and newer) and iPad (all generations). </p>
+
+            <h6 class="text-danger">Q4. Can the GlucoDock® blood glucose monitoring module be used by multiple people? </h6>
+            <p>You are able to connect up to 4 user accounts. </p>
+
+            <h6 class="text-danger">Q5. Does GlucoDock® require a separate power supply? </h6>
+            <p>No, the connected iPhone, iPod touch or iPad supplies GlucoDock® with power.</p> 
+
+            <h6 class="text-danger">Q6. Can the measuring unit within GlucoDock® be adjusted individually? </h6>
+            <p>Of course. The VitaDock® App allows personal user settings, such as to determine measuring unites mmol/L or mg/dL. </p>
+
+            <h6 class="text-danger">Q7. Which test trips do I need for measuring with my GlucoDock®? </h6>
+            <p>For the GlucoDock® glucose measuring module you need the GlucoDock® test strips. </p>
+
+            <h6 class="text-danger">Q8. Can I use other test strips with GlucoDock®? </h6>
+            <p>No. GlucoDock® can only be used with GlucoDock® test strips designed by Medisana. </p> 
+
+            <h6 class="text-danger">Q9. Can I also use GlucoDock® with an Android device?</h6> 
+            <p>Due to technical restrictions GlucoDock® cannot be connected to an Android device. </p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="content6" role="tabpanel" aria-labelledby="tab6">
+        <div class="row">
+          <div class="col-md-12 p-4">
+            <a href="http://eti.mw3-cloud.com/index.php/glucodock-bundle.html" target="_blank">
+              <img src="http://eti.mw3-cloud.com/media/wysiwyg/15glucodock-bundle.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+  </div>
+</div>

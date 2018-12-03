@@ -49,6 +49,10 @@ import { CustomerAddressComponent } from './pages/customer-address/customer-addr
 
 import { AuthService } from './services/auth/auth.service';
 import { ChangeLanguageService } from './services/change-language/change-language.service';
+import { ProductsComponent } from './pages/products/products.component';
+import { ProductComponent } from './pages/product/product.component';
+import { ListProductCardComponent } from './components/list-product-card/list-product-card.component';
+import { GridProductCardComponent } from './components/grid-product-card/grid-product-card.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -89,7 +93,11 @@ export function createTranslateLoader(http: HttpClient) {
     SubmitTicketComponent,
     ProjectDetailsComponent,
     EditCustomerAccountComponent,
-    CustomerAddressComponent
+    CustomerAddressComponent,
+    ProductsComponent,
+    ProductComponent,
+    ListProductCardComponent,
+    GridProductCardComponent
   ],
   imports: [
     BrowserModule,

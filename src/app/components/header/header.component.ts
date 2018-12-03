@@ -26,18 +26,18 @@ export class HeaderComponent implements OnInit {
 	changeLanguage(lang){
 		this.translate.use(lang);
 		localStorage.setItem("language", lang)
-		if (lang == 'ar') {
-			$('html').attr('dir', 'rtl');
-			$('.navbar-nav').removeClass('mr-auto');
-			$('.navbar-right').addClass('mr-auto');
-			$('.tab-body, .reset-password, .client-account, .list-group, .dropdown-menu, .tab-content').addClass("text-right");
-			$('.item-img').removeClass('float-left');
-		}else{
-			$('html').attr('dir', 'ltr');
-			$('.navbar-nav').addClass('mr-auto');
-			$('.navbar-right').removeClass('mr-auto');
-			$('.tab-body, .reset-password, .client-account, .list-group, .dropdown-menu, .tab-content').removeClass("text-right");
-			$('.item-img').addClass('float-left');
-		}
+		// if (lang == 'ar') {
+		// 	$('html').attr('dir', 'rtl');
+		// 	$('.navbar-nav').removeClass('mr-auto');
+		// 	$('.navbar-right').addClass('mr-auto');
+		// 	$('.tab-body, .reset-password, .client-account, .list-group, .dropdown-menu, .tab-content').addClass("text-right");
+		// 	$('.item-img').removeClass('float-left');
+		// }else{
+		// 	$('html').attr('dir', 'ltr');
+		// 	$('.navbar-nav').addClass('mr-auto');
+		// 	$('.navbar-right').removeClass('mr-auto');
+		// 	$('.tab-body, .reset-password, .client-account, .list-group, .dropdown-menu, .tab-content').removeClass("text-right");
+		// 	$('.item-img').addClass('float-left');
+		// }
 	}
 }

@@ -11,7 +11,7 @@ export class AppComponent {
 
     ngOnInit(){ }
 
- //  	setLanguage(){
+ 	//  setLanguage(){
 	//     let lang = localStorage.getItem("language")
 	//    if (lang == 'ar') {
 	// 		$('html').attr('dir', 'rtl');

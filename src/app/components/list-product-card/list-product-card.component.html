@@ -1,0 +1,8 @@
+<div class="card">
+  	<img class="card-img-left" [src]="data.image">
+  	<div class="card-body">
+    	<a routerLink="/product/{{data.id}}"><h5 class="card-title">{{ data.title }}</h5></a>
+    	<p class="card-text">{{ data.description }}</p>
+    	<p class="lead">{{ data.price }}</p>
+  	</div>
+</div>

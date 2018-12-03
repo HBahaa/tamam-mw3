@@ -23,11 +23,14 @@ import { SubmitTicketComponent } from './pages/submit-ticket/submit-ticket.compo
 import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
 import { EditCustomerAccountComponent } from './pages/edit-customer-account/edit-customer-account.component';
 import { CustomerAddressComponent } from './pages/customer-address/customer-address.component';
-
+import { ProductsComponent } from './pages/products/products.component';
+import { ProductComponent } from './pages/product/product.component';
 
 const routes: Routes = [
 	{path:'login', component:LoginComponent },
 	{path:'forget-password', component:ForgetPasswordComponent },
+	{path:'products', component:ProductsComponent },
+	{path:'product/:id', component:ProductComponent },
 	{path:'select-user-type', component:SelectUserTypeComponent },
 	{path:'customer-address/edit/:id', component:EditCustomerAccountComponent },
 	{path:'customer-address/new/:id', component:EditCustomerAccountComponent },

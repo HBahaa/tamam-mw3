@@ -1,0 +1,93 @@
+<div class="products mt-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group row">
+                    <label class="col-md-6">العرض بالصفحة:</label>
+                    <div class="col-md-6">
+                        <select class="form-control">
+                            <option value="http://eti.mw3-cloud.com/index.php/shop/by-use/health.html?___from_store=default&amp;___store=eg&amp;limit=12" selected="selected">12</option>
+                            <option value="http://eti.mw3-cloud.com/index.php/shop/by-use/health.html?___from_store=default&amp;___store=eg&amp;limit=24">
+                            24</option>
+                            <option value="http://eti.mw3-cloud.com/index.php/shop/by-use/health.html?___from_store=default&amp;___store=eg&amp;limit=36">
+                            36</option>
+                            <option value="http://eti.mw3-cloud.com/index.php/shop/by-use/health.html?___from_store=default&amp;___store=eg&amp;limit=all">
+                            All</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group row">
+                    <label class="col-md-6">الترتيب حسب:</label>
+                    <div class="col-md-6">
+                        <select class="form-control">
+                            <option value="" selected>الموقع</option>
+                            <option value="">اﻷسم</option>
+                            <option value="">السعر</option>
+                            <option value="">العلامة التجارية</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-offset-md-2 col-md-4 col-xs-5">
+                <span>{{ 'PRODUCTS.view_mode' | translate }}</span>
+                <button (click)="changeViewToList()" class="btn btn-default m-2">
+                    <i class="fa fa-list"></i> List
+                </button>
+                <button (click)="changeViewToGrid()" class="btn btn-default m-2">
+                    <i class="fa fa-th"></i> Grid
+                </button>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-9">
+                <div class="row" *ngIf="!viewList; else gridView">
+                    <div class="col-md-4 col-xs-6" *ngFor="let product of products">
+                        <app-grid-product-card [data]="product"></app-grid-product-card>
+                    </div>
+                </div>
+                <ng-template #gridView>
+                    <div class="row">
+                        <div class="col-md-12" *ngIf="viewList">
+                            <app-list-product-card *ngFor="let product of products" [data]="product"></app-list-product-card>
+                        </div>
+                    </div>
+                </ng-template>
+            </div>
+            <div class="col-md-3">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <!-- <h5 class="mb-0"> -->
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                {{ 'PRODUCTS.compare_products' | translate }}
+                            </button>
+                            <!-- </h5> -->
+                        </div>
+                  
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>{{ 'PRODUCTS.no_products_to_compare' | translate }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    {{ 'PRODUCTS.cart' | translate }}
+                            </button>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>{{ 'PRODUCTS.cart_items' | translate }}</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

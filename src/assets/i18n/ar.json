@@ -42,6 +42,7 @@
 			"title" : "مساعدة",
 			"submit_ticket" : "إرسل طلب مساعدة"
 		},
+		"products" : "المنتجات",
 		"certification" : "الشهادات",
 		"blog" : "المدونة",
 		"modal": {
@@ -759,5 +760,21 @@
 		"delete_address" : "خـذف العنوان",
 		"add_new_address" : "أضف عنـوان جديـد",
 		"back" : "رجـــوع"
+	},
+	"PRODUCTS" : {
+		"view_mode" : "شكل العرض",
+		"price" : "السعر",
+		"quantity": "الكمية",
+		"add_to_cart" : "أضف إلى عربة التسوق",
+		"description" : "نبذة عن التطبيق",
+		"features_benefits" : "الخصائص والمميزات",
+		"video" : "الوسائط المرئية",
+		"perquesities" : "المتطلبات الأساسية",
+		"frequent_questions" : "اسئلة شائعة",
+		"bundle" : "الباقات",
+		"compare_products":"مقارنة المنتجات",
+		"no_products_to_compare": "ليس لديك عناصر للمقارنة",
+		"cart": "عربة التسوق",
+		"cart_items": "لا يوجد منتجات في عربة التسوق"
 	}
 }

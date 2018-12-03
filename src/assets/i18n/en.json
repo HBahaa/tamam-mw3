@@ -42,6 +42,7 @@
 			"title" : "Support",
 			"submit_ticket" : "Submit A Ticket"
 		},
+		"products" : "Products",
 		"certification" : "Certification",
 		"blog" : "Blog",
 		"modal": {
@@ -762,5 +763,21 @@
 		"delete_address" : "Delete Address",
 		"add_new_address" : "Add New Address",
 		"back" : "Back"
+	},
+	"PRODUCTS" : {
+		"view_mode" : "View",
+		"price" : "current price",
+		"quantity": "Quantity",
+		"add_to_cart": "Add To Cart",
+		"description" : "Description",
+		"features_benefits" : "Features",
+		"video" : "الوسائط المرئية",
+		"perquesities" : "المتطلبات الأساسية",
+		"frequent_questions" : "اسئلة شائعة",
+		"bundle" : "الباقات",
+		"compare_products":"Compare Products",
+		"no_products_to_compare": "You have no items to compare.",
+		"cart": "My Cart",
+		"cart_items": "You have no items in your shopping cart."
 	}
 }
